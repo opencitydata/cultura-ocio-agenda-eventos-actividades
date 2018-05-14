@@ -1,7 +1,7 @@
 digraph ar2dtool_diagram { 
 rankdir=LR;
 size="1000"
-node [shape = rectangle, color="black"]; "esagenda:Evento" "schema:Event" "event:Event" "time:GeneralDateTimeDescription" "time:DateTimeInterval" "time:DurationDescription" "time:TemporalDuration" "time:Duration" "time:GeneralDurationDescription" "time:January" "time:ProperInterval" "time:TimePosition" "66968b5d2b27f4a0f5e9c1c54de8a26e" "time:TemporalPosition" "time:Interval" "time:TemporalEntity" "time:Year" "time:MonthOfYear" "time:DateTimeDescription" "time:TemporalUnit" "time:Instant" "time:DayOfWeek" ; /*classes style*/
+node [shape = rectangle, color="black"]; "esagenda:Evento" "schema:Event" "event:Event" "time:GeneralDateTimeDescription" "time:DateTimeInterval" "time:DurationDescription" "3025029662e6d8a42a1a0cb55aefaaa8" "time:TemporalDuration" "time:Duration" "time:GeneralDurationDescription" "time:January" "time:ProperInterval" "time:TimePosition" "time:TemporalPosition" "time:Interval" "time:TemporalEntity" "time:Year" "time:MonthOfYear" "time:DateTimeDescription" "time:TemporalUnit" "time:Instant" "time:DayOfWeek" ; /*classes style*/
 	"time:TemporalEntity" -> "owl:Thing" [ label = "rdfs:subClassOf" ];
 	"time:DateTimeInterval" -> "time:ProperInterval" [ label = "rdfs:subClassOf" ];
 	"time:DayOfWeek" -> "owl:Thing" [ label = "rdfs:subClassOf" ];
@@ -13,7 +13,7 @@ node [shape = rectangle, color="black"]; "esagenda:Evento" "schema:Event" "event
 	"time:GeneralDateTimeDescription" -> "time:TemporalPosition" [ label = "rdfs:subClassOf" ];
 	"time:DateTimeDescription" -> "time:GeneralDateTimeDescription" [ label = "rdfs:subClassOf" ];
 	"time:DurationDescription" -> "time:GeneralDurationDescription" [ label = "rdfs:subClassOf" ];
-	"time:TimePosition" -> "66968b5d2b27f4a0f5e9c1c54de8a26e" [ label = "rdfs:subClassOf" ];
+	"time:TimePosition" -> "3025029662e6d8a42a1a0cb55aefaaa8" [ label = "rdfs:subClassOf" ];
 	"time:TimePosition" -> "time:TemporalPosition" [ label = "rdfs:subClassOf" ];
 	"time:January" -> "time:DateTimeDescription" [ label = "rdfs:subClassOf" ];
 	"time:ProperInterval" -> "time:Interval" [ label = "rdfs:subClassOf" ];
