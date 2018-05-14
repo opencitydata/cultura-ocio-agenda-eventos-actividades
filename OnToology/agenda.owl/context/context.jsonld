@@ -1,0 +1,120 @@
+{
+  "@context" : {
+    "fechaFin" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda#fechaFin",
+      "@type" : "http://www.w3.org/2001/XMLSchema#date"
+    },
+    "versionInfo" : {
+      "@id" : "http://www.w3.org/2002/07/owl#versionInfo"
+    },
+    "servicioMunicipal" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda#servicioMunicipal",
+      "@type" : "@id"
+    },
+    "license" : {
+      "@id" : "http://creativecommons.org/ns#license"
+    },
+    "Organization" : {
+      "@id" : "http://www.w3.org/ns/org#Organization"
+    },
+    "issued" : {
+      "@id" : "http://purl.org/dc/terms/issued"
+    },
+    "place" : {
+      "@id" : "http://purl.org/NET/c4dm/event.owl#place",
+      "@type" : "@id"
+    },
+    "accesible" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda#accesible",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "Concept" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+    },
+    "horaInicio" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda#horaInicio",
+      "@type" : "http://www.w3.org/2001/XMLSchema#time"
+    },
+    "Event" : {
+      "@id" : "http://schema.org/Event"
+    },
+    "doorTime" : {
+      "@id" : "http://schema.org/doorTime"
+    },
+    "equipamiento" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento#equipamiento",
+      "@type" : "@id"
+    },
+    "creator" : {
+      "@id" : "http://purl.org/dc/elements/1.1/creator"
+    },
+    "location" : {
+      "@id" : "http://schema.org/location",
+      "@type" : "@id"
+    },
+    "rights" : {
+      "@id" : "http://purl.org/dc/elements/1.1/rights"
+    },
+    "identifier" : {
+      "@id" : "http://purl.org/dc/elements/1.1/identifier"
+    },
+    "Place" : {
+      "@id" : "http://schema.org/Place"
+    },
+    "isDefinedBy" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy"
+    },
+    "lugarInscripcion" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda#lugarInscripcion",
+      "@type" : "@id"
+    },
+    "numeroMaximoParticipantes" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda#numeroMaximoParticipantes"
+    },
+    "title" : {
+      "@id" : "http://purl.org/dc/elements/1.1/title"
+    },
+    "medioTransporte" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda#medioTransporte",
+      "@type" : "@id"
+    },
+    "horaFin" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda#horaFin",
+      "@type" : "http://www.w3.org/2001/XMLSchema#time"
+    },
+    "tipoPublico" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda#tipoPublico",
+      "@type" : "@id"
+    },
+    "date" : {
+      "@id" : "http://purl.org/dc/elements/1.1/date"
+    },
+    "fechaInicio" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda#fechaInicio",
+      "@type" : "http://www.w3.org/2001/XMLSchema#date"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "hasFormat" : {
+      "@id" : "http://purl.org/dc/terms/hasFormat"
+    },
+    "Evento" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda#Evento"
+    },
+    "tipoEvento" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda#tipoEvento",
+      "@type" : "@id"
+    },
+    "tipoAccesibilidad" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda#tipoAccesibilidad",
+      "@type" : "@id"
+    },
+    "preferredNamespaceUri" : {
+      "@id" : "http://purl.org/vocab/vann/preferredNamespaceUri"
+    }
+  }
+}
