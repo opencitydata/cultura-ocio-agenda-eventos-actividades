@@ -11,6 +11,7 @@ Por tanto, se pretende con esto llevar un control de cambios entre versiones.
 * [10/03/2018] Actualización de referencias a las URIs donde se encuentra publicada la última versión.
 * [07/05/2018] Aceptado pull request de OnToology para la generación de documentación [[OnToology update #2]](https://github.com/opencitydata/cultura-ocio-agenda-eventos-actividades/pull/2)
 * [16/05/2018] Documentación regenerada a la última versión y añadidos ejemplos de uso.
+* [24/03/2022] Comienzo de la actualización a la versión 1.1, con nuevos patrones
 
 A continuación se muestran también los datos originales obtenidos del grupo de trabajo OjoAlData100, que identificó este vocabulario como uno de los prioritarios.
 
@@ -48,4 +49,4 @@ Sí (por ejemplo, para comparar agendas previas). El histórico tiene poco valor
 ### Afectado LOPD
 No
 
-Este vocabulario está siendo utilizado en el contexto de la actuación sobre datos abiertos del proyecto "Plataforma de Gobierno Abierto, Colaborativa e Interoperable" (http://www.red.es/redes/es/que-hacemos/ciudades-inteligentes/proyectos-en-ciudades). Dentro de los objetivos específicos de este proyecto no se encuentra el desarrollo, actualización o validación de este vocabulario, aunque no se descarta que puedan realizarse cambios cuando los conjuntos de datos correspondientes tengan que ser expuestos por medio de la API de datos abiertos que se está desarrollando en el proyecto.
+Este vocabulario (v1.0) está siendo utilizado en el contexto de la actuación sobre datos abiertos del proyecto "Plataforma de Gobierno Abierto, Colaborativa e Interoperable" (http://www.red.es/redes/es/que-hacemos/ciudades-inteligentes/proyectos-en-ciudades). Dentro de los objetivos específicos de este proyecto no se encuentra el desarrollo, actualización o validación de este vocabulario, aunque no se descarta que puedan realizarse cambios cuando los conjuntos de datos correspondientes tengan que ser expuestos por medio de la API de datos abiertos que se está desarrollando en el proyecto.
