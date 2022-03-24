@@ -1,0 +1,155 @@
+ @prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix esadm: <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#> .
+@prefix esagenda: <http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-cultural#> .
+@prefix esequip: <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento-municipal#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+dbo: a owl:Ontology ;
+    dc:description "Ontology code created by Chowlk" .
+
+dbo:District a owl:Class ;
+    rdfs:label "District" ;
+    rdfs:subClassOf dbo:GovernmentalAdministrativeRegion .
+
+dbo:Municipaly a owl:Class ;
+    rdfs:label "Municipaly" ;
+    rdfs:subClassOf dbo:GovernmentalAdministrativeRegion .
+
+dbo:Neighborhoods a owl:Class ;
+    rdfs:label "Neighborhoods" ;
+    rdfs:subClassOf dbo:GovernmentalAdministrativeRegion .
+
+dbo:Province a owl:Class ;
+    rdfs:label "Province" ;
+    rdfs:subClassOf dbo:GovernmentalAdministrativeRegion .
+
+schema:URL a owl:DatatypeProperty ;
+    rdfs:label "u r l" ;
+    rdfs:domain schema:CreativeWork .
+
+schema:address a owl:ObjectProperty ;
+    rdfs:label "address" ;
+    rdfs:domain schema:Place .
+
+schema:audience a owl:DatatypeProperty ;
+    rdfs:label "audience" ;
+    rdfs:domain schema:Event .
+
+schema:description a owl:DatatypeProperty ;
+    rdfs:label "description" ;
+    rdfs:domain schema:CreativeWork .
+
+schema:doorTime a owl:DatatypeProperty ;
+    rdfs:label "door time" ;
+    rdfs:domain schema:Event .
+
+schema:endDate a owl:DatatypeProperty ;
+    rdfs:label "end date" ;
+    rdfs:domain schema:Event .
+
+schema:eventAttendanceMode a owl:DatatypeProperty ;
+    rdfs:label "event attendance mode" ;
+    rdfs:domain schema:Event .
+
+schema:eventStatus a owl:DatatypeProperty ;
+    rdfs:label "event status" ;
+    rdfs:domain schema:Event .
+
+schema:identifier a owl:DatatypeProperty ;
+    rdfs:label "identifier" ;
+    rdfs:domain schema:CreativeWork .
+
+schema:image a owl:DatatypeProperty ;
+    rdfs:label "image" ;
+    rdfs:domain schema:CreativeWork .
+
+schema:isAccesibleForFree a owl:DatatypeProperty ;
+    rdfs:label "is accesible for free" ;
+    rdfs:domain schema:Event .
+
+schema:location a owl:ObjectProperty ;
+    rdfs:label "location" ;
+    rdfs:range schema:Place .
+
+schema:maximunAttendeCapacity a owl:DatatypeProperty ;
+    rdfs:label "maximun attende capacity" ;
+    rdfs:domain schema:Event .
+
+schema:name a owl:DatatypeProperty ;
+    rdfs:label "name" ;
+    rdfs:domain schema:CreativeWork .
+
+schema:postalCode a owl:DatatypeProperty ;
+    rdfs:label "postal code" ;
+    rdfs:domain schema:PostalAddress .
+
+schema:startDate a owl:DatatypeProperty ;
+    rdfs:label "start date" ;
+    rdfs:domain schema:Event .
+
+schema:superEvent a owl:ObjectProperty ;
+    rdfs:label "super event" ;
+    rdfs:domain schema:Event ;
+    rdfs:range schema:Event .
+
+schema:typicalAgeRange a owl:DatatypeProperty ;
+    rdfs:label "typical age range" ;
+    rdfs:domain schema:Event .
+
+schema:workPerformed a owl:DatatypeProperty ;
+    rdfs:label "work performed" ;
+    rdfs:domain schema:Event .
+
+esagenda:accesible a owl:DatatypeProperty ;
+    rdfs:label "accesible" ;
+    rdfs:domain esagenda:Evento ;
+    rdfs:range xsd:boolean .
+
+esagenda:interior a owl:DatatypeProperty ;
+    rdfs:label "interior" ;
+    rdfs:domain esagenda:Evento ;
+    rdfs:range xsd:boolean .
+
+esadm:barrio a owl:Class ;
+    rdfs:label "barrio" .
+
+esadm:distrito a owl:Class ;
+    rdfs:label "distrito" .
+
+esadm:municipio a owl:Class ;
+    rdfs:label "municipio" .
+
+esadm:provincia a owl:Class ;
+    rdfs:label "provincia" .
+
+esequip:equipamiento a owl:Class ;
+    rdfs:label "equipamiento" ;
+    rdfs:subClassOf schema:Place .
+
+schema:DigitalDocument a owl:Class ;
+    rdfs:label "Digital Document" .
+
+schema:PostalAddress a owl:Class ;
+    rdfs:label "Postal Address" .
+
+esagenda:Evento a owl:Class ;
+    rdfs:label "Evento" ;
+    rdfs:subClassOf schema:Event .
+
+schema:Place a owl:Class ;
+    rdfs:label "Place" .
+
+dbo:GovernmentalAdministrativeRegion a owl:Class ;
+    rdfs:label "Governmental Administrative Region" .
+
+schema:CreativeWork a owl:Class ;
+    rdfs:label "Creative Work" ;
+    rdfs:subClassOf schema:DigitalDocument .
+
+schema:Event a owl:Class ;
+    rdfs:label "Event" .
+
