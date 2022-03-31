@@ -15,10 +15,13 @@
 <http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda> rdf:type owl:Ontology ;
                                                                     owl:versionIRI <http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda/1.1> ;
                                                                     owl:imports <http://www.w3.org/2004/02/skos/core> ;
+                                                                    <http://purl.org/dc/elements/1.1/identifier> "http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda" ,
+                                                                                                                 "http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda.owl" ;
                                                                     <http://purl.org/dc/terms/creator> "Josué Garcia Salas - Universidad Politécnica de Madrid" ,
                                                                                                        "Oscar Corcho (Ontology Engineering Group - Universidad Politécnica de Madrid, Localidata)" ;
-                                                                    <http://purl.org/dc/terms/title> ""@en ,
-                                                                                                     "Vocabulario para la representación de datos sobre los eventos que se realizan dentro de una población"@es ,
+                                                                    <http://purl.org/dc/terms/hasFormat> "https://creativecommons.org/licenses/by/4.0" ;
+                                                                    <http://purl.org/dc/terms/issued> "2022-03-31" ;
+                                                                    <http://purl.org/dc/terms/title> "Vocabulario para la representación de datos sobre los eventos que se realizan dentro de una población"@es ,
                                                                                                      "Vocabulary for representing data on events occurring within a population."@en ;
                                                                     rdfs:comment """Esta versión ha sido generada dentro del contexto del proyecto \"Plataforma de gobierno abierto, colaborativa e interoperable\" en el que participan los ayuntamientos de Madrid, Zaragoza, Santiago de Compostela y A Coruña.   
  En esta versión se tienen clases y propiedades que han sido seleccionadas para brindar la opcion más actual y estar posible."""@es ,
@@ -26,18 +29,28 @@
  In this version there are classes and properties that have been selected to provide the most current and current option possible."""@en .
 
 #################################################################
-#    Object Properties
+#    Annotation properties
 #################################################################
 
-###  http://schema.org/location
-schema:location rdf:type owl:ObjectProperty ;
-                rdfs:domain schema:Event ;
-                rdfs:range schema:Place ;
-                rdfs:comment "La ubicación de, por ejemplo, el lugar donde se produce un evento, donde se encuentra una organización o donde tiene lugar una acción."@es ,
-                             "The location of for example where the event is happening, an organization is located, or where an action takes place."@en ;
-                rdfs:label "localizacion"@es ,
-                           "location"@en .
+###  http://purl.org/dc/elements/1.1/identifier
+<http://purl.org/dc/elements/1.1/identifier> rdf:type owl:AnnotationProperty .
 
+
+###  http://purl.org/dc/terms/hasFormat
+<http://purl.org/dc/terms/hasFormat> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/issued
+<http://purl.org/dc/terms/issued> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
 
 ###  http://schema.org/subEvent
 schema:subEvent rdf:type owl:ObjectProperty ;
@@ -57,6 +70,16 @@ schema:superEvent rdf:type owl:ObjectProperty ;
                                "Un evento del que forma parte este evento."@es ;
                   rdfs:label "super event"@en ,
                              "super evento"@es .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda#direccion
+esagenda:direccion rdf:type owl:ObjectProperty ;
+                   rdfs:domain schema:Event ;
+                   rdfs:range schema:Place ;
+                   rdfs:comment "La direccion de, por ejemplo, el lugar donde se produce un evento, donde se encuentra una organización o donde tiene lugar una acción."@es ,
+                                "The address of for example where the event is happening, an organization is located, or where an action takes place."@en ;
+                   rdfs:label "direccion"@en ,
+                              "direccion"@es .
 
 
 ###  http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda#documentacion
@@ -250,6 +273,27 @@ schema:workPerformed rdf:type owl:DatatypeProperty ;
                                   "Trabajo realizado en los eventos."@es ;
                      rdfs:label "trabajo realizado"@es ,
                                 "work performed"@en .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda#interior
+esagenda:interior rdf:type owl:DatatypeProperty ;
+                  rdfs:domain esagenda:Evento ;
+                  rdfs:range xsd:boolean ;
+                  rdfs:comment "Indica si el evento se produce en un espacio cerrado y techado."@es ,
+                               "Indicates if the event takes place in an enclosed and roofed space."@en ;
+                  rdfs:label "inside"@en ,
+                             "interior"@es .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento#nombre
+esequip:nombre rdf:type owl:DatatypeProperty ;
+               rdfs:subPropertyOf owl:topDataProperty ;
+               rdfs:domain esequip:Equipamiento ;
+               rdfs:range xsd:string ;
+               rdfs:comment "Name of the facility where the event is to take place"@en ,
+                            "Nombre del equipamiento donde se va a realizar el evento"@es ;
+               rdfs:label "name"@en ,
+                          "nombre"@es .
 
 
 #################################################################
