@@ -7,7 +7,12 @@ Los pasos que se han seguido para la actualización de la ontología son:
 * Nuevo XML generado de la ontología de diagrams.net
 * Nuevo TTL generado por la ontología a través de Chowlk Converte
 
-Dia 31/03/2022
+## Dia 07/04/2022
+Se han producido los siguientes cambios:
+  - Se han corregido los errores en owl y en el ejemplo que no cumplian el diseño de la ontología 
+  - A través de widoco se ha construido la página web de la ontología en ESPAÑOL (falta versión en inglés)
+
+## Dia 31/03/2022
 Se ha actualizado la ontología con los siguientes cambios
   - Se ha eliminado propiedad tipo-accesibilidad de la clase esagenda:Evento hasta la implementacion del skos
   - Se ha eliminado la propiedad esagenda:accesible
@@ -15,7 +20,3 @@ Se ha actualizado la ontología con los siguientes cambios
   - Se ha cambiado la propiedad relacionada entre schema:place y schema:postalAddress de schema:address a esagenda:direccion
   - Se ha añadido el dato schema:address a la clase schema:PostalAddress
 
-Dia 07/04/2022
-Se han producido los siguientes cambios:
-  - Se han corregido los errores en owl y en el ejemplo que no cumplian el diseño de la ontología 
-  - A través de widoco se ha construido la página web de la ontología en ESPAÑOL (falta versión en inglés)
