@@ -1,0 +1,465 @@
+<http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda> <http://www.w3.org/2002/07/owl#versionIRI> <http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda/1.1> .
+<http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda> <http://purl.org/dc/elements/1.1/identifier> "http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda" .
+<http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda> <http://purl.org/dc/elements/1.1/identifier> "http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda.owl" .
+<http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda> <http://purl.org/dc/terms/creator> "Josué Garcia Salas - Universidad Politécnica de Madrid" .
+<http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda> <http://purl.org/dc/terms/creator> "Oscar Corcho (Ontology Engineering Group - Universidad Politécnica de Madrid, Localidata)" .
+<http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda> <http://purl.org/dc/terms/issued> "2022-03-31" .
+<http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda> <http://purl.org/dc/terms/license> "https://creativecommons.org/licenses/by/4.0" .
+<http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda> <http://purl.org/dc/terms/title> "Vocabulario para la representación de eventos de una agenda cultural"@es .
+<http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda> <http://purl.org/dc/terms/title> "Vocabulary for the representation of events in a cultural agenda"@en .
+<http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda> <http://www.w3.org/2000/01/rdf-schema#comment> "Esta versión ha sido generada dentro del contexto del proyecto \"Plataforma de gobierno abierto, colaborativa e inter operable\" en el que participan los ayuntamientos de Madrid, Zaragoza, Santiago de Compostela y A Coruña. \n En esta versión se tienen clases y propiedades que han sido seleccionadas para brindar la opción más actual y estar posible."@es .
+<http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda> <http://www.w3.org/2000/01/rdf-schema#comment> "This version has been generated within the context of the project \"Open, collaborative and interoperable government platform\" in which the city councils of Madrid, Zaragoza, Santiago de Compostela and A Coruña participate. \n In this version there are classes and properties that have been selected to provide the most current and current option possible."@en .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/elements/1.1/identifier
+<http://purl.org/dc/elements/1.1/identifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/hasFormat
+<http://purl.org/dc/terms/hasFormat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/issued
+<http://purl.org/dc/terms/issued> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://schema.org/location
+<http://schema.org/location> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://schema.org/location> <http://www.w3.org/2000/01/rdf-schema#domain> <http://schema.org/Event> .
+<http://schema.org/location> <http://www.w3.org/2000/01/rdf-schema#range> <http://schema.org/Place> .
+<http://schema.org/location> <http://www.w3.org/2000/01/rdf-schema#comment> "Localización que tendrá el lugar donde se haga el evento"@es .
+<http://schema.org/location> <http://www.w3.org/2000/01/rdf-schema#comment> "Location of the place where the event is to be held."@es .
+<http://schema.org/location> <http://www.w3.org/2000/01/rdf-schema#label> "localizacion"@es .
+<http://schema.org/location> <http://www.w3.org/2000/01/rdf-schema#label> "location"@en .
+# 
+# http://schema.org/subEvent
+<http://schema.org/subEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://schema.org/subEvent> <http://www.w3.org/2002/07/owl#inverseOf> <http://schema.org/superEvent> .
+<http://schema.org/subEvent> <http://www.w3.org/2000/01/rdf-schema#domain> <http://schema.org/Event> .
+<http://schema.org/subEvent> <http://www.w3.org/2000/01/rdf-schema#range> <http://schema.org/Event> .
+<http://schema.org/subEvent> <http://www.w3.org/2000/01/rdf-schema#comment> "An Event that is part of this event."@en .
+<http://schema.org/subEvent> <http://www.w3.org/2000/01/rdf-schema#comment> "Un Evento que forma parte de este evento."@es .
+<http://schema.org/subEvent> <http://www.w3.org/2000/01/rdf-schema#label> "sub event"@en .
+<http://schema.org/subEvent> <http://www.w3.org/2000/01/rdf-schema#label> "sub evento"@es .
+# 
+# http://schema.org/superEvent
+<http://schema.org/superEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://schema.org/superEvent> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://schema.org/superEvent> <http://www.w3.org/2000/01/rdf-schema#comment> "An event that this event is a part of."@en .
+<http://schema.org/superEvent> <http://www.w3.org/2000/01/rdf-schema#comment> "Un evento del que forma parte este evento."@es .
+<http://schema.org/superEvent> <http://www.w3.org/2000/01/rdf-schema#label> "super event"@en .
+<http://schema.org/superEvent> <http://www.w3.org/2000/01/rdf-schema#label> "super evento"@es .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda#direccion
+<http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda#direccion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda#direccion> <http://www.w3.org/2000/01/rdf-schema#domain> <http://schema.org/Event> .
+<http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda#direccion> <http://www.w3.org/2000/01/rdf-schema#range> <http://schema.org/Place> .
+<http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda#direccion> <http://www.w3.org/2000/01/rdf-schema#comment> "La direccion de, por ejemplo, el lugar donde se produce un evento, donde se encuentra una organización o donde tiene lugar una acción."@es .
+<http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda#direccion> <http://www.w3.org/2000/01/rdf-schema#comment> "The address of for example where the event is happening, an organization is located, or where an action takes place."@en .
+<http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda#direccion> <http://www.w3.org/2000/01/rdf-schema#label> "direccion"@en .
+<http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda#direccion> <http://www.w3.org/2000/01/rdf-schema#label> "direccion"@es .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda#documentacion
+<http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda#documentacion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda#documentacion> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda#Evento> .
+<http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda#documentacion> <http://www.w3.org/2000/01/rdf-schema#range> <http://schema.org/DigitalDocument> .
+<http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda#documentacion> <http://www.w3.org/2000/01/rdf-schema#comment> "Asociación con la documentación como actas, mociones, vídeos."@es .
+<http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda#documentacion> <http://www.w3.org/2000/01/rdf-schema#comment> "Association with documentation such as minutes, motions, videos."@en .
+<http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda#documentacion> <http://www.w3.org/2000/01/rdf-schema#label> "documentacion"@es .
+<http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda#documentacion> <http://www.w3.org/2000/01/rdf-schema#label> "documentation"@en .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda#tipo-evento
+<http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda#tipo-evento> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda#tipo-evento> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda#Evento> .
+<http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda#tipo-evento> <http://www.w3.org/2000/01/rdf-schema#comment> "Tipología que define a qué categoría pertenece el evento. Los tipos de evento se representan mediante una lista de conceptos."@es .
+<http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda#tipo-evento> <http://www.w3.org/2000/01/rdf-schema#comment> "Typology that defines to what category the event belongs. Event types are represented by a list of concepts."@en .
+<http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda#tipo-evento> <http://www.w3.org/2000/01/rdf-schema#label> "event type"@en .
+<http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda#tipo-evento> <http://www.w3.org/2000/01/rdf-schema#label> "tipo de evento"@es .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda#ubicacion
+<http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda#ubicacion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda#ubicacion> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda#Evento> .
+<http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda#ubicacion> <http://www.w3.org/2000/01/rdf-schema#range> <http://dbpedia.org/ontology/GovernmentalAdministrativeRegion> .
+<http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda#ubicacion> <http://www.w3.org/2000/01/rdf-schema#comment> "Territorial scope of an event."@en .
+<http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda#ubicacion> <http://www.w3.org/2000/01/rdf-schema#comment> "Ámbito territorial de un evento."@es .
+<http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda#ubicacion> <http://www.w3.org/2000/01/rdf-schema#label> "location"@en .
+<http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda#ubicacion> <http://www.w3.org/2000/01/rdf-schema#label> "ubicacion"@es .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://schema.org/address
+<http://schema.org/address> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://schema.org/address> <http://www.w3.org/2000/01/rdf-schema#domain> <http://schema.org/PostalAddress> .
+<http://schema.org/address> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://schema.org/address> <http://www.w3.org/2000/01/rdf-schema#comment> "Address of the event location"@en .
+<http://schema.org/address> <http://www.w3.org/2000/01/rdf-schema#comment> "Dirección del lugar donde se produce el evento"@es .
+<http://schema.org/address> <http://www.w3.org/2000/01/rdf-schema#label> "address"@en .
+<http://schema.org/address> <http://www.w3.org/2000/01/rdf-schema#label> "direccion"@es .
+# 
+# http://schema.org/audience
+<http://schema.org/audience> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://schema.org/audience> <http://www.w3.org/2000/01/rdf-schema#domain> <http://schema.org/Event> .
+<http://schema.org/audience> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://schema.org/audience> <http://www.w3.org/2000/01/rdf-schema#comment> "An intended audience."@en .
+<http://schema.org/audience> <http://www.w3.org/2000/01/rdf-schema#comment> "Un público objetivo."@es .
+<http://schema.org/audience> <http://www.w3.org/2000/01/rdf-schema#label> "audience"@en .
+<http://schema.org/audience> <http://www.w3.org/2000/01/rdf-schema#label> "audiencia"@es .
+# 
+# http://schema.org/description
+<http://schema.org/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://schema.org/description> <http://www.w3.org/2000/01/rdf-schema#domain> <http://schema.org/CreativeWork> .
+<http://schema.org/description> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://schema.org/description> <http://www.w3.org/2000/01/rdf-schema#comment> "A description of the item."@en .
+<http://schema.org/description> <http://www.w3.org/2000/01/rdf-schema#comment> "La descripción de un artículo."@es .
+<http://schema.org/description> <http://www.w3.org/2000/01/rdf-schema#label> "descripcion"@es .
+<http://schema.org/description> <http://www.w3.org/2000/01/rdf-schema#label> "description"@en .
+# 
+# http://schema.org/doorTime
+<http://schema.org/doorTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://schema.org/doorTime> <http://www.w3.org/2000/01/rdf-schema#domain> <http://schema.org/Event> .
+<http://schema.org/doorTime> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://schema.org/doorTime> <http://www.w3.org/2000/01/rdf-schema#comment> "La hora de inicio de la admisión."@es .
+<http://schema.org/doorTime> <http://www.w3.org/2000/01/rdf-schema#comment> "The time admission will commence."@en .
+<http://schema.org/doorTime> <http://www.w3.org/2000/01/rdf-schema#label> "door time"@en .
+<http://schema.org/doorTime> <http://www.w3.org/2000/01/rdf-schema#label> "hora de apertura de puertas"@es .
+# 
+# http://schema.org/endDate
+<http://schema.org/endDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://schema.org/endDate> <http://www.w3.org/2000/01/rdf-schema#domain> <http://schema.org/Event> .
+<http://schema.org/endDate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://schema.org/endDate> <http://www.w3.org/2000/01/rdf-schema#comment> "La fecha y hora de finalización del artículo."@es .
+<http://schema.org/endDate> <http://www.w3.org/2000/01/rdf-schema#comment> "The end date and time of the item."@en .
+<http://schema.org/endDate> <http://www.w3.org/2000/01/rdf-schema#label> "end Date"@en .
+<http://schema.org/endDate> <http://www.w3.org/2000/01/rdf-schema#label> "fecha fin"@es .
+# 
+# http://schema.org/eventAttendanceMode
+<http://schema.org/eventAttendanceMode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://schema.org/eventAttendanceMode> <http://www.w3.org/2000/01/rdf-schema#domain> <http://schema.org/Event> .
+<http://schema.org/eventAttendanceMode> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://schema.org/eventAttendanceMode> <http://www.w3.org/2000/01/rdf-schema#comment> "Se propone la integración completa de este término en Schema.org, a la espera de los comentarios de implementación y la adopción por parte de las aplicaciones y los sitios web."@es .
+<http://schema.org/eventAttendanceMode> <http://www.w3.org/2000/01/rdf-schema#comment> "This term is proposed for full integration into Schema.org, pending implementation feedback and adoption from applications and websites."@en .
+<http://schema.org/eventAttendanceMode> <http://www.w3.org/2000/01/rdf-schema#label> "event attendace mode"@en .
+<http://schema.org/eventAttendanceMode> <http://www.w3.org/2000/01/rdf-schema#label> "modo de asistencia al evento"@es .
+# 
+# http://schema.org/eventStatus
+<http://schema.org/eventStatus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://schema.org/eventStatus> <http://www.w3.org/2000/01/rdf-schema#domain> <http://schema.org/Event> .
+<http://schema.org/eventStatus> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://schema.org/eventStatus> <http://www.w3.org/2000/01/rdf-schema#comment> "An eventStatus of an event represents its status; particularly useful when an event is cancelled or rescheduled."@en .
+<http://schema.org/eventStatus> <http://www.w3.org/2000/01/rdf-schema#comment> "El estado de un evento representa su situación; especialmente útil cuando un evento se cancela o se reprograma."@es .
+<http://schema.org/eventStatus> <http://www.w3.org/2000/01/rdf-schema#label> "estado del evento"@es .
+<http://schema.org/eventStatus> <http://www.w3.org/2000/01/rdf-schema#label> "event status"@en .
+# 
+# http://schema.org/identifier
+<http://schema.org/identifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://schema.org/identifier> <http://www.w3.org/2000/01/rdf-schema#domain> <http://schema.org/CreativeWork> .
+<http://schema.org/identifier> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://schema.org/identifier> <http://www.w3.org/2000/01/rdf-schema#comment> "La propiedad identificador representa cualquier tipo de identificador para cualquier tipo de cosa."@es .
+<http://schema.org/identifier> <http://www.w3.org/2000/01/rdf-schema#comment> "The identifier property represents any kind of identifier for any kind of thing."@en .
+<http://schema.org/identifier> <http://www.w3.org/2000/01/rdf-schema#label> "identificador"@es .
+<http://schema.org/identifier> <http://www.w3.org/2000/01/rdf-schema#label> "identifier"@en .
+# 
+# http://schema.org/image
+<http://schema.org/image> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://schema.org/image> <http://www.w3.org/2000/01/rdf-schema#domain> <http://schema.org/CreativeWork> .
+<http://schema.org/image> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#base64Binary> .
+<http://schema.org/image> <http://www.w3.org/2000/01/rdf-schema#comment> "A description of the item."@en .
+<http://schema.org/image> <http://www.w3.org/2000/01/rdf-schema#comment> "La descripción de un artículo."@es .
+<http://schema.org/image> <http://www.w3.org/2000/01/rdf-schema#label> "image"@en .
+<http://schema.org/image> <http://www.w3.org/2000/01/rdf-schema#label> "imagen"@es .
+# 
+# http://schema.org/isAccessibleForFree
+<http://schema.org/isAccessibleForFree> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://schema.org/isAccessibleForFree> <http://www.w3.org/2000/01/rdf-schema#domain> <http://schema.org/Event> .
+<http://schema.org/isAccessibleForFree> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://schema.org/isAccessibleForFree> <http://www.w3.org/2000/01/rdf-schema#comment> "A flag to signal that the item, event, or place is accessible for free."@en .
+<http://schema.org/isAccessibleForFree> <http://www.w3.org/2000/01/rdf-schema#comment> "Una bandera para señalar que el artículo, evento o lugar es accesible de forma gratuita."@es .
+<http://schema.org/isAccessibleForFree> <http://www.w3.org/2000/01/rdf-schema#label> "es accesible gratis"@es .
+<http://schema.org/isAccessibleForFree> <http://www.w3.org/2000/01/rdf-schema#label> "is accesible free"@en .
+# 
+# http://schema.org/maximumAttendeeCapacity
+<http://schema.org/maximumAttendeeCapacity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://schema.org/maximumAttendeeCapacity> <http://www.w3.org/2000/01/rdf-schema#domain> <http://schema.org/Event> .
+<http://schema.org/maximumAttendeeCapacity> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://schema.org/maximumAttendeeCapacity> <http://www.w3.org/2000/01/rdf-schema#comment> "El número total de personas que pueden asistir a un evento"@es .
+<http://schema.org/maximumAttendeeCapacity> <http://www.w3.org/2000/01/rdf-schema#comment> "The total number of individuals that may attend an event or venue."@en .
+<http://schema.org/maximumAttendeeCapacity> <http://www.w3.org/2000/01/rdf-schema#label> "capacidad maxima"@es .
+<http://schema.org/maximumAttendeeCapacity> <http://www.w3.org/2000/01/rdf-schema#label> "maximum attendee capacity"@en .
+# 
+# http://schema.org/name
+<http://schema.org/name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://schema.org/name> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<http://schema.org/name> <http://www.w3.org/2000/01/rdf-schema#domain> <http://schema.org/CreativeWork> .
+<http://schema.org/name> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://schema.org/name> <http://www.w3.org/2000/01/rdf-schema#comment> "El nombre del artículo."@es .
+<http://schema.org/name> <http://www.w3.org/2000/01/rdf-schema#comment> "The name of the item."@en .
+<http://schema.org/name> <http://www.w3.org/2000/01/rdf-schema#label> "name"@en .
+<http://schema.org/name> <http://www.w3.org/2000/01/rdf-schema#label> "nombre"@es .
+# 
+# http://schema.org/postalCode
+<http://schema.org/postalCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://schema.org/postalCode> <http://www.w3.org/2000/01/rdf-schema#domain> <http://schema.org/PostalAddress> .
+<http://schema.org/postalCode> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://schema.org/postalCode> <http://www.w3.org/2000/01/rdf-schema#comment> "El código postal."@es .
+<http://schema.org/postalCode> <http://www.w3.org/2000/01/rdf-schema#comment> "The postal code."@en .
+<http://schema.org/postalCode> <http://www.w3.org/2000/01/rdf-schema#label> "codigo postal"@es .
+<http://schema.org/postalCode> <http://www.w3.org/2000/01/rdf-schema#label> "postal code"@en .
+# 
+# http://schema.org/startDate
+<http://schema.org/startDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://schema.org/startDate> <http://www.w3.org/2000/01/rdf-schema#domain> <http://schema.org/Event> .
+<http://schema.org/startDate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://schema.org/startDate> <http://www.w3.org/2000/01/rdf-schema#comment> "La fecha y hora de inicio del evento."@es .
+<http://schema.org/startDate> <http://www.w3.org/2000/01/rdf-schema#comment> "The start date and time of the item."@en .
+<http://schema.org/startDate> <http://www.w3.org/2000/01/rdf-schema#label> "fecha inicio"@es .
+<http://schema.org/startDate> <http://www.w3.org/2000/01/rdf-schema#label> "start Date"@en .
+# 
+# http://schema.org/typicalAgeRange
+<http://schema.org/typicalAgeRange> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://schema.org/typicalAgeRange> <http://www.w3.org/2000/01/rdf-schema#domain> <http://schema.org/Event> .
+<http://schema.org/typicalAgeRange> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://schema.org/typicalAgeRange> <http://www.w3.org/2000/01/rdf-schema#comment> "El rango de edad típico esperado"@es .
+<http://schema.org/typicalAgeRange> <http://www.w3.org/2000/01/rdf-schema#comment> "The typical expected age range."@en .
+<http://schema.org/typicalAgeRange> <http://www.w3.org/2000/01/rdf-schema#label> "rango edad"@es .
+<http://schema.org/typicalAgeRange> <http://www.w3.org/2000/01/rdf-schema#label> "typical age range"@en .
+# 
+# http://schema.org/url
+<http://schema.org/url> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://schema.org/url> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<http://schema.org/url> <http://www.w3.org/2000/01/rdf-schema#domain> <http://schema.org/CreativeWork> .
+<http://schema.org/url> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#anyURI> .
+<http://schema.org/url> <http://www.w3.org/2000/01/rdf-schema#comment> "Enlace de un artículo."@es .
+<http://schema.org/url> <http://www.w3.org/2000/01/rdf-schema#comment> "URL of the item."@en .
+<http://schema.org/url> <http://www.w3.org/2000/01/rdf-schema#label> "url"@en .
+<http://schema.org/url> <http://www.w3.org/2000/01/rdf-schema#label> "url"@es .
+# 
+# http://schema.org/workPerformed
+<http://schema.org/workPerformed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://schema.org/workPerformed> <http://www.w3.org/2000/01/rdf-schema#domain> <http://schema.org/Event> .
+<http://schema.org/workPerformed> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://schema.org/workPerformed> <http://www.w3.org/2000/01/rdf-schema#comment> "A work performed in some event."@en .
+<http://schema.org/workPerformed> <http://www.w3.org/2000/01/rdf-schema#comment> "Trabajo realizado en los eventos."@es .
+<http://schema.org/workPerformed> <http://www.w3.org/2000/01/rdf-schema#label> "trabajo realizado"@es .
+<http://schema.org/workPerformed> <http://www.w3.org/2000/01/rdf-schema#label> "work performed"@en .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda#interior
+<http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda#interior> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda#interior> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda#Evento> .
+<http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda#interior> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda#interior> <http://www.w3.org/2000/01/rdf-schema#comment> "Indica si el evento se produce en un espacio cerrado y techado."@es .
+<http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda#interior> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates if the event takes place in an enclosed and roofed space."@en .
+<http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda#interior> <http://www.w3.org/2000/01/rdf-schema#label> "inside"@en .
+<http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda#interior> <http://www.w3.org/2000/01/rdf-schema#label> "interior"@es .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento#nombre
+<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento#nombre> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento#nombre> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento#nombre> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento#Equipamiento> .
+<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento#nombre> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento#nombre> <http://www.w3.org/2000/01/rdf-schema#comment> "Name of the facility where the event is to take place"@en .
+<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento#nombre> <http://www.w3.org/2000/01/rdf-schema#comment> "Nombre del equipamiento donde se va a realizar el evento"@es .
+<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento#nombre> <http://www.w3.org/2000/01/rdf-schema#label> "name"@en .
+<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento#nombre> <http://www.w3.org/2000/01/rdf-schema#label> "nombre"@es .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://dbpedia.org/ontology/District
+<http://dbpedia.org/ontology/District> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://dbpedia.org/ontology/District> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://dbpedia.org/ontology/GovernmentalAdministrativeRegion> .
+<http://dbpedia.org/ontology/District> <http://www.w3.org/2000/01/rdf-schema#comment> "Cada una de las demarcaciones en que se subdivide un territorio o una población para distribuir y ordenar el ejercicio de los derechos civiles y políticos, o de las funciones públicas, o de los servicios administrativos."@es .
+<http://dbpedia.org/ontology/District> <http://www.w3.org/2000/01/rdf-schema#comment> "Each of the demarcations into which a territory or a population is subdivided to distribute and order the exercise of civil and political rights, or of public functions, or of administrative services."@en .
+<http://dbpedia.org/ontology/District> <http://www.w3.org/2000/01/rdf-schema#label> "District"@en .
+<http://dbpedia.org/ontology/District> <http://www.w3.org/2000/01/rdf-schema#label> "District"@es .
+# 
+# http://dbpedia.org/ontology/GovernmentalAdministrativeRegion
+<http://dbpedia.org/ontology/GovernmentalAdministrativeRegion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://dbpedia.org/ontology/GovernmentalAdministrativeRegion> <http://www.w3.org/2000/01/rdf-schema#comment> "An administrative body governing some territorial unity, in this case a governmental administrative body."@en .
+<http://dbpedia.org/ontology/GovernmentalAdministrativeRegion> <http://www.w3.org/2000/01/rdf-schema#comment> "Órgano administrativo que rige alguna unidad territorial, en este caso un órgano administrativo gubernamental."@es .
+<http://dbpedia.org/ontology/GovernmentalAdministrativeRegion> <http://www.w3.org/2000/01/rdf-schema#label> "Governmental Administrative Region"@en .
+<http://dbpedia.org/ontology/GovernmentalAdministrativeRegion> <http://www.w3.org/2000/01/rdf-schema#label> "Región Administrativa Gubernamental"@es .
+# 
+# http://dbpedia.org/ontology/Municipaly
+<http://dbpedia.org/ontology/Municipaly> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://dbpedia.org/ontology/Municipaly> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://dbpedia.org/ontology/GovernmentalAdministrativeRegion> .
+<http://dbpedia.org/ontology/Municipaly> <http://www.w3.org/2000/01/rdf-schema#comment> "Entidad local formada por los vecinos de un determinado territorio para gestionar autónomamente sus intereses comunes."@es .
+<http://dbpedia.org/ontology/Municipaly> <http://www.w3.org/2000/01/rdf-schema#comment> "Local entity formed by the neighbors of a given territory to autonomously manage their common interests."@en .
+<http://dbpedia.org/ontology/Municipaly> <http://www.w3.org/2000/01/rdf-schema#comment> "Municipaly"@es .
+<http://dbpedia.org/ontology/Municipaly> <http://www.w3.org/2000/01/rdf-schema#label> "Municipaly"@en .
+# 
+# http://dbpedia.org/ontology/Neighborhoods
+<http://dbpedia.org/ontology/Neighborhoods> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://dbpedia.org/ontology/Neighborhoods> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://dbpedia.org/ontology/GovernmentalAdministrativeRegion> .
+<http://dbpedia.org/ontology/Neighborhoods> <http://www.w3.org/2000/01/rdf-schema#comment> "Cada una de las partes en que se dividen los pueblos y ciudades o sus distritos."@es .
+<http://dbpedia.org/ontology/Neighborhoods> <http://www.w3.org/2000/01/rdf-schema#comment> "Each of the parts into which towns and cities or their districts are divided."@en .
+<http://dbpedia.org/ontology/Neighborhoods> <http://www.w3.org/2000/01/rdf-schema#label> "Neighborhood"@en .
+<http://dbpedia.org/ontology/Neighborhoods> <http://www.w3.org/2000/01/rdf-schema#label> "Neighborhood"@es .
+# 
+# http://dbpedia.org/ontology/Province
+<http://dbpedia.org/ontology/Province> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://dbpedia.org/ontology/Province> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://dbpedia.org/ontology/GovernmentalAdministrativeRegion> .
+<http://dbpedia.org/ontology/Province> <http://www.w3.org/2000/01/rdf-schema#comment> "Administrative territorial demarcation of the several into which some States or institutions are organized."@en .
+<http://dbpedia.org/ontology/Province> <http://www.w3.org/2000/01/rdf-schema#comment> "Demarcación territorial administrativa de las varias en que se organizan algunos Estados o instituciones."@es .
+<http://dbpedia.org/ontology/Province> <http://www.w3.org/2000/01/rdf-schema#label> "Province"@en .
+<http://dbpedia.org/ontology/Province> <http://www.w3.org/2000/01/rdf-schema#label> "Province"@es .
+# 
+# http://schema.org/CreativeWork
+<http://schema.org/CreativeWork> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://schema.org/CreativeWork> <http://www.w3.org/2000/01/rdf-schema#comment> "El tipo más genérico de trabajo creativo, que incluye libros, películas, fotografías, programas de software, etc."@es .
+<http://schema.org/CreativeWork> <http://www.w3.org/2000/01/rdf-schema#comment> "The most generic kind of creative work, including books, movies, photographs, software programs, etc."@en .
+<http://schema.org/CreativeWork> <http://www.w3.org/2000/01/rdf-schema#label> "Creative Work"@en .
+<http://schema.org/CreativeWork> <http://www.w3.org/2000/01/rdf-schema#label> "Trabajo Creativo"@es .
+# 
+# http://schema.org/DigitalDocument
+<http://schema.org/DigitalDocument> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://schema.org/DigitalDocument> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://schema.org/CreativeWork> .
+<http://schema.org/DigitalDocument> <http://www.w3.org/2000/01/rdf-schema#comment> "An electronic file or document."@en .
+<http://schema.org/DigitalDocument> <http://www.w3.org/2000/01/rdf-schema#comment> "Un archivo o documento electrónico."@es .
+<http://schema.org/DigitalDocument> <http://www.w3.org/2000/01/rdf-schema#label> "Digital Document"@en .
+<http://schema.org/DigitalDocument> <http://www.w3.org/2000/01/rdf-schema#label> "Documento Digital"@es .
+# 
+# http://schema.org/Event
+<http://schema.org/Event> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://schema.org/Event> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda#Evento> .
+<http://schema.org/Event> <http://www.w3.org/2000/01/rdf-schema#comment> "An event happening at a certain time and location, such as a concert, lecture, or festival. Ticketing information may be added via the offers property. Repeated events may be structured as separate Event objects."@en .
+<http://schema.org/Event> <http://www.w3.org/2000/01/rdf-schema#comment> "Un evento que tiene lugar a una hora y en un lugar determinados, como un concierto, una conferencia o un festival. La información sobre la venta de entradas puede añadirse a través de la propiedad Ofertas. Los eventos repetidos pueden estructurarse como objetos Evento separados."@es .
+<http://schema.org/Event> <http://www.w3.org/2000/01/rdf-schema#label> "Event"@en .
+<http://schema.org/Event> <http://www.w3.org/2000/01/rdf-schema#label> "Event"@es .
+# 
+# http://schema.org/Place
+<http://schema.org/Place> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://schema.org/Place> <http://www.w3.org/2000/01/rdf-schema#comment> "Entidades que tienen una extensión física algo fija."@es .
+<http://schema.org/Place> <http://www.w3.org/2000/01/rdf-schema#comment> "Entities that have a somewhat fixed, physical extension."@en .
+<http://schema.org/Place> <http://www.w3.org/2000/01/rdf-schema#label> "Lugar"@es .
+<http://schema.org/Place> <http://www.w3.org/2000/01/rdf-schema#label> "Place"@en .
+# 
+# http://schema.org/PostalAddress
+<http://schema.org/PostalAddress> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://schema.org/PostalAddress> <http://www.w3.org/2000/01/rdf-schema#comment> "La dirección del lugar en el que se produce el evento."@es .
+<http://schema.org/PostalAddress> <http://www.w3.org/2000/01/rdf-schema#comment> "The address of the place where the event occurs."@en .
+<http://schema.org/PostalAddress> <http://www.w3.org/2000/01/rdf-schema#label> "Dirección Postal"@es .
+<http://schema.org/PostalAddress> <http://www.w3.org/2000/01/rdf-schema#label> "Postal Address"@en .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda#Evento
+<http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda#Evento> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda#Evento> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid1 .
+_:genid1 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid5 .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid5 <http://www.w3.org/2002/07/owl#onProperty> <http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda#tipo-evento> .
+_:genid5 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2004/02/skos/core#Concept> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid3 <http://www.w3.org/2002/07/owl#onProperty> <http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda#tipo-evento> .
+_:genid3 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid3 <http://www.w3.org/2002/07/owl#onClass> <http://www.w3.org/2004/02/skos/core#Concept> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda#Evento> <http://www.w3.org/2000/01/rdf-schema#comment> "Important and scheduled event of a social, academic, artistic or sporting nature."@en .
+<http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda#Evento> <http://www.w3.org/2000/01/rdf-schema#comment> "Suceso importante y programado, de índole social, académica, artística o deportiva."@es .
+<http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda#Evento> <http://www.w3.org/2000/01/rdf-schema#label> "Evento"@en .
+<http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda#Evento> <http://www.w3.org/2000/01/rdf-schema#label> "Evento"@es .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Barrio
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Barrio> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Barrio> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://dbpedia.org/ontology/Neighborhoods> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Barrio> <http://www.w3.org/2000/01/rdf-schema#comment> "Cada una de las partes en que se dividen los pueblos y ciudades o sus distritos."@es .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Barrio> <http://www.w3.org/2000/01/rdf-schema#comment> "Each of the parts into which towns and cities or their districts are divided."@en .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Barrio> <http://www.w3.org/2000/01/rdf-schema#label> "Barrio"@en .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Barrio> <http://www.w3.org/2000/01/rdf-schema#label> "Barrio"@es .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Distrito
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Distrito> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Distrito> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://dbpedia.org/ontology/District> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Distrito> <http://www.w3.org/2000/01/rdf-schema#comment> "Cada una de las demarcaciones en que se subdivide un territorio o una población para distribuir y ordenar el ejercicio de los derechos civiles y políticos, o de las funciones públicas, o de los servicios administrativos."@es .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Distrito> <http://www.w3.org/2000/01/rdf-schema#comment> "Each of the demarcations into which a territory or a population is subdivided to distribute and order the exercise of civil and political rights, or of public functions, or of administrative services."@en .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Distrito> <http://www.w3.org/2000/01/rdf-schema#label> "Distrito"@en .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Distrito> <http://www.w3.org/2000/01/rdf-schema#label> "Distrito"@es .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Municipio
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Municipio> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Municipio> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://dbpedia.org/ontology/Municipaly> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Municipio> <http://www.w3.org/2000/01/rdf-schema#comment> "Entidad local formada por los vecinos de un determinado territorio para gestionar autónomamente sus intereses comunes."@es .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Municipio> <http://www.w3.org/2000/01/rdf-schema#comment> "Local entity formed by the neighbors of a given territory to autonomously manage their common interests."@en .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Municipio> <http://www.w3.org/2000/01/rdf-schema#label> "Municipio"@en .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Municipio> <http://www.w3.org/2000/01/rdf-schema#label> "Municipio"@es .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Provincia
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Provincia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Provincia> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://dbpedia.org/ontology/Province> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Provincia> <http://www.w3.org/2000/01/rdf-schema#comment> "Administrative territorial demarcation of the several into which some States or institutions are organized."@en .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Provincia> <http://www.w3.org/2000/01/rdf-schema#comment> "Demarcación territorial administrativa de las varias en que se organizan algunos Estados o instituciones"@es .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Provincia> <http://www.w3.org/2000/01/rdf-schema#comment> "Provincia"@en .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Provincia> <http://www.w3.org/2000/01/rdf-schema#label> "Provincia"@es .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento#Equipamiento
+<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento#Equipamiento> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento#Equipamiento> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://schema.org/Place> .
+<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento#Equipamiento> <http://www.w3.org/2000/01/rdf-schema#comment> "Equipamientos a los que un ciudadano puede acudir pertenecientes a una administración."@es .
+<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento#Equipamiento> <http://www.w3.org/2000/01/rdf-schema#comment> "Equipment to which a citizen can access belonging to an administration."@es .
+<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento#Equipamiento> <http://www.w3.org/2000/01/rdf-schema#label> "Equipament"@en .
+<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento#Equipamiento> <http://www.w3.org/2000/01/rdf-schema#label> "Equipamiento"@es .
+# 
+# http://www.w3.org/2004/02/skos/core#Concept
+<http://www.w3.org/2004/02/skos/core#Concept> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/2004/02/skos/core#Concept> <http://www.w3.org/2000/01/rdf-schema#label> "Concept"@en .
+# 
+# http://www.w3.org/2004/02/skos/core#ConceptScheme
+<http://www.w3.org/2004/02/skos/core#ConceptScheme> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/2004/02/skos/core#ConceptScheme> <http://www.w3.org/2000/01/rdf-schema#comment> "A concept scheme may be defined to include concepts from different sources."@en .
+<http://www.w3.org/2004/02/skos/core#ConceptScheme> <http://www.w3.org/2000/01/rdf-schema#comment> "Thesauri, classification schemes, subject heading lists, taxonomies, 'folksonomies', and other types of controlled vocabulary are all examples of concept schemes.  Concept schemes are also embedded in glossaries and terminologies."@en .
+<http://www.w3.org/2004/02/skos/core#ConceptScheme> <http://www.w3.org/2000/01/rdf-schema#label> "Concept Scheme"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://vocab.linkeddata.es/page/datosabiertos/kos/cultura-ocio/agenda/tipo-evento
+<http://vocab.linkeddata.es/page/datosabiertos/kos/cultura-ocio/agenda/tipo-evento> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://vocab.linkeddata.es/page/datosabiertos/kos/cultura-ocio/agenda/tipo-evento> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+# 
+# Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/
