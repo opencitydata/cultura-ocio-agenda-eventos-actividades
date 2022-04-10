@@ -7,6 +7,16 @@ Los pasos que se han seguido para la actualización de la ontología son:
 * Nuevo XML generado de la ontología de diagrams.net
 * Nuevo TTL generado por la ontología a través de Chowlk Converte
 
+## Dia 10/04/2022
+Se han producido los siguientes cambios:
+  - Se ha subido los datos del csv de lorca adaptados con openrefine
+  - Se ha añadido a la lista skos el evento de rallye y concurso
+
+## Dia 09/04/2022
+Se han producido los siguientes cambios:
+  - Se ha realizado la lista skos de los tipos de eventos
+  - Se han subido los csv de las cuidades con las que se va a trabajar
+
 ## Dia 07/04/2022
 Se han producido los siguientes cambios:
   - Se han corregido los errores en owl y en el ejemplo que no cumplian el diseño de la ontología 
@@ -19,4 +29,5 @@ Se ha actualizado la ontología con los siguientes cambios
   - Se ha añadido el dato esequip:nombre a la clase equipamiento
   - Se ha cambiado la propiedad relacionada entre schema:place y schema:postalAddress de schema:address a esagenda:direccion
   - Se ha añadido el dato schema:address a la clase schema:PostalAddress
+
 
