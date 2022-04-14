@@ -1,0 +1,339 @@
+@base <http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda> .
+@prefix rr: <http://www.w3.org/ns/r2rml#>.
+@prefix rml: <http://semweb.mmlab.be/ns/rml#>.
+@prefix ql: <http://semweb.mmlab.be/ns/ql#>.
+@prefix transit: <http://vocab.org/transit/terms/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix schema: <http://schema.org/> .
+@prefix esadm: <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio/> .
+@prefix esequip: <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento/> .
+@prefix esagenda: <http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda/>.
+
+
+<#EventoMap1> a rr:TriplesMap;
+    rml:logicalSource [
+        rml:source "datos.csv" ;
+        rml:referenceFormulation ql:CSV 
+    ];
+        rr:subjectMap [
+        rr:template "http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda/Evento/{identifier}";
+        rr:termType rr:IRI;
+        rr:class esagenda:Evento
+    ]; 
+
+    rr:predicateObjectMap [
+        rr:predicateMap [
+            rr:constant esagenda:ubicacion;
+            rr:termType rr:IRI
+        ];
+        rr:objectMap [
+            rr:parentTriplesMap <#EventoMap2>;
+            rr:joinCondition [
+                rr:child "identifier"; rr:parent "identifier";
+                ]
+            ]
+            ];
+
+
+    rr:predicateObjectMap [
+        rr:predicateMap [
+            rr:constant esagenda:documentacion;
+            rr:termType rr:IRI
+        ];
+        rr:objectMap [
+            rr:parentTriplesMap <#EventoMap3>;
+            rr:joinCondition [
+                rr:child "identifier"; rr:parent "identifier";
+                ]
+            ]
+            ];
+
+
+    rr:predicateObjectMap [
+        rr:predicateMap [
+            rr:constant esagenda:location;
+            rr:termType rr:IRI
+        ];
+        rr:objectMap [
+            rr:parentTriplesMap <#EventoMap4>;
+            rr:joinCondition [
+                rr:child "identifier"; rr:parent "identifier";
+                ]
+            ]
+            ];
+
+
+    rr:predicateObjectMap [
+       rr:predicate schema:audience;
+        rr:objectMap [
+            rml:reference "audience"; 
+            rr:datatype xsd:string;
+        ]
+    ];
+
+
+    rr:predicateObjectMap [
+       rr:predicate schema:doorTime;
+        rr:objectMap [
+            rml:reference "doorTime"; 
+            rr:datatype xsd:dateTime;
+        ]
+    ];
+
+       rr:predicateObjectMap [
+       rr:predicate schema:startDate;
+        rr:objectMap [
+            rml:reference "startDate"; 
+            rr:datatype xsd:dateTime;
+        ]
+    ];
+
+       rr:predicateObjectMap [
+       rr:predicate schema:endDate;
+        rr:objectMap [
+            rml:reference "endDate"; 
+            rr:datatype xsd:dateTime;
+        ]
+    ];
+
+
+    rr:predicateObjectMap [
+       rr:predicate schema:eventAttendanceMode;
+        rr:objectMap [
+            rml:reference "eventAttendanceMode"; 
+            rr:datatype xsd:string;
+        ]
+    ];
+
+       rr:predicateObjectMap [
+       rr:predicate schema:isAccesibleForFree;
+        rr:objectMap [
+            rml:reference "isAccesibleForFree"; 
+            rr:datatype xsd:string;
+        ]
+    ];
+       
+
+   rr:predicateObjectMap [
+       rr:predicate schema:maximunAttendeCapacity;
+        rr:objectMap [
+            rml:reference "maximunAttendeCapacity"; 
+            rr:datatype xsd:string;
+        ]
+    ];
+       
+
+   rr:predicateObjectMap [
+       rr:predicate schema:eventStatus;
+        rr:objectMap [
+            rml:reference "eventStatus"; 
+            rr:datatype xsd:string;
+        ]
+    ];
+       
+
+   rr:predicateObjectMap [
+       rr:predicate schema:typicalAgeRange;
+        rr:objectMap [
+            rml:reference "typicalAgeRange"; 
+            rr:datatype xsd:string;
+        ]
+    ];
+       
+
+   rr:predicateObjectMap [
+       rr:predicate schema:workPerformed;
+        rr:objectMap [
+            rml:reference "workPerformed"; 
+            rr:datatype xsd:string;
+        ]
+    ];
+
+
+   rr:predicateObjectMap [
+       rr:predicate esagenda:tipo-evento;
+        rr:objectMap [
+            rml:reference "tipo-evento"; 
+            rr:datatype xsd:string;
+        ]
+    ];
+
+   rr:predicateObjectMap [
+       rr:predicate esagenda:interior;
+        rr:objectMap [
+            rml:reference "interior"; 
+            rr:datatype xsd:boolean;
+        ]
+    ].
+
+
+       
+ <#EventoMap2> a rr:TriplesMap;
+    rml:logicalSource [
+        rml:source "datos.csv" ;
+        rml:referenceFormulation ql:CSV 
+    ];
+        rr:subjectMap [
+        rr:template "http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda/ubicacion/{identifier}";
+        rr:termType rr:IRI;
+        rr:class esagenda:ubicacion
+    ];      
+
+
+   rr:predicateObjectMap [
+       rr:predicate esadm:Provincia;
+        rr:objectMap [
+            rml:reference "Provincia"; 
+            rr:datatype xsd:string;
+        ]
+    ];
+
+   rr:predicateObjectMap [
+       rr:predicate esadm:Municipio;
+        rr:objectMap [
+            rml:reference "Municipio"; 
+            rr:datatype xsd:string;
+        ]
+    ];
+
+   rr:predicateObjectMap [
+       rr:predicate esadm:Distrito;
+        rr:objectMap [
+            rml:reference "Distrito"; 
+            rr:datatype xsd:string;
+        ]
+    ];
+
+   rr:predicateObjectMap [
+       rr:predicate esadm:Barrio;
+        rr:objectMap [
+            rml:reference "Barrio"; 
+            rr:datatype xsd:string;
+        ]
+    ].
+
+
+ <#EventoMap3> a rr:TriplesMap;
+    rml:logicalSource [
+        rml:source "datos.csv" ;
+        rml:referenceFormulation ql:CSV 
+    ];
+        rr:subjectMap [
+        rr:template "http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda/documentacion/{identifier}";
+        rr:termType rr:IRI;
+        rr:class esagenda:documentacion
+    ]; 
+
+
+   rr:predicateObjectMap [
+       rr:predicate schema:identifier;
+        rr:objectMap [
+            rml:reference "identifier"; 
+            rr:datatype xsd:string;
+        ]
+    ];  
+
+
+   rr:predicateObjectMap [
+       rr:predicate schema:name;
+        rr:objectMap [
+            rml:reference "name"; 
+            rr:datatype xsd:string;
+        ]
+    ]; 
+
+
+   rr:predicateObjectMap [
+       rr:predicate schema:description;
+        rr:objectMap [
+            rml:reference "description"; 
+            rr:datatype xsd:string;
+        ]
+    ];   
+
+       rr:predicateObjectMap [
+       rr:predicate schema:image;
+        rr:objectMap [
+            rml:reference "image"; 
+            rr:datatype xsd:string;
+        ]
+    ];  
+
+   rr:predicateObjectMap [
+       rr:predicate schema:url;
+        rr:objectMap [
+            rml:reference "url"; 
+            rr:datatype xsd:string;
+        ]
+    ].
+
+
+
+ <#EventoMap4> a rr:TriplesMap;
+    rml:logicalSource [
+        rml:source "datos.csv" ;
+        rml:referenceFormulation ql:CSV 
+    ];
+        rr:subjectMap [
+        rr:template "http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda/location/{identifier}";
+        rr:termType rr:IRI;
+        rr:class schema:location
+    ]; 
+
+    rr:predicateObjectMap [
+        rr:predicateMap [
+            rr:constant esagenda:direccion;
+            rr:termType rr:IRI
+        ];
+        rr:objectMap [
+            rr:parentTriplesMap <#EventoMap5>;
+            rr:joinCondition [
+                rr:child "identifier"; rr:parent "identifier";
+                ]
+            ]
+            ];
+
+
+       rr:predicateObjectMap [
+       rr:predicate esequip:nombre;
+        rr:objectMap [
+            rml:reference "nombre"; 
+            rr:datatype xsd:string;
+        ]
+    ]. 
+
+
+ <#EventoMap5> a rr:TriplesMap;
+    rml:logicalSource [
+        rml:source "datos.csv" ;
+        rml:referenceFormulation ql:CSV 
+    ];
+        rr:subjectMap [
+        rr:template "http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda/direccion/{identifier}";
+        rr:termType rr:IRI;
+        rr:class esagenda:direccion
+    ]; 
+
+
+       rr:predicateObjectMap [
+       rr:predicate schema:address;
+        rr:objectMap [
+            rml:reference "address"; 
+            rr:datatype xsd:string;
+        ]
+    ];
+
+       rr:predicateObjectMap [
+       rr:predicate schema:postalCode;
+        rr:objectMap [
+            rml:reference "postalCode"; 
+            rr:datatype xsd:string;
+        ]
+    ]. 
