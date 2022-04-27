@@ -134,6 +134,26 @@ schema:superEvent rdf:type owl:ObjectProperty ,
 #    Data properties
 #################################################################
 
+###  http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructura/equipamiento-municipal#id
+esequip:id rdf:type owl:DatatypeProperty ,
+                    owl:FunctionalProperty ;
+           rdfs:domain esequip:Equipamiento ;
+           rdfs:comment "Identifier of the equipment of the town hall where the event will take place."@en ,
+                        "Indentificador del equipamiento del ayuntamiento donde tendrá lugar el evento."@es ;
+           rdfs:label "id"@en ,
+                      "id"@es .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructura/equipamiento-municipal#nombre
+esequip:nombre rdf:type owl:DatatypeProperty ,
+                        owl:FunctionalProperty ;
+               rdfs:domain esequip:Equipamiento ;
+               rdfs:comment "Name of the equipment of the municipality where the event will take place."@en ,
+                            "Nombre del equipamiento del ayuntamiento donde tendrá lugar el evento."@es ;
+               rdfs:label "name"@en ,
+                          "nombre"@es .
+
+
 ###  http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda#interior
 esagenda:interior rdf:type owl:DatatypeProperty ,
                            owl:FunctionalProperty ;
@@ -371,7 +391,6 @@ schema:workPerformed rdf:type owl:DatatypeProperty ,
 
 ###  http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructura/equipamiento-municipal#Equipamiento
 esequip:Equipamiento rdf:type owl:Class ;
-                     rdfs:subClassOf schema:Place ;
                      rdfs:comment "Equipamientos a los que un ciudadano puede acudir pertenecientes a una administración."@es ,
                                   "Facilities to which a citizen can go belonging to an administration."@en ;
                      rdfs:label "Equipamiento"@es ,
@@ -439,6 +458,7 @@ schema:Event rdf:type owl:Class ;
 
 ###  https://schema.org/Place
 schema:Place rdf:type owl:Class ;
+             rdfs:subClassOf esequip:Equipamiento ;
              rdfs:comment "Entidades que tienen una extensión física"@es ,
                           "Entities that have a somewhat fixed, physical extension."@en ;
              rdfs:label "Lugar"@es ,

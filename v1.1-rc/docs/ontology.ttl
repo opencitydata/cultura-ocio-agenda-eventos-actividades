@@ -129,6 +129,26 @@
 #    Data properties
 #################################################################
 
+###  http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructura/equipamiento-municipal#id
+<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructura/equipamiento-municipal#id> rdf:type owl:DatatypeProperty ,
+                                                                                                            owl:FunctionalProperty ;
+                                                                                                   rdfs:domain <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructura/equipamiento-municipal#Equipamiento> ;
+                                                                                                   rdfs:comment "Identifier of the equipment of the town hall where the event will take place."@en ,
+                                                                                                                "Indentificador del equipamiento del ayuntamiento donde tendrá lugar el evento."@es ;
+                                                                                                   rdfs:label "id"@en ,
+                                                                                                              "id"@es .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructura/equipamiento-municipal#nombre
+<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructura/equipamiento-municipal#nombre> rdf:type owl:DatatypeProperty ,
+                                                                                                                owl:FunctionalProperty ;
+                                                                                                       rdfs:domain <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructura/equipamiento-municipal#Equipamiento> ;
+                                                                                                       rdfs:comment "Name of the equipment of the municipality where the event will take place."@en ,
+                                                                                                                    "Nombre del equipamiento del ayuntamiento donde tendrá lugar el evento."@es ;
+                                                                                                       rdfs:label "name"@en ,
+                                                                                                                  "nombre"@es .
+
+
 ###  http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda#interior
 :interior rdf:type owl:DatatypeProperty ,
                    owl:FunctionalProperty ;
@@ -366,7 +386,6 @@
 
 ###  http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructura/equipamiento-municipal#Equipamiento
 <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructura/equipamiento-municipal#Equipamiento> rdf:type owl:Class ;
-                                                                                                             rdfs:subClassOf <https://schema.org/Place> ;
                                                                                                              rdfs:comment "Equipamientos a los que un ciudadano puede acudir pertenecientes a una administración."@es ,
                                                                                                                           "Facilities to which a citizen can go belonging to an administration."@en ;
                                                                                                              rdfs:label "Equipamiento"@es ,
@@ -434,6 +453,7 @@
 
 ###  https://schema.org/Place
 <https://schema.org/Place> rdf:type owl:Class ;
+                           rdfs:subClassOf <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructura/equipamiento-municipal#Equipamiento> ;
                            rdfs:comment "Entidades que tienen una extensión física"@es ,
                                         "Entities that have a somewhat fixed, physical extension."@en ;
                            rdfs:label "Lugar"@es ,

@@ -205,6 +205,34 @@
     
 
 
+    <!-- http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructura/equipamiento-municipal#id -->
+
+
+    <owl:DatatypeProperty rdf:about="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructura/equipamiento-municipal#id">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructura/equipamiento-municipal#Equipamiento"/>
+        <rdfs:comment xml:lang="en">Identifier of the equipment of the town hall where the event will take place.</rdfs:comment>
+        <rdfs:comment xml:lang="es">Indentificador del equipamiento del ayuntamiento donde tendrá lugar el evento.</rdfs:comment>
+        <rdfs:label xml:lang="en">id</rdfs:label>
+        <rdfs:label xml:lang="es">id</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructura/equipamiento-municipal#nombre -->
+
+
+    <owl:DatatypeProperty rdf:about="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructura/equipamiento-municipal#nombre">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructura/equipamiento-municipal#Equipamiento"/>
+        <rdfs:comment xml:lang="en">Name of the equipment of the municipality where the event will take place.</rdfs:comment>
+        <rdfs:comment xml:lang="es">Nombre del equipamiento del ayuntamiento donde tendrá lugar el evento.</rdfs:comment>
+        <rdfs:label xml:lang="en">name</rdfs:label>
+        <rdfs:label xml:lang="es">nombre</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda#interior -->
 
 
@@ -536,7 +564,6 @@
 
 
     <owl:Class rdf:about="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructura/equipamiento-municipal#Equipamiento">
-        <rdfs:subClassOf rdf:resource="https://schema.org/Place"/>
         <rdfs:comment xml:lang="es">Equipamientos a los que un ciudadano puede acudir pertenecientes a una administración.</rdfs:comment>
         <rdfs:comment xml:lang="en">Facilities to which a citizen can go belonging to an administration.</rdfs:comment>
         <rdfs:label xml:lang="es">Equipamiento</rdfs:label>
@@ -635,6 +662,7 @@
 
 
     <owl:Class rdf:about="https://schema.org/Place">
+        <rdfs:subClassOf rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructura/equipamiento-municipal#Equipamiento"/>
         <rdfs:comment xml:lang="es">Entidades que tienen una extensión física</rdfs:comment>
         <rdfs:comment xml:lang="en">Entities that have a somewhat fixed, physical extension.</rdfs:comment>
         <rdfs:label xml:lang="es">Lugar</rdfs:label>
