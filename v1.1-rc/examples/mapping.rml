@@ -13,7 +13,7 @@
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix schema: <http://schema.org/> .
 @prefix esadm: <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio/> .
-@prefix esequip: <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento/> .
+@prefix esequip: <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/> .
 @prefix esagenda: <http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/>.
 
 
@@ -25,7 +25,7 @@
         rr:subjectMap [
         rr:template "http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/{identifier}";
         rr:termType rr:IRI;
-        rr:class esagenda:Evento
+        rr:class esagenda:evento
     ]; 
 
     rr:predicateObjectMap [
@@ -44,7 +44,7 @@
 
     rr:predicateObjectMap [
         rr:predicateMap [
-            rr:constant esequip:Equipamiento;
+            rr:constant esequip:equipamiento;
             rr:termType rr:IRI
         ];
         rr:objectMap [
@@ -232,7 +232,7 @@
         rr:subjectMap [
         rr:template "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento-municipal/equipamiento/{id}";
         rr:termType rr:IRI;
-        rr:class esequip:Equipamiento
+        rr:class esequip:equipamiento
     ]; 
 	
 
