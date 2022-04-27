@@ -230,7 +230,7 @@
         rml:referenceFormulation ql:CSV 
     ];
         rr:subjectMap [
-        rr:template "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento-municipal/equipamiento/{nombre}";
+        rr:template "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento-municipal/equipamiento/{id}";
         rr:termType rr:IRI;
         rr:class esequip:Equipamiento
     ]; 
