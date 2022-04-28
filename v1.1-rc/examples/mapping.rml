@@ -10,9 +10,8 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
-@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dct: <http://purl.org/dc/elements/1.1/> .
 @prefix schema: <http://schema.org/> .
-@prefix esadm: <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio/> .
 @prefix esequip: <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/> .
 @prefix esagenda: <http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/>.
 
@@ -166,14 +165,14 @@
         rml:referenceFormulation ql:CSV 
     ];
         rr:subjectMap [
-        rr:template "http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/documentacion/{identifier}";
+        rr:template "http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/{identifier}/documentacion";
         rr:termType rr:IRI;
         rr:class esagenda:documentacion
     ]; 
 
 
    rr:predicateObjectMap [
-       rr:predicate schema:identifier;
+       rr:predicate dct:identifier;
         rr:objectMap [
             rml:reference "identifier"; 
             rr:datatype xsd:string;
@@ -256,7 +255,16 @@
             rml:reference "nombre"; 
             rr:datatype xsd:string;
         ]
-    ]. 
+    ]; 
+	
+	
+       rr:predicateObjectMap [
+       rr:predicate dct:identifier;
+        rr:objectMap [
+            rml:reference "id"; 
+            rr:datatype xsd:string;;
+        ]
+    ].
 	
 	
  <#EventoMap4> a rr:TriplesMap;
@@ -265,7 +273,7 @@
         rml:referenceFormulation ql:CSV 
     ];
         rr:subjectMap [
-        rr:template "http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/location/{identifier}";
+        rr:template "https://schema.org/address/{identifier}";
         rr:termType rr:IRI;
         rr:class schema:address
     ]; 

@@ -43,6 +43,18 @@
 # 
 # #################################################################
 # #
+# #    Datatypes
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/terms/identifier
+<http://purl.org/dc/terms/identifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# 
+# 
+# #################################################################
+# #
 # #    Object Properties
 # #
 # #################################################################
@@ -121,15 +133,6 @@
 # #
 # #################################################################
 # 
-# 
-# http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructura/equipamiento-municipal#id
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructura/equipamiento-municipal#id> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructura/equipamiento-municipal#id> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructura/equipamiento-municipal#id> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructura/equipamiento-municipal#Equipamiento> .
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructura/equipamiento-municipal#id> <http://www.w3.org/2000/01/rdf-schema#comment> "Identifier of the equipment of the town hall where the event will take place."@en .
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructura/equipamiento-municipal#id> <http://www.w3.org/2000/01/rdf-schema#comment> "Indentificador del equipamiento del ayuntamiento donde tendrá lugar el evento."@es .
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructura/equipamiento-municipal#id> <http://www.w3.org/2000/01/rdf-schema#label> "id"@en .
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructura/equipamiento-municipal#id> <http://www.w3.org/2000/01/rdf-schema#label> "id"@es .
 # 
 # http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructura/equipamiento-municipal#nombre
 <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructura/equipamiento-municipal#nombre> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
@@ -243,10 +246,12 @@
 # https://schema.org/identifier
 <https://schema.org/identifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://schema.org/identifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://schema.org/identifier> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructura/equipamiento-municipal#Equipamiento> .
 <https://schema.org/identifier> <http://www.w3.org/2000/01/rdf-schema#domain> <https://schema.org/CreativeWork> .
 <https://schema.org/identifier> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
 <https://schema.org/identifier> <http://www.w3.org/2000/01/rdf-schema#comment> "La propiedad identificador representa cualquier tipo de identificador para cualquier tipo de Cosa, como ISBNs, códigos GTIN, UUIDs, etc."@es .
 <https://schema.org/identifier> <http://www.w3.org/2000/01/rdf-schema#comment> "The identifier property represents any kind of identifier for any kind of Thing, such as ISBNs, GTIN codes, UUIDs etc"@en .
+<https://schema.org/identifier> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/dc/terms/> .
 <https://schema.org/identifier> <http://www.w3.org/2000/01/rdf-schema#label> "identificador"@es .
 <https://schema.org/identifier> <http://www.w3.org/2000/01/rdf-schema#label> "identifier"@en .
 # 
