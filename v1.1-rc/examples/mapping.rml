@@ -13,7 +13,7 @@
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix schema: <http://schema.org/> .
 @prefix esequip: <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras#> .
-@prefix esagenda: <http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/>.
+@prefix esagenda: <http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda#>.
 
 
 <#EventoMap1> a rr:TriplesMap;
