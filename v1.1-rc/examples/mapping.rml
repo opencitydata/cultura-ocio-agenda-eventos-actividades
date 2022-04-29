@@ -12,7 +12,7 @@
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix schema: <http://schema.org/> .
-@prefix esequip: <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/> .
+@prefix esequip: <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras#> .
 @prefix esagenda: <http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/>.
 
 
@@ -231,7 +231,7 @@
         rr:subjectMap [
         rr:template "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento-municipal/equipamiento/{id}";
         rr:termType rr:IRI;
-        rr:class esequip:equipamiento
+        rr:class esequip:Equipamiento
     ]; 
 	
 
