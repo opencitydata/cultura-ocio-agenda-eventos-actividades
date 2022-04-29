@@ -2,7 +2,7 @@
 
 La estructura de las carpetas que contiene el repositorio es la siguiente:
 
-## Ontology
+## ontology
 En la carpeta Ontology se encuentran los archivos relacionados con la implementación del vocabulario en el lenguaje OWL. 
 
 ## docs
