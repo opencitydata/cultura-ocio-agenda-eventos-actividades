@@ -12,4 +12,4 @@ En la carpeta docs se encuentran los archivos relacionados con la documentación
 En la carpeta skos se encuentran los archivos relacionados con la creación de tesauros SKOS que se utilizan en el vocabulario.
 
 ## examples
-En la carpeta examples se encuentran los archivos relacionados con la creación de ejemplos de datos provenientes de varias ciudades (fundamentalmente en España). Estos datos han sido tratados con [OpenRefine](https://openrefine.org/), para su adaptación a la hora de realizar la generación de RDF de acuerdo con el vocabulario, y una vez adaptados se han procesado con la herramienta [rmlmapper](https://github.com/RMLio/rmlmapper-java), mediante el uso de mappings RML. 
+En la carpeta examples se encuentran los archivos relacionados con la creación de ejemplos de datos provenientes de varias ciudades (fundamentalmente en España). Estos datos han sido tratados con [OpenRefine](https://openrefine.org/), para su adaptación a la hora de realizar la generación de RDF de acuerdo con el vocabulario, y una vez adaptados se han procesado con la herramienta [Morph-KGC](https://github.com/oeg-upm/Morph-KGC), mediante el uso de mappings RML. 
