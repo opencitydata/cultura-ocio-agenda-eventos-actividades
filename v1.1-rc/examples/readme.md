@@ -22,7 +22,8 @@ Conjunto de datos que han sido obtenidos de los portales de ciudades abiertas. L
 	* Origen de los datos: Datos abiertos de la Región de Murcia.
 	* Licencia: http://datos.lorca.es/avisolegal
 
-[Salamanca](https://datosabiertos.jcyl.es/web/jcyl/set/es/cultura-ocio/infraestructuras_culturales/1284305389968), [Lorca monumentos](https://datos.lorca.es/catalogo/monumentos) y [Lorca servicios](https://datos.lorca.es/catalogo/servicios)
+## config.ini
+Fichero que contiene la configuracion de Morph-KGC.
 
 ## mapping.rml
 Archivo que contiene el mapping RML para estructurar los datos del CSV para realizar la generacion de RDF de acuerdo con el vocabulario.
