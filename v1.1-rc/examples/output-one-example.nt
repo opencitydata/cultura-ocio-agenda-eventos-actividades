@@ -1,0 +1,29 @@
+<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/1285153785025> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda#Evento>.
+<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/1285153785025> <http://schema.org/audience> "Público familiar".
+<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/1285153785025> <http://schema.org/startDate> "2022-08-12T22:00+01:00"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/1285153785025> <http://schema.org/endDate> "2022-08-13T01:00+01:00"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/1285153785025> <http://schema.org/eventAttendanceMode> "Presencial".
+<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/1285153785025> <http://schema.org/isAccesibleForFree> "false"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/1285153785025> <http://schema.org/maximumAttendeeCapacity> "301".
+<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/1285153785025> <http://schema.org/eventStatus> "Por empezar".
+<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/1285153785025> <http://schema.org/typicalAgeRange> "0-".
+<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/1285153785025> <http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda#documentacion> <http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/1285153785025/documentacion>.
+<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/1285153785025> <http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda#tipo-evento> <http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/teatro>.
+<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/1285153785025> <http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda#interior> "false"^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/1285153785025> <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras#equipamiento> <http://vocab.linkeddata.es/datosabiertos/recurso/urbanismo-infraestructuras/equipamiento-municipal/equipamiento/1284236227322>.
+<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/1285153785025/documentacion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda#Documentacion>.
+<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/1285153785025/documentacion> <http://purl.org/dc/terms/identifier> "1285153785025".
+<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/1285153785025/documentacion> <http://schema.org/name> "'Caravana escape room - Houdini experience'' (HÉCTOR SANSEGUNDO)".
+<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/1285153785025/documentacion> <http://schema.org/description> "Disfruta de una mezcla perfecta de espectáculo de teatro y magia dentro de un museo inversivo , y forma parte de la historia viviendo un escape room único, original y con sorpresas inolvidables.".
+<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/1285153785025/documentacion> <http://schema.org/image> "https://cultura.jcyl.es/web/jcyl/binarios/744/545/CARAVANA%20LA%20MAQUINA.jpeg"^^<http://www.w3.org/2001/XMLSchema#anyURI>.
+<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/1285153785025/documentacion> <http://schema.org/url> "https://cultura.jcyl.es/web/jcyl/Cultura/es/Plantilla100Detalle/1284282053297/Evento/1285153785025/Comunicacion"^^<http://www.w3.org/2001/XMLSchema#anyURI>.
+<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/1285153785025/documentacion> <http://schema.org/fileFormat> "HTML".
+<http://vocab.linkeddata.es/datosabiertos/recurso/urbanismo-infraestructuras/equipamiento-municipal/equipamiento/1284236227322> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras#Equipamiento>.
+<http://vocab.linkeddata.es/datosabiertos/recurso/urbanismo-infraestructuras/equipamiento-municipal/equipamiento/1284236227322> <http://schema.org/address> <http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/1285153785025/address>.
+<http://vocab.linkeddata.es/datosabiertos/recurso/urbanismo-infraestructuras/equipamiento-municipal/equipamiento/1284236227322> <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras#nombre> "Centro Cultural de la Villa (Lumbrales)".
+<http://vocab.linkeddata.es/datosabiertos/recurso/urbanismo-infraestructuras/equipamiento-municipal/equipamiento/1284236227322> <http://purl.org/dc/terms/identifier> "1284236227322".
+<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/1285153785025/address> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/address>.
+<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/1285153785025/address> <http://schema.org/addressRegion> "Salamanca".
+<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/1285153785025/address> <http://schema.org/addressLocality> "Lumbrales".
+<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/1285153785025/address> <http://schema.org/postalCode> "37240".
+<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/1285153785025/address> <http://schema.org/streetAddress> "Plaza Mayor, 1".
