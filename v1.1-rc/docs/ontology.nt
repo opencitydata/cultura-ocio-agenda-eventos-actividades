@@ -1,17 +1,17 @@
-<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
-<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda> <http://www.w3.org/2002/07/owl#versionIRI> <http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/1.1> .
-<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda> <http://purl.org/dc/elements/1.1/creator> "Josué García Salas (Estudiante Universidad Politécnica de Madrid)" .
-<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda> <http://purl.org/dc/elements/1.1/creator> "Oscar Corcho (Ontology Engineering Group - Universidad Politécnica de Madrid, Localidata)" .
-<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda> <http://purl.org/dc/terms/title> <https://creativecommons.org/licenses/by/4.0> .
-<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda> <http://purl.org/dc/terms/title> "Vocabulario para la representación de eventos de una agenda cultural"@es .
-<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda> <http://purl.org/dc/terms/title> "Vocabulary for the representation of events in a cultural agenda"@en .
-<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda> <http://purl.org/vocab/vann/preferredNamespacePrefix> "esagenda" .
-<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda> <http://purl.org/vocab/vann/preferredNamespaceUri> "http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda#" .
-<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda> <http://www.w3.org/2000/01/rdf-schema#comment> "Esta versión del vocabulario ha sido generada en el contexto de la iniciativa OpenCityData, para dar soporte al conjunto de datasets identificados en la guías de datos abiertos (poner enlace) de la Federación Española de Municipios y Provincias (FEMP)."@es .
-<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda> <http://www.w3.org/2000/01/rdf-schema#comment> "This version of the vocabulary has been generated in the context of the OpenCityData initiative, to support the set of datasets identified in the open data guides (put link) of the Spanish Federation of Municipalities and Provinces (FEMP)."@en .
-<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda> <http://www.w3.org/2000/01/rdf-schema#comment> "http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda" .
-<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda> <http://www.w3.org/2002/07/owl#versionInfo> "Esta versión del vocabulario ha sido generada en el contexto de la iniciativa OpenCityData, para dar soporte al conjunto de datasets identificados en la guías de datos abiertos (poner enlace) de la Federación Española de Municipios y Provincias (FEMP) ."@es .
-<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda> <http://www.w3.org/2002/07/owl#versionInfo> "This version of the vocabulary has been generated in the context of the OpenCityData initiative, to support the set of datasets identified in the open data guides (put link) of the Spanish Federation of Municipalities and Provinces (FEMP)."@en .
+<http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda> <http://www.w3.org/2002/07/owl#versionIRI> <http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda/1.1> .
+<http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda> <http://purl.org/dc/elements/1.1/creator> "Josué García Salas (Estudiante Universidad Politécnica de Madrid)" .
+<http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda> <http://purl.org/dc/elements/1.1/creator> "Oscar Corcho (Ontology Engineering Group - Universidad Politécnica de Madrid, Localidata)" .
+<http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda> <http://purl.org/dc/terms/title> <https://creativecommons.org/licenses/by/4.0> .
+<http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda> <http://purl.org/dc/terms/title> "Vocabulario para la representación de eventos de una agenda cultural"@es .
+<http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda> <http://purl.org/dc/terms/title> "Vocabulary for the representation of events in a cultural agenda"@en .
+<http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda> <http://purl.org/vocab/vann/preferredNamespacePrefix> "esagenda" .
+<http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda> <http://purl.org/vocab/vann/preferredNamespaceUri> "http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda#" .
+<http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda> <http://www.w3.org/2000/01/rdf-schema#comment> "Esta versión del vocabulario ha sido generada en el contexto de la iniciativa OpenCityData, para dar soporte al conjunto de datasets identificados en la guías de datos abiertos (poner enlace) de la Federación Española de Municipios y Provincias (FEMP)."@es .
+<http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda> <http://www.w3.org/2000/01/rdf-schema#comment> "This version of the vocabulary has been generated in the context of the OpenCityData initiative, to support the set of datasets identified in the open data guides (put link) of the Spanish Federation of Municipalities and Provinces (FEMP)."@en .
+<http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda> <http://www.w3.org/2000/01/rdf-schema#comment> "http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda" .
+<http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda> <http://www.w3.org/2002/07/owl#versionInfo> "Esta versión del vocabulario ha sido generada en el contexto de la iniciativa OpenCityData, para dar soporte al conjunto de datasets identificados en la guías de datos abiertos (poner enlace) de la Federación Española de Municipios y Provincias (FEMP) ."@es .
+<http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda> <http://www.w3.org/2002/07/owl#versionInfo> "This version of the vocabulary has been generated in the context of the OpenCityData initiative, to support the set of datasets identified in the open data guides (put link) of the Spanish Federation of Municipalities and Provinces (FEMP)."@en .
 # 
 # 
 # #################################################################
@@ -60,24 +60,24 @@
 # #################################################################
 # 
 # 
-# http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda#documentacion
-<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda#documentacion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda#documentacion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
-<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda#documentacion> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda#Evento> .
-<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda#documentacion> <http://www.w3.org/2000/01/rdf-schema#range> <https://schema.org/DigitalDocument> .
-<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda#documentacion> <http://www.w3.org/2000/01/rdf-schema#comment> "Documentación asociada a un evento"@es .
-<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda#documentacion> <http://www.w3.org/2000/01/rdf-schema#comment> "Documentation associated with an event"@en .
-<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda#documentacion> <http://www.w3.org/2000/01/rdf-schema#label> "documentacion"@es .
-<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda#documentacion> <http://www.w3.org/2000/01/rdf-schema#label> "documentation"@en .
+# http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda#documentacion
+<http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda#documentacion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda#documentacion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda#documentacion> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda#Evento> .
+<http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda#documentacion> <http://www.w3.org/2000/01/rdf-schema#range> <https://schema.org/DigitalDocument> .
+<http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda#documentacion> <http://www.w3.org/2000/01/rdf-schema#comment> "Documentación asociada a un evento"@es .
+<http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda#documentacion> <http://www.w3.org/2000/01/rdf-schema#comment> "Documentation associated with an event"@en .
+<http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda#documentacion> <http://www.w3.org/2000/01/rdf-schema#label> "documentacion"@es .
+<http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda#documentacion> <http://www.w3.org/2000/01/rdf-schema#label> "documentation"@en .
 # 
-# http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda#tipoEvento
-<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda#tipoEvento> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda#tipoEvento> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
-<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda#tipoEvento> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda#Evento> .
-<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda#tipoEvento> <http://www.w3.org/2000/01/rdf-schema#comment> "Tipo de evento que tendrá lugar."@es .
-<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda#tipoEvento> <http://www.w3.org/2000/01/rdf-schema#comment> "Type of event to be held."@en .
-<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda#tipoEvento> <http://www.w3.org/2000/01/rdf-schema#label> "tipo de evento"@es .
-<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda#tipoEvento> <http://www.w3.org/2000/01/rdf-schema#label> "type of event"@en .
+# http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda#tipoEvento
+<http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda#tipoEvento> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda#tipoEvento> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda#tipoEvento> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda#Evento> .
+<http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda#tipoEvento> <http://www.w3.org/2000/01/rdf-schema#comment> "Tipo de evento que tendrá lugar."@es .
+<http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda#tipoEvento> <http://www.w3.org/2000/01/rdf-schema#comment> "Type of event to be held."@en .
+<http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda#tipoEvento> <http://www.w3.org/2000/01/rdf-schema#label> "tipo de evento"@es .
+<http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda#tipoEvento> <http://www.w3.org/2000/01/rdf-schema#label> "type of event"@en .
 # 
 # http://www.w3.org/2004/02/skos/core#inScheme
 <http://www.w3.org/2004/02/skos/core#inScheme> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -98,7 +98,7 @@
 # https://schema.org/location
 <https://schema.org/location> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://schema.org/location> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
-<https://schema.org/location> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda#Evento> .
+<https://schema.org/location> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda#Evento> .
 <https://schema.org/location> <http://www.w3.org/2000/01/rdf-schema#range> <https://schema.org/Place> .
 <https://schema.org/location> <http://www.w3.org/2000/01/rdf-schema#comment> "La ubicación, por ejemplo, del lugar donde se produce un evento, donde se encuentra una organización o donde tiene lugar una acción."@es .
 <https://schema.org/location> <http://www.w3.org/2000/01/rdf-schema#comment> "The location of, for example, where an event is happening, where an organization is located, or where an action takes place."@en .
@@ -134,6 +134,16 @@
 # #################################################################
 # 
 # 
+# http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda#interior
+<http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda#interior> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda#interior> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda#interior> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda#Evento> .
+<http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda#interior> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda#interior> <http://www.w3.org/2000/01/rdf-schema#comment> "Indica si un evento tiene lugar en un sitio cerrado."@es .
+<http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda#interior> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates whether an event is taking place in an enclosed location"@en .
+<http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda#interior> <http://www.w3.org/2000/01/rdf-schema#label> "inside"@en .
+<http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda#interior> <http://www.w3.org/2000/01/rdf-schema#label> "interior"@es .
+# 
 # http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructura/equipamiento-municipal#nombre
 <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructura/equipamiento-municipal#nombre> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructura/equipamiento-municipal#nombre> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
@@ -142,16 +152,6 @@
 <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructura/equipamiento-municipal#nombre> <http://www.w3.org/2000/01/rdf-schema#comment> "Nombre del equipamiento del ayuntamiento donde tendrá lugar el evento."@es .
 <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructura/equipamiento-municipal#nombre> <http://www.w3.org/2000/01/rdf-schema#label> "name"@en .
 <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructura/equipamiento-municipal#nombre> <http://www.w3.org/2000/01/rdf-schema#label> "nombre"@es .
-# 
-# http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda#interior
-<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda#interior> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda#interior> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
-<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda#interior> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda#Evento> .
-<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda#interior> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
-<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda#interior> <http://www.w3.org/2000/01/rdf-schema#comment> "Indica si un evento tiene lugar en un sitio cerrado."@es .
-<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda#interior> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates whether an event is taking place in an enclosed location"@en .
-<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda#interior> <http://www.w3.org/2000/01/rdf-schema#label> "inside"@en .
-<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda#interior> <http://www.w3.org/2000/01/rdf-schema#label> "interior"@es .
 # 
 # https://schema.org/Audience
 <https://schema.org/Audience> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
@@ -364,35 +364,35 @@
 # #################################################################
 # 
 # 
+# http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda#Evento
+<http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda#Evento> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda#Evento> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid1 .
+_:genid1 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid5 .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid5 <http://www.w3.org/2002/07/owl#onProperty> <http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda#tipoEvento> .
+_:genid5 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2004/02/skos/core#Concept> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid3 <http://www.w3.org/2002/07/owl#onProperty> <http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda#tipoEvento> .
+_:genid3 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid3 <http://www.w3.org/2002/07/owl#onClass> <http://www.w3.org/2004/02/skos/core#Concept> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda#Evento> <http://www.w3.org/2000/01/rdf-schema#comment> "An event that will take place in a city."@en .
+<http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda#Evento> <http://www.w3.org/2000/01/rdf-schema#comment> "Evento que tendrá lugar en una ciudad."@es .
+<http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda#Evento> <http://www.w3.org/2000/01/rdf-schema#label> "Event"@en .
+<http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda#Evento> <http://www.w3.org/2000/01/rdf-schema#label> "Evento"@es .
+# 
 # http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructura/equipamiento-municipal#Equipamiento
 <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructura/equipamiento-municipal#Equipamiento> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructura/equipamiento-municipal#Equipamiento> <http://www.w3.org/2000/01/rdf-schema#comment> "Equipamientos a los que un ciudadano puede acudir pertenecientes a una administración."@es .
 <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructura/equipamiento-municipal#Equipamiento> <http://www.w3.org/2000/01/rdf-schema#comment> "Facilities to which a citizen can go belonging to an administration."@en .
 <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructura/equipamiento-municipal#Equipamiento> <http://www.w3.org/2000/01/rdf-schema#label> "Equipamiento"@es .
 <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructura/equipamiento-municipal#Equipamiento> <http://www.w3.org/2000/01/rdf-schema#label> "Equipment"@en .
-# 
-# http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda#Evento
-<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda#Evento> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda#Evento> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid1 .
-_:genid1 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid4 .
-_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid5 .
-_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid5 <http://www.w3.org/2002/07/owl#onProperty> <http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda#tipoEvento> .
-_:genid5 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2004/02/skos/core#Concept> .
-_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid2 .
-_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid3 .
-_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid3 <http://www.w3.org/2002/07/owl#onProperty> <http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda#tipoEvento> .
-_:genid3 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid3 <http://www.w3.org/2002/07/owl#onClass> <http://www.w3.org/2004/02/skos/core#Concept> .
-_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda#Evento> <http://www.w3.org/2000/01/rdf-schema#comment> "An event that will take place in a city."@en .
-<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda#Evento> <http://www.w3.org/2000/01/rdf-schema#comment> "Evento que tendrá lugar en una ciudad."@es .
-<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda#Evento> <http://www.w3.org/2000/01/rdf-schema#label> "Event"@en .
-<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda#Evento> <http://www.w3.org/2000/01/rdf-schema#label> "Evento"@es .
 # 
 # http://www.w3.org/2004/02/skos/core#Concept
 <http://www.w3.org/2004/02/skos/core#Concept> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -422,7 +422,7 @@ _:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 # 
 # https://schema.org/Event
 <https://schema.org/Event> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://schema.org/Event> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda#Evento> .
+<https://schema.org/Event> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda#Evento> .
 <https://schema.org/Event> <http://www.w3.org/2000/01/rdf-schema#comment> "An event happening at a certain time and location, such as a concert, lecture, or festival."@en .
 <https://schema.org/Event> <http://www.w3.org/2000/01/rdf-schema#comment> "Un evento que tiene lugar a una hora y en un lugar determinados, como un concierto, una conferencia o un festival."@es .
 <https://schema.org/Event> <http://www.w3.org/2000/01/rdf-schema#label> "Event"@en .

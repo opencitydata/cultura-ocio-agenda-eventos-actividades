@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda#"
-     xml:base="http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda"
+<rdf:RDF xmlns="http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda#"
+     xml:base="http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -9,18 +9,18 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:vann="http://purl.org/vocab/vann/"
      xmlns:terms="http://purl.org/dc/terms/">
-    <owl:Ontology rdf:about="http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda">
-        <owl:versionIRI rdf:resource="http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/1.1"/>
+    <owl:Ontology rdf:about="http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda">
+        <owl:versionIRI rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda/1.1"/>
         <dc:creator>Josué García Salas (Estudiante Universidad Politécnica de Madrid)</dc:creator>
         <dc:creator>Oscar Corcho (Ontology Engineering Group - Universidad Politécnica de Madrid, Localidata)</dc:creator>
         <terms:title rdf:resource="https://creativecommons.org/licenses/by/4.0"/>
         <terms:title xml:lang="es">Vocabulario para la representación de eventos de una agenda cultural</terms:title>
         <terms:title xml:lang="en">Vocabulary for the representation of events in a cultural agenda</terms:title>
         <vann:preferredNamespacePrefix>esagenda</vann:preferredNamespacePrefix>
-        <vann:preferredNamespaceUri>http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda#</vann:preferredNamespaceUri>
+        <vann:preferredNamespaceUri>http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda#</vann:preferredNamespaceUri>
         <rdfs:comment xml:lang="es">Esta versión del vocabulario ha sido generada en el contexto de la iniciativa OpenCityData, para dar soporte al conjunto de datasets identificados en la guías de datos abiertos (poner enlace) de la Federación Española de Municipios y Provincias (FEMP).</rdfs:comment>
         <rdfs:comment xml:lang="en">This version of the vocabulary has been generated in the context of the OpenCityData initiative, to support the set of datasets identified in the open data guides (put link) of the Spanish Federation of Municipalities and Provinces (FEMP).</rdfs:comment>
-        <rdfs:comment>http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda</rdfs:comment>
+        <rdfs:comment>http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda</rdfs:comment>
         <owl:versionInfo xml:lang="es">Esta versión del vocabulario ha sido generada en el contexto de la iniciativa OpenCityData, para dar soporte al conjunto de datasets identificados en la guías de datos abiertos (poner enlace) de la Federación Española de Municipios y Provincias (FEMP) .</owl:versionInfo>
         <owl:versionInfo xml:lang="en">This version of the vocabulary has been generated in the context of the OpenCityData initiative, to support the set of datasets identified in the open data guides (put link) of the Spanish Federation of Municipalities and Provinces (FEMP).</owl:versionInfo>
     </owl:Ontology>
@@ -112,12 +112,12 @@
     
 
 
-    <!-- http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda#documentacion -->
+    <!-- http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda#documentacion -->
 
 
-    <owl:ObjectProperty rdf:about="http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda#documentacion">
+    <owl:ObjectProperty rdf:about="http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda#documentacion">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda#Evento"/>
+        <rdfs:domain rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda#Evento"/>
         <rdfs:range rdf:resource="https://schema.org/DigitalDocument"/>
         <rdfs:comment xml:lang="es">Documentación asociada a un evento</rdfs:comment>
         <rdfs:comment xml:lang="en">Documentation associated with an event</rdfs:comment>
@@ -127,12 +127,12 @@
     
 
 
-    <!-- http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda#tipoEvento -->
+    <!-- http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda#tipoEvento -->
 
 
-    <owl:ObjectProperty rdf:about="http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda#tipoEvento">
+    <owl:ObjectProperty rdf:about="http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda#tipoEvento">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda#Evento"/>
+        <rdfs:domain rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda#Evento"/>
         <rdfs:comment xml:lang="es">Tipo de evento que tendrá lugar.</rdfs:comment>
         <rdfs:comment xml:lang="en">Type of event to be held.</rdfs:comment>
         <rdfs:label xml:lang="es">tipo de evento</rdfs:label>
@@ -172,7 +172,7 @@
 
     <owl:ObjectProperty rdf:about="https://schema.org/location">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda#Evento"/>
+        <rdfs:domain rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda#Evento"/>
         <rdfs:range rdf:resource="https://schema.org/Place"/>
         <rdfs:comment xml:lang="es">La ubicación, por ejemplo, del lugar donde se produce un evento, donde se encuentra una organización o donde tiene lugar una acción.</rdfs:comment>
         <rdfs:comment xml:lang="en">The location of, for example, where an event is happening, where an organization is located, or where an action takes place.</rdfs:comment>
@@ -224,6 +224,21 @@
     
 
 
+    <!-- http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda#interior -->
+
+
+    <owl:DatatypeProperty rdf:about="http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda#interior">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda#Evento"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:comment xml:lang="es">Indica si un evento tiene lugar en un sitio cerrado.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Indicates whether an event is taking place in an enclosed location</rdfs:comment>
+        <rdfs:label xml:lang="en">inside</rdfs:label>
+        <rdfs:label xml:lang="es">interior</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructura/equipamiento-municipal#nombre -->
 
 
@@ -234,21 +249,6 @@
         <rdfs:comment xml:lang="es">Nombre del equipamiento del ayuntamiento donde tendrá lugar el evento.</rdfs:comment>
         <rdfs:label xml:lang="en">name</rdfs:label>
         <rdfs:label xml:lang="es">nombre</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda#interior -->
-
-
-    <owl:DatatypeProperty rdf:about="http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda#interior">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda#Evento"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
-        <rdfs:comment xml:lang="es">Indica si un evento tiene lugar en un sitio cerrado.</rdfs:comment>
-        <rdfs:comment xml:lang="en">Indicates whether an event is taking place in an enclosed location</rdfs:comment>
-        <rdfs:label xml:lang="en">inside</rdfs:label>
-        <rdfs:label xml:lang="es">interior</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -567,31 +567,19 @@
     
 
 
-    <!-- http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructura/equipamiento-municipal#Equipamiento -->
+    <!-- http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda#Evento -->
 
 
-    <owl:Class rdf:about="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructura/equipamiento-municipal#Equipamiento">
-        <rdfs:comment xml:lang="es">Equipamientos a los que un ciudadano puede acudir pertenecientes a una administración.</rdfs:comment>
-        <rdfs:comment xml:lang="en">Facilities to which a citizen can go belonging to an administration.</rdfs:comment>
-        <rdfs:label xml:lang="es">Equipamiento</rdfs:label>
-        <rdfs:label xml:lang="en">Equipment</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda#Evento -->
-
-
-    <owl:Class rdf:about="http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda#Evento">
+    <owl:Class rdf:about="http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda#Evento">
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda#tipoEvento"/>
+                        <owl:onProperty rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda#tipoEvento"/>
                         <owl:allValuesFrom rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda#tipoEvento"/>
+                        <owl:onProperty rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda#tipoEvento"/>
                         <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
                         <owl:onClass rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
                     </owl:Restriction>
@@ -602,6 +590,18 @@
         <rdfs:comment xml:lang="es">Evento que tendrá lugar en una ciudad.</rdfs:comment>
         <rdfs:label xml:lang="en">Event</rdfs:label>
         <rdfs:label xml:lang="es">Evento</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructura/equipamiento-municipal#Equipamiento -->
+
+
+    <owl:Class rdf:about="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructura/equipamiento-municipal#Equipamiento">
+        <rdfs:comment xml:lang="es">Equipamientos a los que un ciudadano puede acudir pertenecientes a una administración.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Facilities to which a citizen can go belonging to an administration.</rdfs:comment>
+        <rdfs:label xml:lang="es">Equipamiento</rdfs:label>
+        <rdfs:label xml:lang="en">Equipment</rdfs:label>
     </owl:Class>
     
 
@@ -656,7 +656,7 @@
 
 
     <owl:Class rdf:about="https://schema.org/Event">
-        <rdfs:subClassOf rdf:resource="http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda#Evento"/>
+        <rdfs:subClassOf rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda#Evento"/>
         <rdfs:comment xml:lang="en">An event happening at a certain time and location, such as a concert, lecture, or festival.</rdfs:comment>
         <rdfs:comment xml:lang="es">Un evento que tiene lugar a una hora y en un lugar determinados, como un concierto, una conferencia o un festival.</rdfs:comment>
         <rdfs:label xml:lang="en">Event</rdfs:label>
