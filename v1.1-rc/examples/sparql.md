@@ -13,8 +13,7 @@ WHERE {
 **La salida en formato csv es**:
 
 
-![imagen](https://user-images.githubusercontent.com/39318241/168403078-2ad1df0b-78b7-4c56-9657-117d45cb8088.png)
-
+![imagen](https://user-images.githubusercontent.com/39318241/168403118-8ecb149f-7414-451d-a69e-4936445dcb9d.png)
 
 
 ## Evento que se celebra el dia 10 de cualquier mes
