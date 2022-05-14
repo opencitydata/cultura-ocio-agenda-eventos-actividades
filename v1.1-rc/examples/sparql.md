@@ -1,3 +1,18 @@
+## Eventos cuya audiencia recomendada son los adultos
+```
+SELECT DISTINCT ?name ?audience WHERE {
+	?evento <http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda#documentacion> ?documentacion .
+	?documentacion <http://schema.org/name> ?name .
+  	?evento <http://schema.org/audience> ?audience .
+  FILTER regex(?audience, "Adultos")
+} 
+```
+**La salida en formato csv es**:
+
+
+![image](https://user-images.githubusercontent.com/39318241/168426304-f77f8692-c451-4a1b-a0c9-ad4e20c63299.png)
+
+
 ## Evento que se celebra en el mes de agosto
 ```
 SELECT DISTINCT ?name ?mes ?startDate ?string 
