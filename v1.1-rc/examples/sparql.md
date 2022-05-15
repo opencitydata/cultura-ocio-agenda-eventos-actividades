@@ -1,3 +1,18 @@
+# Cosas a mejorar
+- La de accesible no hace falta el BIND.
+- Me he dado cuenta de que isAccesibleForFree está mal.Sería isAccessibleForFree.
+- maxima --> máxima
+- estan --> están 
+- La de agosto se puede hacer más sencilla, pues hayfunción en SPARQL para sacar el mes de una fecha. Lo. Mismo la del día 10 de cada mes.
+- Evento tipo concierto veo que está mal, y será problema del RDF. El kos no puede ser una propiedad, debería ser el objeto. Si está así en la onto o datos hay que retocarlo. Además, me gustaría no abusar del FILTER, sino marcar en algunos el SKOS concept correspondiente.
+- Además, me gustaría no abusar del FILTER, sino marcar en algunos el SKOS concept correspondiente.
+- Reciento --> recinto
+- El de recinto cerrado no sé por qué necesitas el BIND
+- ¿Por qué el nombre de un evento se devuelve a partir de su documentación? Quizás es fallo mío al revisar, pero me parece muy raro que no sea un rdfs:label asociado directamente al evento.
+- El Retiro no es un municipio!!!!
+
+
+
 ## Eventos cuya audiencia recomendada son los adultos
 ```
 SELECT DISTINCT ?name ?audience WHERE {
