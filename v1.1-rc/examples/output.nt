@@ -2256,222 +2256,222 @@
 <http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/3328/address> <http://schema.org/postalCode> "30800".
 <http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/3328/address> <http://schema.org/streetAddress> "Plaza de España, 7".
 <http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11637393/address> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/address>.
-<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11637393/address> <http://schema.org/addressRegion> "Madrid".
-<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11637393/address> <http://schema.org/addressLocality> "Ciudad Lineal".
+<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11637393/address> <http://schema.org/addressRegion> "Comunidad de Madrid".
+<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11637393/address> <http://schema.org/addressLocality> "Madrid".
 <http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11637393/address> <http://schema.org/postalCode> "28043".
 <http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11637393/address> <http://schema.org/streetAddress> "CALLE SAN NEMESIO 4".
 <http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11637388/address> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/address>.
-<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11637388/address> <http://schema.org/addressRegion> "Madrid".
-<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11637388/address> <http://schema.org/addressLocality> "Ciudad Lineal".
+<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11637388/address> <http://schema.org/addressRegion> "Comunidad de Madrid".
+<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11637388/address> <http://schema.org/addressLocality> "Madrid".
 <http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11637388/address> <http://schema.org/postalCode> "28043".
 <http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11637388/address> <http://schema.org/streetAddress> "CALLE SAN NEMESIO 4".
 <http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11578054/address> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/address>.
-<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11578054/address> <http://schema.org/addressRegion> "Madrid".
-<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11578054/address> <http://schema.org/addressLocality> "Latina".
+<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11578054/address> <http://schema.org/addressRegion> "Comunidad de Madrid".
+<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11578054/address> <http://schema.org/addressLocality> "Madrid".
 <http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11578054/address> <http://schema.org/postalCode> "28044".
 <http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11578054/address> <http://schema.org/streetAddress> "AVENIDA LAS AGUILAS 2".
 <http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11591790/address> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/address>.
-<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11591790/address> <http://schema.org/addressRegion> "Madrid".
-<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11591790/address> <http://schema.org/addressLocality> "Villa de Vallecas".
+<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11591790/address> <http://schema.org/addressRegion> "Comunidad de Madrid".
+<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11591790/address> <http://schema.org/addressLocality> "Madrid".
 <http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11591790/address> <http://schema.org/postalCode> "28031".
 <http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11591790/address> <http://schema.org/streetAddress> "CALLE REAL DE ARGANDA 39".
 <http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11615773/address> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/address>.
-<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11615773/address> <http://schema.org/addressRegion> "Madrid".
-<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11615773/address> <http://schema.org/addressLocality> "Hortaleza".
+<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11615773/address> <http://schema.org/addressRegion> "Comunidad de Madrid".
+<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11615773/address> <http://schema.org/addressLocality> "Madrid".
 <http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11615773/address> <http://schema.org/postalCode> "28043".
 <http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11615773/address> <http://schema.org/streetAddress> "CALLE MATAPOZUELOS 2".
 <http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11566513/address> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/address>.
-<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11566513/address> <http://schema.org/addressRegion> "Madrid".
-<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11566513/address> <http://schema.org/addressLocality> "Retiro".
+<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11566513/address> <http://schema.org/addressRegion> "Comunidad de Madrid".
+<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11566513/address> <http://schema.org/addressLocality> "Madrid".
 <http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11566513/address> <http://schema.org/postalCode> "28007".
 <http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11566513/address> <http://schema.org/streetAddress> "CALLE ARREGUI Y ARUEJ 31".
 <http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11580799/address> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/address>.
-<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11580799/address> <http://schema.org/addressRegion> "Madrid".
-<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11580799/address> <http://schema.org/addressLocality> "Hortaleza".
+<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11580799/address> <http://schema.org/addressRegion> "Comunidad de Madrid".
+<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11580799/address> <http://schema.org/addressLocality> "Madrid".
 <http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11580799/address> <http://schema.org/postalCode> "28043".
 <http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11580799/address> <http://schema.org/streetAddress> "CALLE CARRIL DEL CONDE 57".
 <http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11640435/address> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/address>.
-<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11640435/address> <http://schema.org/addressRegion> "Madrid".
-<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11640435/address> <http://schema.org/addressLocality> "Moratalaz".
+<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11640435/address> <http://schema.org/addressRegion> "Comunidad de Madrid".
+<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11640435/address> <http://schema.org/addressLocality> "Madrid".
 <http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11640435/address> <http://schema.org/postalCode> "28030".
 <http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11640435/address> <http://schema.org/streetAddress> "AVENIDA MORATALAZ 130".
 <http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11566482/address> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/address>.
-<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11566482/address> <http://schema.org/addressRegion> "Madrid".
-<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11566482/address> <http://schema.org/addressLocality> "Retiro".
+<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11566482/address> <http://schema.org/addressRegion> "Comunidad de Madrid".
+<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11566482/address> <http://schema.org/addressLocality> "Madrid".
 <http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11566482/address> <http://schema.org/postalCode> "28007".
 <http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11566482/address> <http://schema.org/streetAddress> "CALLE ARREGUI Y ARUEJ 31".
 <http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11566487/address> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/address>.
-<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11566487/address> <http://schema.org/addressRegion> "Madrid".
-<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11566487/address> <http://schema.org/addressLocality> "Retiro".
+<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11566487/address> <http://schema.org/addressRegion> "Comunidad de Madrid".
+<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11566487/address> <http://schema.org/addressLocality> "Madrid".
 <http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11566487/address> <http://schema.org/postalCode> "28007".
 <http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11566487/address> <http://schema.org/streetAddress> "CALLE ARREGUI Y ARUEJ 31".
 <http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/10621974/address> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/address>.
-<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/10621974/address> <http://schema.org/addressRegion> "Madrid".
-<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/10621974/address> <http://schema.org/addressLocality> "Carabanchel Alto".
+<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/10621974/address> <http://schema.org/addressRegion> "Comunidad de Madrid".
+<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/10621974/address> <http://schema.org/addressLocality> "Madrid".
 <http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/10621974/address> <http://schema.org/postalCode> "28044".
 <http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/10621974/address> <http://schema.org/streetAddress> "CALLE ALFONSO FERNANDEZ 23".
 <http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11587808/address> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/address>.
-<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11587808/address> <http://schema.org/addressRegion> "Madrid".
-<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11587808/address> <http://schema.org/addressLocality> "Retiro".
+<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11587808/address> <http://schema.org/addressRegion> "Comunidad de Madrid".
+<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11587808/address> <http://schema.org/addressLocality> "Madrid".
 <http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11587808/address> <http://schema.org/postalCode> "28007".
 <http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11587808/address> <http://schema.org/streetAddress> "CALLE ARREGUI Y ARUEJ 31".
 <http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11413107/address> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/address>.
-<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11413107/address> <http://schema.org/addressRegion> "Madrid".
-<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11413107/address> <http://schema.org/addressLocality> "Matadero".
+<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11413107/address> <http://schema.org/addressRegion> "Comunidad de Madrid".
+<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11413107/address> <http://schema.org/addressLocality> "Madrid".
 <http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11413107/address> <http://schema.org/postalCode> "28045".
 <http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11413107/address> <http://schema.org/streetAddress> "PASEO CHOPERA 14".
 <http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11636800/address> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/address>.
-<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11636800/address> <http://schema.org/addressRegion> "Madrid".
-<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11636800/address> <http://schema.org/addressLocality> "Arganzuela".
+<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11636800/address> <http://schema.org/addressRegion> "Comunidad de Madrid".
+<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11636800/address> <http://schema.org/addressLocality> "Madrid".
 <http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11636800/address> <http://schema.org/postalCode> "28005".
 <http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11636800/address> <http://schema.org/streetAddress> "CALLE ARGANDA 12".
 <http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11638469/address> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/address>.
-<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11638469/address> <http://schema.org/addressRegion> "Madrid".
-<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11638469/address> <http://schema.org/addressLocality> "Maratalaz".
+<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11638469/address> <http://schema.org/addressRegion> "Comunidad de Madrid".
+<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11638469/address> <http://schema.org/addressLocality> "Madrid".
 <http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11638469/address> <http://schema.org/postalCode> "28030".
 <http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11638469/address> <http://schema.org/streetAddress> "AVENIDA MORATALAZ 130".
 <http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11643150/address> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/address>.
-<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11643150/address> <http://schema.org/addressRegion> "Madrid".
-<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11643150/address> <http://schema.org/addressLocality> "San Blas - Canillejas".
+<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11643150/address> <http://schema.org/addressRegion> "Comunidad de Madrid".
+<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11643150/address> <http://schema.org/addressLocality> "Madrid".
 <http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11643150/address> <http://schema.org/postalCode> "28022".
 <http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11643150/address> <http://schema.org/streetAddress> "CALLE BOLTA&amp;Ntilde;A 27".
 <http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11413111/address> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/address>.
-<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11413111/address> <http://schema.org/addressRegion> "Madrid".
-<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11413111/address> <http://schema.org/addressLocality> "Matadero".
+<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11413111/address> <http://schema.org/addressRegion> "Comunidad de Madrid".
+<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11413111/address> <http://schema.org/addressLocality> "Madrid".
 <http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11413111/address> <http://schema.org/postalCode> "28045".
 <http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11413111/address> <http://schema.org/streetAddress> "PASEO CHOPERA 14".
 <http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11514185/address> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/address>.
-<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11514185/address> <http://schema.org/addressRegion> "Madrid".
-<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11514185/address> <http://schema.org/addressLocality> "Retiro".
+<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11514185/address> <http://schema.org/addressRegion> "Comunidad de Madrid".
+<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11514185/address> <http://schema.org/addressLocality> "Madrid".
 <http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11514185/address> <http://schema.org/postalCode> "28007".
 <http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11514185/address> <http://schema.org/streetAddress> "PLAZA DAOIZ Y VELARDE 2".
 <http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11580736/address> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/address>.
-<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11580736/address> <http://schema.org/addressRegion> "Madrid".
-<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11580736/address> <http://schema.org/addressLocality> "Latina".
+<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11580736/address> <http://schema.org/addressRegion> "Comunidad de Madrid".
+<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11580736/address> <http://schema.org/addressLocality> "Madrid".
 <http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11580736/address> <http://schema.org/postalCode> "28044".
 <http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11580736/address> <http://schema.org/streetAddress> "AVENIDA LAS AGUILAS 2".
 <http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11634548/address> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/address>.
-<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11634548/address> <http://schema.org/addressRegion> "Madrid".
-<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11634548/address> <http://schema.org/addressLocality> "Ciudad Lineal".
+<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11634548/address> <http://schema.org/addressRegion> "Comunidad de Madrid".
+<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11634548/address> <http://schema.org/addressLocality> "Madrid".
 <http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11634548/address> <http://schema.org/postalCode> "28017".
 <http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11634548/address> <http://schema.org/streetAddress> "CALLE NUESTRA SEÑORA DEL VILLAR 6".
 <http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11637390/address> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/address>.
-<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11637390/address> <http://schema.org/addressRegion> "Madrid".
-<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11637390/address> <http://schema.org/addressLocality> "Ciudad Lineal".
+<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11637390/address> <http://schema.org/addressRegion> "Comunidad de Madrid".
+<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11637390/address> <http://schema.org/addressLocality> "Madrid".
 <http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11637390/address> <http://schema.org/postalCode> "28043".
 <http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11637390/address> <http://schema.org/streetAddress> "CALLE SAN NEMESIO 4".
 <http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11643194/address> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/address>.
-<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11643194/address> <http://schema.org/addressRegion> "Madrid".
-<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11643194/address> <http://schema.org/addressLocality> "San Blas - Canillejas".
+<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11643194/address> <http://schema.org/addressRegion> "Comunidad de Madrid".
+<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11643194/address> <http://schema.org/addressLocality> "Madrid".
 <http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11643194/address> <http://schema.org/postalCode> "28022".
 <http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11643194/address> <http://schema.org/streetAddress> "CALLE BOLTA&amp;Ntilde;A 27".
 <http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/7644875/address> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/address>.
-<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/7644875/address> <http://schema.org/addressRegion> "Madrid".
-<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/7644875/address> <http://schema.org/addressLocality> "Carabanchel Alto".
+<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/7644875/address> <http://schema.org/addressRegion> "Comunidad de Madrid".
+<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/7644875/address> <http://schema.org/addressLocality> "Madrid".
 <http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/7644875/address> <http://schema.org/postalCode> "28044".
 <http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/7644875/address> <http://schema.org/streetAddress> "CALLE ALFONSO FERNANDEZ 23".
 <http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11413103/address> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/address>.
-<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11413103/address> <http://schema.org/addressRegion> "Madrid".
-<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11413103/address> <http://schema.org/addressLocality> "Matadero".
+<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11413103/address> <http://schema.org/addressRegion> "Comunidad de Madrid".
+<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11413103/address> <http://schema.org/addressLocality> "Madrid".
 <http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11413103/address> <http://schema.org/postalCode> "28045".
 <http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11413103/address> <http://schema.org/streetAddress> "PASEO CHOPERA 14".
 <http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11413115/address> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/address>.
-<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11413115/address> <http://schema.org/addressRegion> "Madrid".
-<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11413115/address> <http://schema.org/addressLocality> "Matadero".
+<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11413115/address> <http://schema.org/addressRegion> "Comunidad de Madrid".
+<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11413115/address> <http://schema.org/addressLocality> "Madrid".
 <http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11413115/address> <http://schema.org/postalCode> "28045".
 <http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11413115/address> <http://schema.org/streetAddress> "PASEO CHOPERA 14".
 <http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11579708/address> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/address>.
-<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11579708/address> <http://schema.org/addressRegion> "Madrid".
-<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11579708/address> <http://schema.org/addressLocality> "Chamartín".
+<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11579708/address> <http://schema.org/addressRegion> "Comunidad de Madrid".
+<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11579708/address> <http://schema.org/addressLocality> "Madrid".
 <http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11579708/address> <http://schema.org/postalCode> "28002".
 <http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11579708/address> <http://schema.org/streetAddress> "CALLE MANTUANO 51".
 <http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11413096/address> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/address>.
-<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11413096/address> <http://schema.org/addressRegion> "Madrid".
-<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11413096/address> <http://schema.org/addressLocality> "Matadero".
+<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11413096/address> <http://schema.org/addressRegion> "Comunidad de Madrid".
+<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11413096/address> <http://schema.org/addressLocality> "Madrid".
 <http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11413096/address> <http://schema.org/postalCode> "28045".
 <http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11413096/address> <http://schema.org/streetAddress> "PASEO CHOPERA 14".
 <http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11483995/address> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/address>.
-<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11483995/address> <http://schema.org/addressRegion> "Madrid".
-<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11483995/address> <http://schema.org/addressLocality> "San Blas - Canillejas".
+<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11483995/address> <http://schema.org/addressRegion> "Comunidad de Madrid".
+<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11483995/address> <http://schema.org/addressLocality> "Madrid".
 <http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11483995/address> <http://schema.org/postalCode> "28022".
 <http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11483995/address> <http://schema.org/streetAddress> "CALLE MARIA SEVILLA DIAGO 15".
 <http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11643216/address> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/address>.
-<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11643216/address> <http://schema.org/addressRegion> "Madrid".
-<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11643216/address> <http://schema.org/addressLocality> "San Blas - Canillejas".
+<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11643216/address> <http://schema.org/addressRegion> "Comunidad de Madrid".
+<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11643216/address> <http://schema.org/addressLocality> "Madrid".
 <http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11643216/address> <http://schema.org/postalCode> "28022".
 <http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11643216/address> <http://schema.org/streetAddress> "CALLE BOLTA&amp;Ntilde;A 27".
 <http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11637392/address> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/address>.
-<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11637392/address> <http://schema.org/addressRegion> "Madrid".
-<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11637392/address> <http://schema.org/addressLocality> "Ciudad Lineal".
+<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11637392/address> <http://schema.org/addressRegion> "Comunidad de Madrid".
+<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11637392/address> <http://schema.org/addressLocality> "Madrid".
 <http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11637392/address> <http://schema.org/postalCode> "28043".
 <http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11637392/address> <http://schema.org/streetAddress> "CALLE SAN NEMESIO 4".
 <http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11577835/address> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/address>.
-<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11577835/address> <http://schema.org/addressRegion> "Madrid".
-<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11577835/address> <http://schema.org/addressLocality> "Puente de Vallecas".
+<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11577835/address> <http://schema.org/addressRegion> "Comunidad de Madrid".
+<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11577835/address> <http://schema.org/addressLocality> "Madrid".
 <http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11577835/address> <http://schema.org/postalCode> "28053".
 <http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11577835/address> <http://schema.org/streetAddress> "AVENIDA DE LAS GLORIETAS 19".
 <http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11643484/address> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/address>.
-<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11643484/address> <http://schema.org/addressRegion> "Madrid".
-<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11643484/address> <http://schema.org/addressLocality> "Ciudad Lineal".
+<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11643484/address> <http://schema.org/addressRegion> "Comunidad de Madrid".
+<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11643484/address> <http://schema.org/addressLocality> "Madrid".
 <http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11643484/address> <http://schema.org/postalCode> "28037".
 <http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11643484/address> <http://schema.org/streetAddress> "CALLE HERMANOS GARCIA NOBLEJAS 14".
 <http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11598526/address> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/address>.
-<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11598526/address> <http://schema.org/addressRegion> "Madrid".
-<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11598526/address> <http://schema.org/addressLocality> "Tetuan".
+<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11598526/address> <http://schema.org/addressRegion> "Comunidad de Madrid".
+<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11598526/address> <http://schema.org/addressLocality> "Madrid".
 <http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11598526/address> <http://schema.org/postalCode> "28029".
 <http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11598526/address> <http://schema.org/streetAddress> "PLAZA DONOSO 5".
 <http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11413089/address> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/address>.
-<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11413089/address> <http://schema.org/addressRegion> "Madrid".
-<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11413089/address> <http://schema.org/addressLocality> "Matadero".
+<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11413089/address> <http://schema.org/addressRegion> "Comunidad de Madrid".
+<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11413089/address> <http://schema.org/addressLocality> "Madrid".
 <http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11413089/address> <http://schema.org/postalCode> "28045".
 <http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11413089/address> <http://schema.org/streetAddress> "PASEO CHOPERA 14".
 <http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11588309/address> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/address>.
-<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11588309/address> <http://schema.org/addressRegion> "Madrid".
-<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11588309/address> <http://schema.org/addressLocality> "Retiro".
+<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11588309/address> <http://schema.org/addressRegion> "Comunidad de Madrid".
+<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11588309/address> <http://schema.org/addressLocality> "Madrid".
 <http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11588309/address> <http://schema.org/postalCode> "28007".
 <http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11588309/address> <http://schema.org/streetAddress> "CALLE ARREGUI Y ARUEJ 31".
 <http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11642687/address> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/address>.
-<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11642687/address> <http://schema.org/addressRegion> "Madrid".
-<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11642687/address> <http://schema.org/addressLocality> "Ciudad Lineal".
+<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11642687/address> <http://schema.org/addressRegion> "Comunidad de Madrid".
+<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11642687/address> <http://schema.org/addressLocality> "Madrid".
 <http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11642687/address> <http://schema.org/postalCode> "28037".
 <http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11642687/address> <http://schema.org/streetAddress> "CALLE HERMANOS GARCIA NOBLEJAS 14".
 <http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11644457/address> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/address>.
-<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11644457/address> <http://schema.org/addressRegion> "Madrid".
-<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11644457/address> <http://schema.org/addressLocality> "Ciudad Lineal".
+<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11644457/address> <http://schema.org/addressRegion> "Comunidad de Madrid".
+<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11644457/address> <http://schema.org/addressLocality> "Madrid".
 <http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11644457/address> <http://schema.org/postalCode> "28037".
 <http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11644457/address> <http://schema.org/streetAddress> "CALLE HERMANOS GARCIA NOBLEJAS 14".
 <http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11642694/address> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/address>.
-<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11642694/address> <http://schema.org/addressRegion> "Madrid".
-<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11642694/address> <http://schema.org/addressLocality> "Ciudad Lineal".
+<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11642694/address> <http://schema.org/addressRegion> "Comunidad de Madrid".
+<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11642694/address> <http://schema.org/addressLocality> "Madrid".
 <http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11642694/address> <http://schema.org/postalCode> "28037".
 <http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11642694/address> <http://schema.org/streetAddress> "CALLE HERMANOS GARCIA NOBLEJAS 14".
 <http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11640419/address> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/address>.
-<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11640419/address> <http://schema.org/addressRegion> "Madrid".
-<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11640419/address> <http://schema.org/addressLocality> "Moratalaz".
+<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11640419/address> <http://schema.org/addressRegion> "Comunidad de Madrid".
+<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11640419/address> <http://schema.org/addressLocality> "Madrid".
 <http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11640419/address> <http://schema.org/postalCode> "28030".
 <http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11640419/address> <http://schema.org/streetAddress> "AVENIDA MORATALAZ 130".
 <http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11625471/address> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/address>.
-<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11625471/address> <http://schema.org/addressRegion> "Madrid".
-<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11625471/address> <http://schema.org/addressLocality> "Latina".
+<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11625471/address> <http://schema.org/addressRegion> "Comunidad de Madrid".
+<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11625471/address> <http://schema.org/addressLocality> "Madrid".
 <http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11625471/address> <http://schema.org/postalCode> "28047".
 <http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11625471/address> <http://schema.org/streetAddress> "CALLE CAMARENA 10".
 <http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11578004/address> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/address>.
-<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11578004/address> <http://schema.org/addressRegion> "Madrid".
-<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11578004/address> <http://schema.org/addressLocality> "Puente de Vallecas".
+<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11578004/address> <http://schema.org/addressRegion> "Comunidad de Madrid".
+<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11578004/address> <http://schema.org/addressLocality> "Madrid".
 <http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11578004/address> <http://schema.org/postalCode> "28053".
 <http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11578004/address> <http://schema.org/streetAddress> "AVENIDA DE LAS GLORIETAS 19".
 <http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11645067/address> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/address>.
-<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11645067/address> <http://schema.org/addressRegion> "Madrid".
-<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11645067/address> <http://schema.org/addressLocality> "Hortaleza".
+<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11645067/address> <http://schema.org/addressRegion> "Comunidad de Madrid".
+<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11645067/address> <http://schema.org/addressLocality> "Madrid".
 <http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11645067/address> <http://schema.org/postalCode> "28033".
 <http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11645067/address> <http://schema.org/streetAddress> "CALLE SANTA VIRGILIA 15".
 <http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11593905/address> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/address>.
-<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11593905/address> <http://schema.org/addressRegion> "Madrid".
-<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11593905/address> <http://schema.org/addressLocality> "Villa de Vallecas".
+<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11593905/address> <http://schema.org/addressRegion> "Comunidad de Madrid".
+<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11593905/address> <http://schema.org/addressLocality> "Madrid".
 <http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11593905/address> <http://schema.org/postalCode> "28031".
 <http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11593905/address> <http://schema.org/streetAddress> "CALLE REAL DE ARGANDA 39".
 <http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11611820/address> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/address>.
-<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11611820/address> <http://schema.org/addressRegion> "Madrid".
-<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11611820/address> <http://schema.org/addressLocality> "Moratalaz".
+<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11611820/address> <http://schema.org/addressRegion> "Comunidad de Madrid".
+<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11611820/address> <http://schema.org/addressLocality> "Madrid".
 <http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11611820/address> <http://schema.org/postalCode> "28030".
 <http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11611820/address> <http://schema.org/streetAddress> "CALLE ARROYO BELINCOSO 11".
