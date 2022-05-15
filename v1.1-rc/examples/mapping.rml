@@ -53,6 +53,15 @@
                 ]
             ]
             ];
+			
+	
+    rr:predicateObjectMap [
+       rr:predicate rdfs:label;
+        rr:objectMap [
+            rml:reference "name"; 
+        ]
+    ];
+
 
 
     rr:predicateObjectMap [
@@ -99,9 +108,9 @@
     ];
 
        rr:predicateObjectMap [
-       rr:predicate schema:isAccesibleForFree;
+       rr:predicate schema:isAccessibleForFree;
         rr:objectMap [
-            rml:reference "isAccesibleForFree"; 
+            rml:reference "isAccessibleForFree"; 
             rr:datatype xsd:boolean;
         ]
     ];
