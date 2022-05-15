@@ -1,5 +1,4 @@
 # Cosas a mejorar
-- estan --> están 
 - La de agosto se puede hacer más sencilla, pues hayfunción en SPARQL para sacar el mes de una fecha. Lo. Mismo la del día 10 de cada mes.
 - Evento tipo concierto veo que está mal, y será problema del RDF. El kos no puede ser una propiedad, debería ser el objeto. Si está así en la onto o datos hay que retocarlo. Además, me gustaría no abusar del FILTER, sino marcar en algunos el SKOS concept correspondiente.
 - Además, me gustaría no abusar del FILTER, sino marcar en algunos el SKOS concept correspondiente.
@@ -88,7 +87,7 @@ SELECT DISTINCT ?name ?maximumAttendeeCapacity WHERE {
 ![image](https://user-images.githubusercontent.com/39318241/168427100-441f9212-7675-47f4-9ab8-25de464148e9.png)
 
 
-## Eventos que todavia estan por celebrarse
+## Eventos que todavia están por celebrarse
 
 ```
 SELECT DISTINCT ?name ?eventStatus WHERE {
