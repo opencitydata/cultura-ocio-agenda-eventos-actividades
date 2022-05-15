@@ -139,7 +139,6 @@
         rr:objectMap [
             rml:reference "workPerformed"; 
             rr:datatype xsd:string;
-			 rr:termType rr:IRI 
         ]
     ];
 
@@ -148,7 +147,7 @@
        rr:predicate esagendakos:tipo-evento;
         rr:objectMap [
             rml:reference "tipo-evento"; 
-			rr:termType rr:IRI
+			rr:datatype xsd:anyURI;
     ;
         ]
     ];
