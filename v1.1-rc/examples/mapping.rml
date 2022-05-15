@@ -99,7 +99,7 @@
     ];
 
        rr:predicateObjectMap [
-       rr:predicate schema:isAccessibleForFree;
+       rr:predicate schema:isAccesibleForFree;
         rr:objectMap [
             rml:reference "isAccesibleForFree"; 
             rr:datatype xsd:boolean;
@@ -147,7 +147,7 @@
        rr:predicate esagendakos:tipo-evento;
         rr:objectMap [
             rml:reference "tipo-evento"; 
-			rr:datatype xsd:anyURI;
+			rr:termType rr:IRI
     ;
         ]
     ];
