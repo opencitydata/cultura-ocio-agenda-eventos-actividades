@@ -2,7 +2,6 @@
 - La de agosto se puede hacer más sencilla, pues hayfunción en SPARQL para sacar el mes de una fecha. Lo. Mismo la del día 10 de cada mes.
 - Evento tipo concierto veo que está mal, y será problema del RDF. El kos no puede ser una propiedad, debería ser el objeto. Si está así en la onto o datos hay que retocarlo
 - Además, me gustaría no abusar del FILTER, sino marcar en algunos el SKOS concept correspondiente.
-- El de recinto cerrado no sé por qué necesitas el BIND
 - ¿Por qué el nombre de un evento se devuelve a partir de su documentación? Quizás es fallo mío al revisar, pero me parece muy raro que no sea un rdfs:label asociado directamente al evento.
 - El Retiro no es un municipio!!!!
 
@@ -54,11 +53,12 @@ WHERE {
 
 ## Evento que tiene el acceso gratuito
 ```
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 SELECT DISTINCT ?name ?isAccessibleForFree WHERE {
 	?evento <http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda#documentacion> ?documentacion .
 	?documentacion <http://schema.org/name> ?name .
   	?evento <http://schema.org/isAccessibleForFree> ?isAccessibleForFree.
-  	FILTER (?isAccessibleForFree = 	"true"^^<http://www.w3.org/2001/XMLSchema#boolean>)
+  	FILTER (?isAccessibleForFree = 	"true"^^xds:boolean)
 } 
 ```
 **La salida del formato CSV es**:
@@ -133,12 +133,13 @@ SELECT DISTINCT ?name ?tipoEvento ?tipo WHERE {
 ## Evento que se realiza en un recinto cerrado
 
 ```
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
 SELECT DISTINCT ?name ?interior WHERE {
 	?evento <http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda#documentacion> ?documentacion .
 	?documentacion <http://schema.org/name> ?name .
   	?evento <http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda#interior> ?interior
-  	BIND (str(?interior) AS ?techado) .
-  FILTER regex(?techado, "true") .
+    FILTER (?interior= "true"^^xsd:boolean) .
 } 
 ```
 
