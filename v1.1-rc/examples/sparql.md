@@ -116,14 +116,13 @@ SELECT DISTINCT ?name ?typicalAgeRange WHERE {
 
 ```
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
-PREFIX xds: <http://www.w3.org/2001/XMLSchema#>
 SELECT DISTINCT ?name ?tipoEvento ?tipo WHERE {
 	?evento <http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda#documentacion> ?documentacion .
 	?documentacion <http://schema.org/name> ?name .
   	?evento <http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda#tipo-evento> ?tipoEvento.
-  FILTER (datatype(?tipoEvento)= xds:anyURI)
+  FILTER (datatype(?tipoEvento)= xsd:anyURI)
   FILTER (?tipoEvento = "http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/teatro"^^xsd:anyURI)
-} 
+}  
 ```
 
 
