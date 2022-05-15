@@ -2,7 +2,6 @@
 - La de agosto se puede hacer más sencilla, pues hayfunción en SPARQL para sacar el mes de una fecha. Lo. Mismo la del día 10 de cada mes.
 - Evento tipo concierto veo que está mal, y será problema del RDF. El kos no puede ser una propiedad, debería ser el objeto. Si está así en la onto o datos hay que retocarlo
 - Además, me gustaría no abusar del FILTER, sino marcar en algunos el SKOS concept correspondiente.
-- Reciento --> recinto
 - El de recinto cerrado no sé por qué necesitas el BIND
 - ¿Por qué el nombre de un evento se devuelve a partir de su documentación? Quizás es fallo mío al revisar, pero me parece muy raro que no sea un rdfs:label asociado directamente al evento.
 - El Retiro no es un municipio!!!!
@@ -131,7 +130,7 @@ SELECT DISTINCT ?name ?tipoEvento ?tipo WHERE {
 ![image](https://user-images.githubusercontent.com/39318241/168427719-8b7845e2-177f-4414-a625-5607dc00d7c9.png)
 
 
-## Evento que se realiza en un reciento cerrado
+## Evento que se realiza en un recinto cerrado
 
 ```
 SELECT DISTINCT ?name ?interior WHERE {
@@ -146,7 +145,7 @@ SELECT DISTINCT ?name ?interior WHERE {
 ![image](https://user-images.githubusercontent.com/39318241/168427791-e87b63a6-07a5-4aac-b311-5f82593147fb.png)
 
 
-## Evento que se celebra en un reciento llamado "Centro Cultural de la Villa"
+## Evento que se celebra en un recinto llamado "Centro Cultural de la Villa"
 
 ``` 
 SELECT DISTINCT ?name ?nombre WHERE {
