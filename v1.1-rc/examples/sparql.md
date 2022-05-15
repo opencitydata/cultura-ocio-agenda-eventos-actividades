@@ -126,9 +126,6 @@ SELECT DISTINCT ?name ?tipoEvento ?tipo WHERE {
 ```
 
 
-![image](https://user-images.githubusercontent.com/39318241/168427719-8b7845e2-177f-4414-a625-5607dc00d7c9.png)
-
-
 ## Evento que se realiza en un recinto cerrado
 
 ```
@@ -177,7 +174,7 @@ SELECT DISTINCT ?name ?addressRegion WHERE {
 
 
 
-## Eventos que tengan lugar en el municipio del retiro
+## Eventos que tengan lugar en el municipio del madrid
 
 ```
 SELECT DISTINCT ?name ?addressLocality WHERE {
@@ -186,11 +183,11 @@ SELECT DISTINCT ?name ?addressLocality WHERE {
 	?documentacion <http://schema.org/name> ?name .
     ?equipamiento <http://schema.org/address> ?address .
   ?address <http://schema.org/addressLocality> ?addressLocality .
-  FILTER (?addressLocality = "Retiro")
+  FILTER (?addressLocality = "Madrid")
 } 
 ```
 
-![image](https://user-images.githubusercontent.com/39318241/168428356-2c19e1b3-2bca-48c3-acae-f9fff6ec9695.png)
+![image](https://user-images.githubusercontent.com/39318241/168491193-f2592b0f-5032-4b62-a1e5-c6bf977530e1.png)
 
 
 ## Evento que se celebra el dia 10 de cualquier mes
