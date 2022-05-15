@@ -1,7 +1,4 @@
 # Cosas a mejorar
-- La de accesible no hace falta el BIND.
-- Me he dado cuenta de que isAccesibleForFree está mal.Sería isAccessibleForFree.
-- maxima --> máxima
 - estan --> están 
 - La de agosto se puede hacer más sencilla, pues hayfunción en SPARQL para sacar el mes de una fecha. Lo. Mismo la del día 10 de cada mes.
 - Evento tipo concierto veo que está mal, y será problema del RDF. El kos no puede ser una propiedad, debería ser el objeto. Si está así en la onto o datos hay que retocarlo. Además, me gustaría no abusar del FILTER, sino marcar en algunos el SKOS concept correspondiente.
@@ -63,20 +60,19 @@ WHERE {
 
 ## Evento que tiene el acceso gratuito
 ```
-SELECT DISTINCT ?name ?isAccesibleForFree WHERE {
+SELECT DISTINCT ?name ?isAccessibleForFree WHERE {
 	?evento <http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda#documentacion> ?documentacion .
 	?documentacion <http://schema.org/name> ?name .
-  	?evento <http://schema.org/isAccesibleForFree> ?isAccesibleForFree.
-  		BIND (str(?isAccesibleForFree) AS ?accesible) 
-  FILTER regex(?accesible, "true")
+  	?evento <http://schema.org/isAccessibleForFree> ?isAccessibleForFree.
+  	FILTER (?isAccessibleForFree = 	"true"^^<http://www.w3.org/2001/XMLSchema#boolean>)
 } 
 ```
 **La salida del formato CSV es**:
 
 
-![image](https://user-images.githubusercontent.com/39318241/168426758-5893b50b-06b3-49f4-b9c2-41c2a2986178.png)
+![image](https://user-images.githubusercontent.com/39318241/168488036-9a5bf2c4-14a9-4e1c-8875-7d2117b55639.png)
 
-## Evento que tiene una capacidad maxima establecida 
+## Evento que tiene una capacidad máxima establecida 
 
 ```
 SELECT DISTINCT ?name ?maximumAttendeeCapacity WHERE {
