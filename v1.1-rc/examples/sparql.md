@@ -1,6 +1,6 @@
 # Cosas a mejorar
 - La de agosto se puede hacer más sencilla, pues hayfunción en SPARQL para sacar el mes de una fecha. Lo. Mismo la del día 10 de cada mes.
-- Evento tipo concierto veo que está mal, y será problema del RDF. El kos no puede ser una propiedad, debería ser el objeto. Si está así en la onto o datos hay que retocarlo. Además, me gustaría no abusar del FILTER, sino marcar en algunos el SKOS concept correspondiente.
+- Evento tipo concierto veo que está mal, y será problema del RDF. El kos no puede ser una propiedad, debería ser el objeto. Si está así en la onto o datos hay que retocarlo
 - Además, me gustaría no abusar del FILTER, sino marcar en algunos el SKOS concept correspondiente.
 - Reciento --> recinto
 - El de recinto cerrado no sé por qué necesitas el BIND
@@ -116,12 +116,14 @@ SELECT DISTINCT ?name ?typicalAgeRange WHERE {
 ## Eventos que son de tipo concierto
 
 ```
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX xds: <http://www.w3.org/2001/XMLSchema#>
 SELECT DISTINCT ?name ?tipoEvento ?tipo WHERE {
 	?evento <http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda#documentacion> ?documentacion .
 	?documentacion <http://schema.org/name> ?name .
   	?evento <http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda#tipo-evento> ?tipoEvento.
-  	BIND (str(?tipoEvento) AS ?tipo) .
-  FILTER regex(?tipo, "concierto") .
+  FILTER (datatype(?tipoEvento)= xds:anyURI)
+  FILTER (?tipoEvento = "http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/teatro"^^xsd:anyURI)
 } 
 ```
 
