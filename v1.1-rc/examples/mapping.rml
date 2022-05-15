@@ -99,7 +99,7 @@
     ];
 
        rr:predicateObjectMap [
-       rr:predicate schema:isAccesibleForFree;
+       rr:predicate schema:isAccessibleForFree;
         rr:objectMap [
             rml:reference "isAccesibleForFree"; 
             rr:datatype xsd:boolean;
