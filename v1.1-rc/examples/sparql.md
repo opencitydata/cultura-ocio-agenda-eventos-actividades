@@ -1,9 +1,7 @@
 # Cosas a mejorar
 - La de agosto se puede hacer más sencilla, pues hayfunción en SPARQL para sacar el mes de una fecha. Lo. Mismo la del día 10 de cada mes.
-- Evento tipo concierto veo que está mal, y será problema del RDF. El kos no puede ser una propiedad, debería ser el objeto. Si está así en la onto o datos hay que retocarlo. Además, me gustaría no abusar del FILTER, sino marcar en algunos el SKOS concept correspondiente.
+- Evento tipo concierto veo que está mal, y será problema del RDF. El kos no puede ser una propiedad, debería ser el objeto. Si está así en la onto o datos hay que retocarlo
 - Además, me gustaría no abusar del FILTER, sino marcar en algunos el SKOS concept correspondiente.
-- Reciento --> recinto
-- El de recinto cerrado no sé por qué necesitas el BIND
 - ¿Por qué el nombre de un evento se devuelve a partir de su documentación? Quizás es fallo mío al revisar, pero me parece muy raro que no sea un rdfs:label asociado directamente al evento.
 - El Retiro no es un municipio!!!!
 
@@ -55,11 +53,12 @@ WHERE {
 
 ## Evento que tiene el acceso gratuito
 ```
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 SELECT DISTINCT ?name ?isAccessibleForFree WHERE {
 	?evento <http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda#documentacion> ?documentacion .
 	?documentacion <http://schema.org/name> ?name .
   	?evento <http://schema.org/isAccessibleForFree> ?isAccessibleForFree.
-  	FILTER (?isAccessibleForFree = 	"true"^^<http://www.w3.org/2001/XMLSchema#boolean>)
+  	FILTER (?isAccessibleForFree = 	"true"^^xsd:boolean)
 } 
 ```
 **La salida del formato CSV es**:
@@ -116,35 +115,37 @@ SELECT DISTINCT ?name ?typicalAgeRange WHERE {
 ## Eventos que son de tipo concierto
 
 ```
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 SELECT DISTINCT ?name ?tipoEvento ?tipo WHERE {
 	?evento <http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda#documentacion> ?documentacion .
 	?documentacion <http://schema.org/name> ?name .
   	?evento <http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda#tipo-evento> ?tipoEvento.
-  	BIND (str(?tipoEvento) AS ?tipo) .
-  FILTER regex(?tipo, "concierto") .
-} 
+  FILTER (datatype(?tipoEvento)= xsd:anyURI)
+  FILTER (?tipoEvento = "http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/teatro"^^xsd:anyURI)
+}  
 ```
 
 
 ![image](https://user-images.githubusercontent.com/39318241/168427719-8b7845e2-177f-4414-a625-5607dc00d7c9.png)
 
 
-## Evento que se realiza en un reciento cerrado
+## Evento que se realiza en un recinto cerrado
 
 ```
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
 SELECT DISTINCT ?name ?interior WHERE {
 	?evento <http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda#documentacion> ?documentacion .
 	?documentacion <http://schema.org/name> ?name .
   	?evento <http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda#interior> ?interior
-  	BIND (str(?interior) AS ?techado) .
-  FILTER regex(?techado, "true") .
+    FILTER (?interior= "true"^^xsd:boolean) .
 } 
 ```
 
 ![image](https://user-images.githubusercontent.com/39318241/168427791-e87b63a6-07a5-4aac-b311-5f82593147fb.png)
 
 
-## Evento que se celebra en un reciento llamado "Centro Cultural de la Villa"
+## Evento que se celebra en un recinto llamado "Centro Cultural de la Villa"
 
 ``` 
 SELECT DISTINCT ?name ?nombre WHERE {
