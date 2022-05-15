@@ -58,7 +58,7 @@ SELECT DISTINCT ?name ?isAccessibleForFree WHERE {
 	?evento <http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda#documentacion> ?documentacion .
 	?documentacion <http://schema.org/name> ?name .
   	?evento <http://schema.org/isAccessibleForFree> ?isAccessibleForFree.
-  	FILTER (?isAccessibleForFree = 	"true"^^xds:boolean)
+  	FILTER (?isAccessibleForFree = 	"true"^^xsd:boolean)
 } 
 ```
 **La salida del formato CSV es**:
