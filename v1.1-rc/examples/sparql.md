@@ -126,9 +126,6 @@ SELECT DISTINCT ?name ?tipoEvento ?tipo WHERE {
 ```
 
 
-![image](https://user-images.githubusercontent.com/39318241/168427719-8b7845e2-177f-4414-a625-5607dc00d7c9.png)
-
-
 ## Evento que se realiza en un recinto cerrado
 
 ```
