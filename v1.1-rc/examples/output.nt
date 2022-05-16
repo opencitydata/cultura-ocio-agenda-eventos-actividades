@@ -547,8 +547,8 @@
 <http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/3423> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda#Evento>.
 <http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/3423> <http://www.w3.org/2000/01/rdf-schema#label> "Paquete especial Semana Santa. Entradas a espacios interiores del Castillo de Lorca. (Del 14 al 17 de Abril)".
 <http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/3423> <http://schema.org/audience> "Todos los públicos".
-<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/3423> <http://schema.org/startDate> "2020-04-14T00:00:00:00+01:00"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
-<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/3423> <http://schema.org/endDate> "2022-04-17T00:00:00:00+01:00"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/3423> <http://schema.org/startDate> "2020-04-14T00:00:00+01:00"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/3423> <http://schema.org/endDate> "2022-04-17T00:00:00+01:00"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
 <http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/3423> <http://schema.org/eventAttendanceMode> "Presencial".
 <http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/3423> <http://schema.org/isAccessibleForFree> "false"^^<http://www.w3.org/2001/XMLSchema#boolean>.
 <http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/3423> <http://schema.org/eventStatus> "Terminado".
@@ -560,8 +560,8 @@
 <http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/3403> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda#Evento>.
 <http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/3403> <http://www.w3.org/2000/01/rdf-schema#label> "EXPOSICIÓN CARTELES DE SEMANA SANTA LORCA".
 <http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/3403> <http://schema.org/audience> "Todos los públicos".
-<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/3403> <http://schema.org/startDate> "2022-03-29T00:00:00:00+01:00"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
-<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/3403> <http://schema.org/endDate> "2022-04-17T00:00:00:00+01:00"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/3403> <http://schema.org/startDate> "2022-03-29T00:00:00+01:00"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/3403> <http://schema.org/endDate> "2022-04-17T00:00:00+01:00"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
 <http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/3403> <http://schema.org/eventAttendanceMode> "Presencial".
 <http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/3403> <http://schema.org/isAccessibleForFree> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
 <http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/3403> <http://schema.org/eventStatus> "Terminado".
@@ -573,8 +573,8 @@
 <http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/3426> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda#Evento>.
 <http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/3426> <http://www.w3.org/2000/01/rdf-schema#label> "El Rey Sabio para niños: el ajedrez y la Torre Alfonsina ".
 <http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/3426> <http://schema.org/audience> "Infantil".
-<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/3426> <http://schema.org/startDate> "2022-04-02T00:00:00:00+01:00"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
-<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/3426> <http://schema.org/endDate> "2022-04-23T00:00:00:00+01:00"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/3426> <http://schema.org/startDate> "2022-04-02T00:00:00+01:00"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/3426> <http://schema.org/endDate> "2022-04-23T00:00:00+01:00"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
 <http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/3426> <http://schema.org/eventAttendanceMode> "Presencial".
 <http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/3426> <http://schema.org/isAccessibleForFree> "false"^^<http://www.w3.org/2001/XMLSchema#boolean>.
 <http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/3426> <http://schema.org/eventStatus> "Terminado".
@@ -586,8 +586,8 @@
 <http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/3421> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda#Evento>.
 <http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/3421> <http://www.w3.org/2000/01/rdf-schema#label> "SILVESTRISMO".
 <http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/3421> <http://schema.org/audience> "Todos los públicos".
-<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/3421> <http://schema.org/startDate> "2022-04-09T00:00:00:00+01:00"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
-<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/3421> <http://schema.org/endDate> "2022-04-09T00:00:00:00+01:00"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/3421> <http://schema.org/startDate> "2022-04-09T00:00:00+01:00"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/3421> <http://schema.org/endDate> "2022-04-09T00:00:00+01:00"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
 <http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/3421> <http://schema.org/eventAttendanceMode> "Presencial".
 <http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/3421> <http://schema.org/isAccessibleForFree> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
 <http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/3421> <http://schema.org/eventStatus> "Terminado".
@@ -599,8 +599,8 @@
 <http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/3360> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda#Evento>.
 <http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/3360> <http://www.w3.org/2000/01/rdf-schema#label> "AUTOMOVILISMO".
 <http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/3360> <http://schema.org/audience> "Todos los públicos".
-<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/3360> <http://schema.org/startDate> "2022-04-09T00:00:00:00+01:00"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
-<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/3360> <http://schema.org/endDate> "2022-04-09T00:00:00:00+01:00"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/3360> <http://schema.org/startDate> "2022-04-09T00:00:00+01:00"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/3360> <http://schema.org/endDate> "2022-04-09T00:00:00+01:00"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
 <http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/3360> <http://schema.org/eventAttendanceMode> "Presencial".
 <http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/3360> <http://schema.org/isAccessibleForFree> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
 <http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/3360> <http://schema.org/eventStatus> "Terminado".
@@ -612,8 +612,8 @@
 <http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/3317> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda#Evento>.
 <http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/3317> <http://www.w3.org/2000/01/rdf-schema#label> "Visita teatralizada: EL SECRETO DEL IRLANDÉS".
 <http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/3317> <http://schema.org/audience> "Todos los públicos".
-<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/3317> <http://schema.org/startDate> "2022-06-04T00:00:00:00+01:00"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
-<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/3317> <http://schema.org/endDate> "2022-06-04T00:00:00:00+01:00"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/3317> <http://schema.org/startDate> "2022-06-04T00:00:00+01:00"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/3317> <http://schema.org/endDate> "2022-06-04T00:00:00+01:00"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
 <http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/3317> <http://schema.org/eventAttendanceMode> "Presencial".
 <http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/3317> <http://schema.org/isAccessibleForFree> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
 <http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/3317> <http://schema.org/eventStatus> "Por empezar".
@@ -625,8 +625,8 @@
 <http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/3302> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda#Evento>.
 <http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/3302> <http://www.w3.org/2000/01/rdf-schema#label> "Visita guiada: LORCA MONUMENTAL Y SU BORDADO".
 <http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/3302> <http://schema.org/audience> "Todos los públicos".
-<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/3302> <http://schema.org/startDate> "2022-06-09T00:00:00:00+01:00"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
-<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/3302> <http://schema.org/endDate> "2022-06-09T00:00:00:00+01:00"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/3302> <http://schema.org/startDate> "2022-06-09T00:00:00+01:00"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/3302> <http://schema.org/endDate> "2022-06-09T00:00:00+01:00"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
 <http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/3302> <http://schema.org/eventAttendanceMode> "Presencial".
 <http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/3302> <http://schema.org/isAccessibleForFree> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
 <http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/3302> <http://schema.org/eventStatus> "Por empezar".
@@ -638,8 +638,8 @@
 <http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/3328> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda#Evento>.
 <http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/3328> <http://www.w3.org/2000/01/rdf-schema#label> "Visita guiada: EL CASCO ANTIGUO DE LORCA".
 <http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/3328> <http://schema.org/audience> "Todos los públicos".
-<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/3328> <http://schema.org/startDate> "2022-06-18T00:00:00:00+01:00"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
-<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/3328> <http://schema.org/endDate> "2022-06-18T00:00:00:00+01:00"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/3328> <http://schema.org/startDate> "2022-06-18T00:00:00+01:00"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/3328> <http://schema.org/endDate> "2022-06-18T00:00:00+01:00"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
 <http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/3328> <http://schema.org/eventAttendanceMode> "Presencial".
 <http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/3328> <http://schema.org/isAccessibleForFree> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>.
 <http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/3328> <http://schema.org/eventStatus> "Por empezar".
