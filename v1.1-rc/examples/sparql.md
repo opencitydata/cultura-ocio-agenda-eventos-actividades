@@ -181,13 +181,11 @@ SELECT DISTINCT ?name ?addressLocality WHERE {
 ## Evento que se celebra el dia 10 de cualquier mes
 
 ``` 
-SELECT DISTINCT ?name ?dia ?startDate ?string 
-WHERE {
-	?evento <http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda#documentacion> ?documentacion .
-	?documentacion <http://schema.org/name> ?name .
-  	?evento <http://schema.org/startDate> ?startDate .
-		BIND (str(?startDate) AS ?string) 
-  		BIND (substr(?string, 9, 2) AS ?dia)
-  		FILTER (?dia = '10')
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?evento ?name ?startDate WHERE{
+  	?evento rdfs:label ?name .
+	?evento <http://schema.org/startDate> ?startDate .
+    	BIND (DAY(?startDate) AS ?dia) 
+  		FILTER (?dia=10)
 } 
 ```
