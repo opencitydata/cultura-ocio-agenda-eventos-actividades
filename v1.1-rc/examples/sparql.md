@@ -9,29 +9,30 @@ SELECT ?name  ?audience WHERE{
 }
 ```
 
-evento | name | audience
+| evento                                                                                    | name                                                                  | audience                                           |         |
+|:-----------------------------------------------------------------------------------------:|:---------------------------------------------------------------------:|:--------------------------------------------------:|:-------:|
+| http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11413089      | Malvivir                                                              | Adultos                                            |         |
+| http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11579708      | La Perra Blanco - Tetuan                                              | Adultos                                            |         |
+| http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/1285151041284 | 'Los mentalistas' (LA CHISTERA MÁGICA)                                | Adultos                                            |         |
+| http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/1285144199175 | 'Cosas nuestras' (KATUA&GALEA TEATRO)                                 | Adultos                                            |         |
+| http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/1285140239576 | 'Silencio' (AVANCE PRODUCCIONES TEATRALES)                            | Adultos                                            |         |
+| http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/1285143668478 | 'Muerte de un viajante' (OKAPI PRODUCCIONES)                          | Adultos                                            |         |
+| http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/1285139511846 | 'Guitarras de cine' (JESÚS PARRA)                                     | Adultos                                            |         |
+| http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11625471      | Sesiones de abordaje de la soledad                                    | Adultos                                            |         |
+| http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/1285142107385 | "'La Celestina                                                        | un selfie con Melibea' (UN PINGÜINO PRODUCCIONES)" | Adultos |
+| http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/1285144969202 | 'Los invisibles' (LA CORACHA TEATRO)                                  | Adultos                                            |         |
+| http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/1285139023785 | 'Danzando por el mundo' (ARTESHOW ESPECTÁCULOS S.L.)                  | Adultos                                            |         |
+| http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/1285153632819 | 'Antes muerta que convicta' (BEATRIZ RICO)                            | Adultos                                            |         |
+| http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/1285143675146 | 'Inquietante' (BAMBALUA TEATRO)                                       | Adultos                                            |         |
+| http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/1285142985689 | 'El mueble' (HISTRIÓN TEATRO)                                         | Adultos                                            |         |
+| http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11580799      | "Bengala                                                              | una vida en doce asaltos (Hortaleza)"              | Adultos |
+| http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/1285141564385 | 'ABBA - live in concert - 50 aniversario' (TEATRALMENTE PRODUCCIONES) | Adultos                                            |         |
+| http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/1285153337815 | 'Desgraciados' (TEATRO ATÓPICO)                                       | Adultos                                            |         |
+| http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11413103      | Là                                                                    | Adultos                                            |         |
+| http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11413115      | La mirada del avestruz                                                | Adultos                                            |         |
+| http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/1285140678968 | '¡Viva la Pepa!' (PENTACIÓN)                                          | Adultos                                            |         |
+| http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/1285145381377 | 'Oceanía' (TRASPASOS)                                                 | Adultos                                            |         |
 
-http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11413089 | Malvivir | Adultos
-http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11579708 | La Perra Blanco - Tetuan | Adultos
-http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/1285151041284 | 'Los mentalistas' (LA CHISTERA MÁGICA) | Adultos
-http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/1285144199175 | 'Cosas nuestras' (KATUA&GALEA TEATRO) | Adultos
-http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/1285140239576 | 'Silencio' (AVANCE PRODUCCIONES TEATRALES) | Adultos
-http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/1285143668478 | 'Muerte de un viajante' (OKAPI PRODUCCIONES) | Adultos
-http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/1285139511846 | 'Guitarras de cine' (JESÚS PARRA) | Adultos
-http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11625471 | Sesiones de abordaje de la soledad | Adultos
-http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/1285142107385 | "'La Celestina |  un selfie con Melibea' (UN PINGÜINO PRODUCCIONES)" | Adultos
-http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/1285144969202 | 'Los invisibles' (LA CORACHA TEATRO) | Adultos
-http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/1285139023785 | 'Danzando por el mundo' (ARTESHOW ESPECTÁCULOS S.L.) | Adultos
-http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/1285153632819 | 'Antes muerta que convicta' (BEATRIZ RICO) | Adultos
-http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/1285143675146 | 'Inquietante' (BAMBALUA TEATRO) | Adultos
-http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/1285142985689 | 'El mueble' (HISTRIÓN TEATRO) | Adultos
-http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11580799 | "Bengala |  una vida en doce asaltos (Hortaleza)" | Adultos
-http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/1285141564385 | 'ABBA - live in concert - 50 aniversario' (TEATRALMENTE PRODUCCIONES) | Adultos
-http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/1285153337815 | 'Desgraciados' (TEATRO ATÓPICO) | Adultos
-http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11413103 | Là | Adultos
-http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/11413115 | La mirada del avestruz | Adultos
-http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/1285140678968 | '¡Viva la Pepa!' (PENTACIÓN) | Adultos
-http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/1285145381377 | 'Oceanía' (TRASPASOS) | Adultos
 
 
 
