@@ -1,12 +1,12 @@
 
 ## Eventos cuya audiencia recomendada son los adultos
 ```
-SELECT DISTINCT ?name ?audience WHERE {
-	?evento <http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda#documentacion> ?documentacion .
-	?documentacion <http://schema.org/name> ?name .
-  	?evento <http://schema.org/audience> ?audience .
-  FILTER regex(?audience, "Adultos")
-} 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?name  ?audience WHERE{
+  	?evento rdfs:label ?name .
+	?evento <http://schema.org/audience> ?audience .
+  		FILTER regex(?audience, "Adultos")
+}
 ```
 **La salida en formato csv es**:
 
