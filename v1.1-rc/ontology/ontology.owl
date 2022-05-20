@@ -273,7 +273,7 @@ schema:fileFormat rdf:type owl:DatatypeProperty ,
 schema:image rdf:type owl:DatatypeProperty ,
                       owl:FunctionalProperty ;
              rdfs:domain schema:CreativeWork ;
-             rdfs:range xsd:string ;
+             rdfs:range xsd:anyURI ;
              rdfs:comment "An image of the item."@en ,
                           "Una imagen del artículo."@es ;
              rdfs:label "image"@en ,
@@ -361,7 +361,7 @@ schema:typicalAgeRange rdf:type owl:DatatypeProperty ,
 schema:url rdf:type owl:DatatypeProperty ,
                     owl:FunctionalProperty ;
            rdfs:domain schema:CreativeWork ;
-           rdfs:range xsd:string ;
+           rdfs:range xsd:anyURI ;
            rdfs:comment "Enlace del artículo"@es ,
                         "URL of the item"@en ;
            rdfs:label "enlace"@es ,
