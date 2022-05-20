@@ -164,6 +164,7 @@ esagenda:interior rdf:type owl:DatatypeProperty ,
 esequip:nombre rdf:type owl:DatatypeProperty ,
                         owl:FunctionalProperty ;
                rdfs:domain esequip:Equipamiento ;
+               rdfs:range xsd:string ;
                rdfs:comment "Name of the equipment of the municipality where the event will take place."@en ,
                             "Nombre del equipamiento del ayuntamiento donde tendrá lugar el evento."@es ;
                rdfs:label "name"@en ,
@@ -309,8 +310,7 @@ schema:name rdf:type owl:DatatypeProperty ,
             rdfs:range xsd:string ;
             rdfs:comment "El nombre de un elemento"@es ,
                          "The name of the item."@en ;
-            rdfs:label "name"@en ,
-                       "nombre"@en .
+            rdfs:label "name" .
 
 
 ###  https://schema.org/postalCode
