@@ -246,3 +246,20 @@ SELECT DISTINCT ?name ?startDate ?typicalAgeRange WHERE{
   	 	FILTER (?addressRegion = "Salamanca")
 } 
 ```
+
+
+## 20. El nombre de los eventos de un recinto techado que tienen lugar a las 12:00
+```
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT DISTINCT ?name ?startDate ?interior  WHERE{
+  	?evento rdfs:label ?name .
+	?evento <http://schema.org/startDate> ?startDate 
+    	BIND (HOURS(?startDate) AS ?hora) 
+  		FILTER (?hora=12) 
+  		BIND (MINUTES(?startDate) AS ?minutos) 
+  		FILTER (?minutos=00) .
+  	?evento <http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda#interior> ?interior
+    	FILTER (?interior= "true"^^xsd:boolean) .
+} 
+```
