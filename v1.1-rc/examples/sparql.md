@@ -714,3 +714,22 @@ SELECT ?evento ?name ?startDate WHERE{
 |http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/1285153654373|'Monólogos con JJ Vaquero' (GORI PRODUCIONES)|2022-08-10T23:00:00+01:00|
 |http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/1285153751569|'Payasos de Risolandia' (PANDORA ANIMACIÓN)|2022-08-10T12:00:00+01:00|
 
+
+
+
+
+
+
+
+------------------------------------------------------------------------------------------
+## Nombre de los eventos que se realizan en Salamanca
+```
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT DISTINCT?name  ?addressRegion WHERE{
+  	?evento rdfs:label ?name .
+	?evento <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras#equipamiento> ?equipamiento .
+  	?equipamiento <http://schema.org/address> ?address .
+    ?address <http://schema.org/addressRegion> ?addressRegion .
+  	 	FILTER (?addressRegion = "Salamanca")
+} 
+```
