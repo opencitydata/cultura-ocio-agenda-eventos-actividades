@@ -193,3 +193,23 @@ SELECT DISTINCT ?name ?addressLocality ?audience WHERE{
   		FILTER (?addressLocality = "Madrid") .
 } 
 ```
+
+
+
+## 17. Todos lo eventos gratuitos que se celebren en Madrid en el mes de junio
+```
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT DISTINCT ?name ?addressLocality ?isAccessibleForFree ?startDate WHERE{
+ 	?evento rdfs:label ?name .
+  	?evento <http://schema.org/isAccessibleForFree> ?isAccessibleForFree .
+  		FILTER (?isAccessibleForFree = "true"^^xsd:boolean)
+  	?evento <http://schema.org/startDate> ?startDate .
+    	BIND (MONTH(?startDate) AS ?mes) 
+  		FILTER (?mes=06)
+	?evento <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras#equipamiento> ?equipamiento .
+  	?equipamiento <http://schema.org/address> ?address .
+    ?address <http://schema.org/addressLocality> ?addressLocality 
+  		FILTER (?addressLocality = "Madrid") .
+}
+```
