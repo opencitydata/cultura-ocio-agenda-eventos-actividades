@@ -224,6 +224,17 @@
     
 
 
+    <!-- http://purl.org/dc/terms/identifier -->
+
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/dc/terms/identifier">
+        <rdfs:domain rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructura/equipamiento-municipal#Equipamiento"/>
+        <rdfs:domain rdf:resource="https://schema.org/CreativeWork"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda#interior -->
 
 
@@ -245,6 +256,7 @@
     <owl:DatatypeProperty rdf:about="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructura/equipamiento-municipal#nombre">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructura/equipamiento-municipal#Equipamiento"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="en">Name of the equipment of the municipality where the event will take place.</rdfs:comment>
         <rdfs:comment xml:lang="es">Nombre del equipamiento del ayuntamiento donde tendrá lugar el evento.</rdfs:comment>
         <rdfs:label xml:lang="en">name</rdfs:label>
@@ -388,30 +400,13 @@
     
 
 
-    <!-- https://schema.org/identifier -->
-
-
-    <owl:DatatypeProperty rdf:about="https://schema.org/identifier">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructura/equipamiento-municipal#Equipamiento"/>
-        <rdfs:domain rdf:resource="https://schema.org/CreativeWork"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <rdfs:comment xml:lang="es">La propiedad identificador representa cualquier tipo de identificador para cualquier tipo de Cosa, como ISBNs, códigos GTIN, UUIDs, etc.</rdfs:comment>
-        <rdfs:comment xml:lang="en">The identifier property represents any kind of identifier for any kind of Thing, such as ISBNs, GTIN codes, UUIDs etc</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
-        <rdfs:label xml:lang="es">identificador</rdfs:label>
-        <rdfs:label xml:lang="en">identifier</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
     <!-- https://schema.org/image -->
 
 
     <owl:DatatypeProperty rdf:about="https://schema.org/image">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="https://schema.org/CreativeWork"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
         <rdfs:comment xml:lang="en">An image of the item.</rdfs:comment>
         <rdfs:comment xml:lang="es">Una imagen del artículo.</rdfs:comment>
         <rdfs:label xml:lang="en">image</rdfs:label>
@@ -459,8 +454,7 @@
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="es">El nombre de un elemento</rdfs:comment>
         <rdfs:comment xml:lang="en">The name of the item.</rdfs:comment>
-        <rdfs:label xml:lang="en">name</rdfs:label>
-        <rdfs:label xml:lang="en">nombre</rdfs:label>
+        <rdfs:label>name</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -530,8 +524,8 @@
 
     <owl:DatatypeProperty rdf:about="https://schema.org/url">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="https://schema.org/Event"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:domain rdf:resource="https://schema.org/CreativeWork"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
         <rdfs:comment xml:lang="es">Enlace del artículo</rdfs:comment>
         <rdfs:comment xml:lang="en">URL of the item</rdfs:comment>
         <rdfs:label xml:lang="es">enlace</rdfs:label>
@@ -588,8 +582,7 @@
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">An event that will take place in a city.</rdfs:comment>
         <rdfs:comment xml:lang="es">Evento que tendrá lugar en una ciudad.</rdfs:comment>
-        <rdfs:label xml:lang="en">Event</rdfs:label>
-        <rdfs:label xml:lang="es">Evento</rdfs:label>
+        <rdfs:label>Evento</rdfs:label>
     </owl:Class>
     
 
@@ -659,8 +652,7 @@
         <rdfs:subClassOf rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda#Evento"/>
         <rdfs:comment xml:lang="en">An event happening at a certain time and location, such as a concert, lecture, or festival.</rdfs:comment>
         <rdfs:comment xml:lang="es">Un evento que tiene lugar a una hora y en un lugar determinados, como un concierto, una conferencia o un festival.</rdfs:comment>
-        <rdfs:label xml:lang="en">Event</rdfs:label>
-        <rdfs:label xml:lang="es">Evento</rdfs:label>
+        <rdfs:label>Event</rdfs:label>
     </owl:Class>
     
 
@@ -708,6 +700,25 @@
     <owl:NamedIndividual rdf:about="http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
     </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    <rdf:Description rdf:about="http://purl.org/dc/terms/identifier">
+        <rdfs:comment xml:lang="es">La propiedad identificador representa cualquier tipo de identificador para cualquier tipo de Cosa, como ISBNs, códigos GTIN, UUIDs, etc.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The identifier property represents any kind of identifier for any kind of Thing, such as ISBNs, GTIN codes, UUIDs etc</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:label xml:lang="es">identificador</rdfs:label>
+        <rdfs:label xml:lang="en">identifier</rdfs:label>
+    </rdf:Description>
 </rdf:RDF>
 
 

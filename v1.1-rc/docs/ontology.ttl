@@ -137,6 +137,13 @@
 #    Data properties
 #################################################################
 
+###  http://purl.org/dc/terms/identifier
+<http://purl.org/dc/terms/identifier> rdf:type owl:DatatypeProperty ;
+                                      rdfs:domain <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructura/equipamiento-municipal#Equipamiento> ,
+                                                  <https://schema.org/CreativeWork> ;
+                                      rdfs:range xsd:string .
+
+
 ###  http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda#interior
 :interior rdf:type owl:DatatypeProperty ,
                    owl:FunctionalProperty ;
@@ -152,6 +159,7 @@
 <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructura/equipamiento-municipal#nombre> rdf:type owl:DatatypeProperty ,
                                                                                                                 owl:FunctionalProperty ;
                                                                                                        rdfs:domain <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructura/equipamiento-municipal#Equipamiento> ;
+                                                                                                       rdfs:range xsd:string ;
                                                                                                        rdfs:comment "Name of the equipment of the municipality where the event will take place."@en ,
                                                                                                                     "Nombre del equipamiento del ayuntamiento donde tendrá lugar el evento."@es ;
                                                                                                        rdfs:label "name"@en ,
@@ -257,24 +265,11 @@
                                            "formato archivo"@es .
 
 
-###  https://schema.org/identifier
-<https://schema.org/identifier> rdf:type owl:DatatypeProperty ,
-                                         owl:FunctionalProperty ;
-                                rdfs:domain <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructura/equipamiento-municipal#Equipamiento> ,
-                                            <https://schema.org/CreativeWork> ;
-                                rdfs:range xsd:string ;
-                                rdfs:comment "La propiedad identificador representa cualquier tipo de identificador para cualquier tipo de Cosa, como ISBNs, códigos GTIN, UUIDs, etc."@es ,
-                                             "The identifier property represents any kind of identifier for any kind of Thing, such as ISBNs, GTIN codes, UUIDs etc"@en ;
-                                rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
-                                rdfs:label "identificador"@es ,
-                                           "identifier"@en .
-
-
 ###  https://schema.org/image
 <https://schema.org/image> rdf:type owl:DatatypeProperty ,
                                     owl:FunctionalProperty ;
                            rdfs:domain <https://schema.org/CreativeWork> ;
-                           rdfs:range xsd:string ;
+                           rdfs:range xsd:anyURI ;
                            rdfs:comment "An image of the item."@en ,
                                         "Una imagen del artículo."@es ;
                            rdfs:label "image"@en ,
@@ -310,8 +305,7 @@
                           rdfs:range xsd:string ;
                           rdfs:comment "El nombre de un elemento"@es ,
                                        "The name of the item."@en ;
-                          rdfs:label "name"@en ,
-                                     "nombre"@en .
+                          rdfs:label "name" .
 
 
 ###  https://schema.org/postalCode
@@ -361,8 +355,8 @@
 ###  https://schema.org/url
 <https://schema.org/url> rdf:type owl:DatatypeProperty ,
                                   owl:FunctionalProperty ;
-                         rdfs:domain <https://schema.org/Event> ;
-                         rdfs:range xsd:string ;
+                         rdfs:domain <https://schema.org/CreativeWork> ;
+                         rdfs:range xsd:anyURI ;
                          rdfs:comment "Enlace del artículo"@es ,
                                       "URL of the item"@en ;
                          rdfs:label "enlace"@es ,
@@ -400,8 +394,7 @@
                         ] ;
         rdfs:comment "An event that will take place in a city."@en ,
                      "Evento que tendrá lugar en una ciudad."@es ;
-        rdfs:label "Event"@en ,
-                   "Evento"@es .
+        rdfs:label "Evento" .
 
 
 ###  http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructura/equipamiento-municipal#Equipamiento
@@ -447,8 +440,7 @@
                            rdfs:subClassOf :Evento ;
                            rdfs:comment "An event happening at a certain time and location, such as a concert, lecture, or festival."@en ,
                                         "Un evento que tiene lugar a una hora y en un lugar determinados, como un concierto, una conferencia o un festival."@es ;
-                           rdfs:label "Event"@en ,
-                                      "Evento"@es .
+                           rdfs:label "Event" .
 
 
 ###  https://schema.org/Place
@@ -475,6 +467,17 @@
 ###  http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento
 <http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento> rdf:type owl:NamedIndividual ,
                                                                                         <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+
+
+#################################################################
+#    Annotations
+#################################################################
+
+<http://purl.org/dc/terms/identifier> rdfs:comment "La propiedad identificador representa cualquier tipo de identificador para cualquier tipo de Cosa, como ISBNs, códigos GTIN, UUIDs, etc."@es ,
+                                                   "The identifier property represents any kind of identifier for any kind of Thing, such as ISBNs, GTIN codes, UUIDs etc"@en ;
+                                      rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
+                                      rdfs:label "identificador"@es ,
+                                                 "identifier"@en .
 
 
 ###  Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/
