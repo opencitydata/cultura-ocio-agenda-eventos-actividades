@@ -228,3 +228,21 @@ SELECT DISTINCT ?name ?addressLocality ?eventAttendanceMode WHERE{
   		FILTER (?addressLocality = "Lorca") .
 } 
 ``` 
+
+## 19. Edad recomendada de los eventos que tengan lugar en Salamanca del día 23 de abril
+```
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT DISTINCT ?name ?startDate ?typicalAgeRange WHERE{
+  	?evento rdfs:label ?name .
+	?evento <http://schema.org/startDate> ?startDate 
+    	BIND (DAY(?startDate) AS ?day) 
+  		FILTER (?day=23) 
+  		BIND (MONTH(?startDate) AS ?mes) 
+  		FILTER (?mes=04)
+  	?evento <http://schema.org/typicalAgeRange> ?typicalAgeRange.
+  	?evento <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras#equipamiento> ?equipamiento .
+  	?equipamiento <http://schema.org/address> ?address .
+    ?address <http://schema.org/addressRegion> ?addressRegion .
+  	 	FILTER (?addressRegion = "Salamanca")
+} 
+```
