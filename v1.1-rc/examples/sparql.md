@@ -180,3 +180,16 @@ SELECT DISTINCT ?name ?addressLocality ?eventAttendanceMode WHERE{
 }
 ``` 
 
+## 16. Tipo de audiencia de los conciertos que se realizan en Madrid
+```
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT DISTINCT ?name ?addressLocality ?audience WHERE{
+ 	?evento rdfs:label ?name .
+  	?evento <http://schema.org/audience> ?audience .
+  	?evento <http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda#tipo-evento> <http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/concierto> .
+	?evento <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras#equipamiento> ?equipamiento .
+  	?equipamiento <http://schema.org/address> ?address .
+    ?address <http://schema.org/addressLocality> ?addressLocality 
+  		FILTER (?addressLocality = "Madrid") .
+} 
+```
