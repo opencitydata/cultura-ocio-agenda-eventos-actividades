@@ -213,3 +213,18 @@ SELECT DISTINCT ?name ?addressLocality ?isAccessibleForFree ?startDate WHERE{
   		FILTER (?addressLocality = "Madrid") .
 }
 ```
+
+## 18. El nombre de todos los eventos presenciales de Lorca
+```
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT DISTINCT ?name ?addressLocality ?eventAttendanceMode WHERE{
+ 	?evento rdfs:label ?name .
+  	?evento <http://schema.org/eventAttendanceMode> ?eventAttendanceMode .
+  		FILTER (?eventAttendanceMode = "Presencial")
+	?evento <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras#equipamiento> ?equipamiento .
+  	?equipamiento <http://schema.org/address> ?address .
+    ?address <http://schema.org/addressLocality> ?addressLocality 
+  		FILTER (?addressLocality = "Lorca") .
+} 
+``` 
