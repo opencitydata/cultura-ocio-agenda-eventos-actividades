@@ -1,0 +1,1625 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+ <link rel="stylesheet" href="resources/primer.css" media="screen" />    <link rel="stylesheet" href="resources/rec.css" media="screen" />    <link rel="stylesheet" href="resources/extra.css" media="screen" />    <link rel="stylesheet" href="resources/owl.css" media="screen" />    <title>Vocabulario para la representación de eventos de una agenda cultural</title>
+
+
+<!-- SCHEMA.ORG METADATA -->
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","url":"http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda#","image":"http://vowl.visualdataweb.org/webvowl/#iri=http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda#","name":"Vocabulario para la representación de eventos de una agenda cultural", "headline":"Esta versión del vocabulario ha sido generada en el contexto de la iniciativa OpenCityData, para dar soporte al conjunto de datasets identificados en la guías de datos abiertos (poner enlace) de la Federación Española de Municipios y Provincias (FEMP).", "datePublished":"Thu May 26 00:51:10 CEST 2022", "version":"Esta es la actualización de la versión original de la ontología de Agenda Cultural que ha sido implementada en el proyecto de OpenCityData .", "license":"https://creativecommons.org/licenses/by/4.0/", "author":[{"@type":"Person","name":"Josué García Salas (Estudiante Universidad Politécnica de Madrid)"},{"@type":"Person","name":"Oscar Corcho (Ontology Engineering Group - Universidad Politécnica de Madrid, Localidata)"}]}</script>
+
+<script src="resources/jquery.js"></script> 
+<script src="resources/marked.min.js"></script> 
+    <script> 
+function loadHash() {
+  jQuery(".markdown").each(function(el){jQuery(this).after(marked(jQuery(this).text())).remove()});
+	var hash = location.hash;
+	if($(hash).offset()!=null){
+	  $('html, body').animate({scrollTop: $(hash).offset().top}, 0);
+}
+	loadTOC();
+}
+function loadTOC(){
+	//process toc dynamically
+	  var t='<h2>Tabla de contenidos</h2><ul>';i = 1;j=0;
+	  jQuery(".list").each(function(){
+		if(jQuery(this).is('h2')){
+			if(j>0){
+				t+='</ul>';
+				j=0;
+			}
+			t+= '<li>'+i+'. <a href=#'+ jQuery(this).attr('id')+'>'+ jQuery(this).ignore("span").text()+'</a></li>';
+			i++;
+		}
+		if(jQuery(this).is('h3')){
+			if(j==0){
+				t+='<ul>';
+			}
+			j++;
+			t+= '<li>'+(i-1)+'.'+j+'. '+'<a href=#'+ jQuery(this).attr('id')+'>'+ jQuery(this).ignore("span").text()+'</a></li>';
+		}
+	  });
+	  t+='</ul>';
+	  $("#toc").html(t); 
+}
+$(function(){
+    loadHash();
+}); $.fn.ignore = function(sel){
+        return this.clone().find(sel||">*").remove().end();
+ }; 
+   </script> 
+  </head> 
+
+<body>
+<div class="container">
+<div class="head">
+<div style="float:right">language <a href="index-en.html"><b>en</b></a> <a href="index-es.html"><b>es</b></a> </div>
+<h1>Vocabulario para la representación de eventos de una agenda cultural</h1>
+
+
+<dl>
+<dt>Versi&oacute;n:</dt>
+<dd><a href="http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda/1.1">http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda/1.1</a></dd>
+<dt>Revisi&oacute;n n&uacute;mero:</dt>
+<dd>Esta es la actualización de la versión original de la ontología de Agenda Cultural que ha sido implementada en el proyecto de OpenCityData .</dd>
+<dt>Autores:</dt>
+<dd>Josué García Salas (Estudiante Universidad Politécnica de Madrid)</dd><dd>Oscar Corcho (Ontology Engineering Group - Universidad Politécnica de Madrid, Localidata)</dd>
+
+<dt>Descargar serializaci&oacute;n:</dt><dd><span><a href="ontology.jsonld" target="_blank"><img src="https://img.shields.io/badge/Format-JSON_LD-blue.svg" alt="JSON-LD" /></a> </span><span><a href="ontology.rdf" target="_blank"><img src="https://img.shields.io/badge/Format-RDF/XML-blue.svg" alt="RDF/XML" /></a> </span><span><a href="ontology.nt" target="_blank"><img src="https://img.shields.io/badge/Format-N_Triples-blue.svg" alt="N-Triples" /></a> </span><span><a href="ontology.ttl" target="_blank"><img src="https://img.shields.io/badge/Format-TTL-blue.svg" alt="TTL" /></a> </span></dd><dt>Licencia:  </dt><dd><a href="https://creativecommons.org/licenses/by/4.0/" target="_blank"><img src="https://img.shields.io/badge/License-https://creativecommons.org/licenses/by/4.0/-blue.svg" alt="https://creativecommons.org/licenses/by/4.0/" /></a>
+</dd><!-- <dt>Evaluation:</dt><dd><a href="OOPSEvaluation/oopsEval.html#" target="_blank"><img src="https://img.shields.io/badge/Evaluate_with-OOPS! (OntOlogy Pitfall Scanner!)-blue.svg" alt="Evaluate with OOPS!" /></a></dd> --></dl>
+
+<hr/>
+</div>
+<div class="status">
+<div>
+<span>Ontology Specification Draft</span>
+</div>
+</div>     <div id="abstract"><h2>S&iacute;ntesis</h2><span class="markdown">
+Esta versión del vocabulario ha sido generada en el contexto de la iniciativa <a href="http://vocab.linkeddata.es/datosabiertos">OpenCityData</a>, para dar soporte al conjunto de datasets identificados en la guías de datos abiertos de la Federación Española de Municipios y Provincias (FEMP). La finalidad del vocabulario es que sirva para poder representar datos relacionados con una agenda cultural.</span> 
+</div>
+<div id="toc"></div> 
+
+<!--INTRODUCTION SECTION-->
+    <div id="introduction"><h2 id="intro" class="list">Introducci&oacute;n <span class="backlink"> volver a <a href="#toc">&iacute;ndice</a></span></h2>
+<span class="markdown">Esta versión del vocabulario ha sido generada en el contexto de la iniciativa <a href="http://vocab.linkeddata.es/datosabiertos/">OpenCityData</a>, para dar soporte al conjunto de datasets identificados en la guías de datos abiertos de la Federación Española de Municipios y Provincias (FEMP). La finalidad del vocabulario es que sirva para poder representar datos relacionados con una agenda cultural.</span> 
+</span>
+<div id="namespacedeclarations">
+<h3 id="ns" class="list">Declaraci&oacute;n de namespaces</h3>
+<div id="ns" align="center">
+<table>
+<caption> <a href="#ns"> Tabla 1</a>: Namespaces utilizados en el documento </caption>
+<tbody>
+<tr><td><b>esagenda</b></td><td>&lt;http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda&gt;</td></tr>
+<tr><td><b>schema</b></td><td>&lt;https://schema.org&gt;</td></tr>
+<tr><td><b>owl</b></td><td>&lt;http://www.w3.org/2002/07/owl&gt;</td></tr>
+<tr><td><b>xsd</b></td><td>&lt;http://www.w3.org/2001/XMLSchema&gt;</td></tr>
+<tr><td><b>skos</b></td><td>&lt;http://www.w3.org/2004/02/skos/core&gt;</td></tr>
+<tr><td><b>rdfs</b></td><td>&lt;http://www.w3.org/2000/01/rdf-schema&gt;</td></tr>
+<tr><td><b>esagendakos</b></td><td>&lt;http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda&gt;</td></tr>
+<tr><td><b>rdf</b></td><td>&lt;http://www.w3.org/1999/02/22-rdf-syntax-ns&gt;</td></tr>
+<tr><td><b>dct</b></td><td>&lt;http://purl.org/dc/terms&gt;</td></tr>
+<tr><td><b>esequip</b></td><td>&lt;http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructura/equipamiento-municipal&gt;</td></tr>
+<tr><td><b>dc</b></td><td>&lt;http://purl.org/dc/elements/1.1&gt;</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+  
+
+<!--OVERVIEW SECTION-->
+    <div id="overview"><h2 id="overv" class="list">Vocabulario para la representación de eventos de una agenda cultural: Resumen <span class="backlink"> volver a <a href="#toc">&iacute;ndice</a></span></h2>
+<span class="markdown">La ontolog&iacute;a se compone de las siguientes clases y propiedades:</span>
+<h4>Clases</h4>
+<ul xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" class="hlist">
+   <li>
+      <a href="#http://www.w3.org/2004/02/skos/core#Concept" title="http://www.w3.org/2004/02/skos/core#Concept">Concept</a>
+   </li>
+   <li>
+      <a href="#http://www.w3.org/2004/02/skos/core#ConceptScheme"
+         title="http://www.w3.org/2004/02/skos/core#ConceptScheme">Concept Scheme</a>
+   </li>
+   <li>
+      <a href="#https://schema.org/PostalAddress" title="https://schema.org/PostalAddress">Dirección postal</a>
+   </li>
+   <li>
+      <a href="#https://schema.org/DigitalDocument" title="https://schema.org/DigitalDocument">Documento digital</a>
+   </li>
+   <li>
+      <a href="#http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructura/equipamiento-municipal#Equipamiento"
+         title="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructura/equipamiento-municipal#Equipamiento">Equipamiento</a>
+   </li>
+   <li>
+      <a href="#https://schema.org/Event" title="https://schema.org/Event">Event</a>
+   </li>
+   <li>
+      <a href="#Evento"
+         title="http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda#Evento">Evento</a>
+   </li>
+   <li>
+      <a href="#https://schema.org/Place" title="https://schema.org/Place">Lugar</a>
+   </li>
+   <li>
+      <a href="#https://schema.org/CreativeWork" title="https://schema.org/CreativeWork">Trabajo creativo</a>
+   </li>
+</ul><h4>Propiedades de objeto</h4><ul xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" class="hlist">
+   <li>
+      <a href="#https://schema.org/address" title="https://schema.org/address">dirección</a>
+   </li>
+   <li>
+      <a href="#documentacion"
+         title="http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda#documentacion">documentacion</a>
+   </li>
+   <li>
+      <a href="#http://www.w3.org/2004/02/skos/core#inScheme" title="http://www.w3.org/2004/02/skos/core#inScheme">is in scheme</a>
+   </li>
+   <li>
+      <a href="#https://schema.org/subEvent" title="https://schema.org/subEvent">sub evento</a>
+   </li>
+   <li>
+      <a href="#https://schema.org/superEvent" title="https://schema.org/superEvent">super evento</a>
+   </li>
+   <li>
+      <a href="#tipoEvento"
+         title="http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda#tipoEvento">tipo de evento</a>
+   </li>
+   <li>
+      <a href="#https://schema.org/location" title="https://schema.org/location">ubicación</a>
+   </li>
+</ul><h4>Propiedades de datos</h4><ul xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" class="hlist">
+   <li>
+      <a href="#https://schema.org/Audience" title="https://schema.org/Audience">audiencia</a>
+   </li>
+   <li>
+      <a href="#https://schema.org/maximumAttendeeCapacity" title="https://schema.org/maximumAttendeeCapacity">capacidad máxima</a>
+   </li>
+   <li>
+      <a href="#https://schema.org/postalCode" title="https://schema.org/postalCode">código postal</a>
+   </li>
+   <li>
+      <a href="#https://schema.org/description" title="https://schema.org/description">descripción</a>
+   </li>
+   <li>
+      <a href="#https://schema.org/streetAddress" title="https://schema.org/streetAddress">dirección calle</a>
+   </li>
+   <li>
+      <a href="#https://schema.org/addressLocality" title="https://schema.org/addressLocality">dirección localidad</a>
+   </li>
+   <li>
+      <a href="#https://schema.org/addressRegion" title="https://schema.org/addressRegion">dirección región</a>
+   </li>
+   <li>
+      <a href="#https://schema.org/url" title="https://schema.org/url">enlace</a>
+   </li>
+   <li>
+      <a href="#https://schema.org/isAccessibleForFree" title="https://schema.org/isAccessibleForFree">es accesible gratis</a>
+   </li>
+   <li>
+      <a href="#https://schema.org/eventStatus" title="https://schema.org/eventStatus">estado del evento</a>
+   </li>
+   <li>
+      <a href="#https://schema.org/endDate" title="https://schema.org/endDate">fecha fin</a>
+   </li>
+   <li>
+      <a href="#https://schema.org/startDate" title="https://schema.org/startDate">fecha inicio</a>
+   </li>
+   <li>
+      <a href="#https://schema.org/fileFormat" title="https://schema.org/fileFormat">formato archivo</a>
+   </li>
+   <li>
+      <a href="#https://schema.org/doorTime" title="https://schema.org/doorTime">hora de apertura</a>
+   </li>
+   <li>
+      <a href="#http://purl.org/dc/terms/identifier" title="http://purl.org/dc/terms/identifier">
+         <span>identificador</span>
+      </a>
+   </li>
+   <li>
+      <a href="#https://schema.org/image" title="https://schema.org/image">imagen</a>
+   </li>
+   <li>
+      <a href="#interior"
+         title="http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda#interior">interior</a>
+   </li>
+   <li>
+      <a href="#https://schema.org/eventAttendanceMode" title="https://schema.org/eventAttendanceMode">modo de asistencia</a>
+   </li>
+   <li>
+      <a href="#https://schema.org/name" title="https://schema.org/name">name</a>
+   </li>
+   <li>
+      <a href="#http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructura/equipamiento-municipal#nombre"
+         title="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructura/equipamiento-municipal#nombre">nombre</a>
+   </li>
+   <li>
+      <a href="#https://schema.org/typicalAgeRange" title="https://schema.org/typicalAgeRange">rango de edad</a>
+   </li>
+   <li>
+      <a href="#https://schema.org/workPerformed" title="https://schema.org/workPerformed">trabajo realizado</a>
+   </li>
+</ul><h4>Individuos</h4><ul xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" class="hlist">
+   <li>
+      <a href="#http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento"
+         title="http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento">
+         <span>tipo evento</span>
+      </a>
+   </li>
+</ul>
+</div>
+  
+
+<!--DESCRIPTION SECTION-->
+<div id="description"><h2 id="desc" class="list">Vocabulario para la representación de eventos de una agenda cultural: Descripci&oacute;n <span class="backlink"> volver a <a href="#toc">&iacute;ndice</a></span></h2>
+   <span class="markdown">La Figura 1 muestra las clases y propiedades del vocabulario que representa los eventos culturales que se van a desarrollar en un determinado lugar:</span>
+   <center>
+      <img src="resources/images/ontology.png" style="width: 90vw; min-width: 140px;">
+      <figcaption>
+         Figura 1. - Modelo conceptual para la representación de la información de los eventos culturales.
+      </figcaption>
+   </center>
+   <br>
+   <br>
+   Para representar un evento se tiene el concepto <a href="#Evento"title="http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda#Evento">esagenda:Evento</a> para el 
+   cual se reutilizan las clases <a href="#https://schema.org/Event" title="https://schema.org/Event">schema:Event</a>, <a href="#https://schema.org/DigitalDocument" 
+   title="https://schema.org/DigitalDocument">schema:DigitalDocument</a>, <a href="#https://schema.org/CreativeWork" title="https://schema.org/CreativeWork">schema:CreativeWork</a>, 
+   <a href="#https://schema.org/Place" title="https://schema.org/Place">schema:Place</a> y <a href="#https://schema.org/PostalAddress" title="https://schema.org/PostalAddress">schema:PostalAddress</a> del vocabulario <a href="https://schema.org" title="https://schema.org">schema.org</a> y 
+   <a href="#http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructura/equipamiento-municipal#Equipamiento"
+               title="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructura/equipamiento-municipal#Equipamiento">esequip:Equipamiento</a> del vocabulario
+               <a href="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento-municipal/index-en.html"
+               title="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento-municipal/index-en.html">esequip</a>.
+   <br>
+   <br>
+   Para poder implementar la información que ya se encuentran desarrolladas sobre eventos en el vocabulario schema.org, se ha establecido que esagenda:Evento es subclase de schema:Event. En cambio, para representar que un evento 
+   debe de tener asociado un archivo digital (que puede ser desde una página web o un archivo PDF), se ha establecido la relación con la clase schema:DigitalDocument a traves de la propiedad esagenda:documentación. Finalmente, 
+   como un evento debe de guardar información sobre el lugar en que se llevara a cabo, se ha decidido relacionar esagenda:Evento con la clase schema:Place a través de la propiedad schema:location.
+   <br>
+   <br>
+   Para añadir al vocabulario los datos que deben de ser añadidos a la hora de documentar el evento en el fichero digital que creamos oportuno, se ha establecido que schema:DigitalDocument es subclase de schema:CreativeWork.
+   <br>
+   <br>
+   Con la finalidad de representar el equipamiento donde puede tener lugar el evento, se ha implantado que esequip:Equipamiento es subclase de schema:Place. Además, para situar el equipamiento que se ha mencionado anteriormente, se ha establecido una relación a través de la propiedad schema:address entre schema:Place y la clase schema:PostalAddress.
+   <br>
+   <br>
+   Adicionalmente, en este vocabulario se ha utilizado un esquema de conceptos SKOS llamado esagenda:tipo-evento para representar el tipo de evento que puede ser. Los valores se han especificado en <a href="http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda"
+   title="http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda">http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda</a>.
+   <br>
+   <br>
+   <h3>3.1 Ejemplos de uso</h3>
+   Con la finalidad de facilitar la compresión del uso de algunas clases y propiedades de este vocabulario, se proporcionarán a continuación algunos ejemplos.
+   <br>
+   <br>
+   En primer lugar, para la representación de un evento se crea una instancia de la clase esagenda:Evento con las propiedades <a href="#https://schema.org/isAccessibleForFree" 
+   title="https://schema.org/isAccessibleForFree">schema:isAccessibleForFree</a> (indica si el acceso el gratuito), <a href="#https://schema.org/eventStatus" 
+   title="https://schema.org/eventStatus">schema:eventStatus</a> (indica el estado), <a href="#https://schema.org/eventAttendanceMode" title="https://schema.org/eventAttendanceMode">
+      schema:eventAttendanceMode</a> (indica el modo de asistencia), <a href="#https://schema.org/workPerformed" title="https://schema.org/workPerformed">schema:workPerformed</a> (indica el trabajo que se realiza), 
+      <a href="#https://schema.org/doorTime" title="https://schema.org/doorTime">schema:doorTime</a> (indica la hora a la que se puede acceder), <a href="#https://schema.org/Audience" title="https://schema.org/Audience">schema:audience</a>
+   (indica el público recomendado), <a href="#https://schema.org/startDate" title="https://schema.org/startDate">schema:startDate</a> (indica la fecha y hora a la que empieza), 
+   <a href="#https://schema.org/endDate" title="https://schema.org/endDate">schema:endDate</a> (indica la fecha y hora a la que finaliza), 
+   <a href="#https://schema.org/maximumAttendeeCapacity" title="https://schema.org/maximumAttendeeCapacity">schema:maximumAttendeeCapacity</a> (indica el máximo de personas que pueden asistir), 
+   <a href="#https://schema.org/typicalAgeRange" title="https://schema.org/typicalAgeRange">schema:typicalAgeRange</a> (indica la edad recomendada),  <a href="#interior"title="http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda#interior">esagenda:interior</a>
+   (indica si está techado el lugar). Asimismo, se enlaza a través de la propiedad  <a href="#tipoEvento"title="http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda#tipoEvento">esagenda:tipoEvento</a>, 
+   el tipo de evento con el concepto correspondiente de la taxonomía del tipo de evento. Finalmente, el evento se relaciona con una instancia de esagenda:documentacion y esequip:Equipamiento.
+   
+<div>
+   <pre style = "overflow: auto;">
+      &#60;http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/1285153785025&#62; a esagenda:Evento ;
+      schema:audience  "Público familiar" ; 
+      schema:startDate "2022-08-12T22:00+01:00"^^xsd:dateTime ;
+      schema:endDate "2022-08-13T01:00+01:00"^^xsd:dateTime ;
+      schema:eventAttendanceMode "Presencial" ;
+      schema:isAccessibleForFree "false"^^xsd:boolean ;
+      schema:maximunAttendeeCapacity "301" ;
+      schema:eventStatus "Por empezar ;
+      schema:typicalAgeRange "0-" ;
+      esagenda:tipoEvento &#60;http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/teatro&#62; ;
+      esagenda:documentacion &#60;http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/1285153785025/documentacion&#62; ;
+      esequip:Equipamiento &#60;http://vocab.linkeddata.es/datosabiertos/recurso/urbanismo-infraestructuras/equipamiento-municipal/equipamiento/1284236227322&#62; .
+   </pre>
+</div>
+   <br>
+   A continuación se representa una instancia de esagenda:Documentacion con las propiedades <a href="#http://purl.org/dc/terms/identifier" title="http://purl.org/dc/terms/identifier">dct:identifier</a> (indica el identificador), 
+   <a href="#https://schema.org/name" title="https://schema.org/name">schema:name</a> (indica el nombre), 
+    <a href="#https://schema.org/description" title="https://schema.org/description">schema:description</a> (indica la descripción), <a href="#https://schema.org/image" title="https://schema.org/image">schema:image</a> 
+    (indica la imagen promocional), <a href="#https://schema.org/url" title="https://schema.org/url">schema:url</a> (indica el enlace donde se encuentra la información), 
+   <a href="#https://schema.org/fileFormat" title="https://schema.org/fileFormat">schema:fileFormat</a> (indica el formato donde está la información).
+   <pre style = "overflow: auto;">
+   &#60;http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/1285153785025/documentacion&#62; a esagenda:Documentacion
+       dct:identifier "1285153785025" ;
+       schema:name "'Caravana escape room - Houdini experience' (HÉCTOR SANSEGUNDO)" ;
+       schema:description "Disfruta de una mezcla perfecta de espectáculo de teatro y magia dentro de un museo inversivo , y forma parte de la historia viviendo un escape room único, original y con sorpresas inolvidables."; 
+       schema:image "https://cultura.jcyl.es/web/jcyl/binarios/744/545/CARAVANA%20LA%20MAQUINA.jpeg"^^xsd:anyURI ;
+       schema:url "https://cultura.jcyl.es/web/jcyl/Cultura/es/Plantilla100Detalle/1284282053297/Evento/1285153785025/Comunicacion"^^xsd:anyURI ;
+       schema:fileFormat "HTML" .
+   </pre>
+   <br>
+   A continuación se va a representar una instancia de esequip:Equipamiento con las propiedades <a href="#http://purl.org/dc/terms/identifier" title="http://purl.org/dc/terms/identifier">dct:identifier</a> (indica el identificador) y 
+   <a href="#http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructura/equipamiento-municipal#nombre" title="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructura/equipamiento-municipal#nombre">esequip:nombre</a> (indica el nombre). 
+   Finalmente, el equipamiento se relaciona a través de la propiedad <a href="#https://schema.org/address" title="https://schema.org/address">schema:address</a> con una instancia de schema:PostalAddress.
+   <pre style = "overflow: auto;">
+   &#60;http://vocab.linkeddata.es/datosabiertos/recurso/urbanismo-infraestructuras/equipamiento-municipal/equipamiento/1284236227322&#62; a esequip:Equipamiento
+       dct:identifier "1284236227322" ;
+       esequip:nombre "Centro Cultural de la Villa (Lumbrales)" ;
+       schema:address &#60;http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/1285153785025/address&#62; .
+   </pre>
+   <br>
+   A continuación se va a representar una instancia de schema:PostalAddress con las propiedades <a href="#https://schema.org/addressRegion" title="https://schema.org/addressRegion">schem:addressRegion</a> (indica la provincia),
+    <a href="#https://schema.org/addressLocality" title="https://schema.org/addressLocality">schema:addressLocality</a> (indica el municipio), 
+   <a href="#https://schema.org/postalCode" title="https://schema.org/postalCode">schema:postalCode</a> (indica el código postal), <a href="#https://schema.org/streetAddress" title="https://schema.org/streetAddress">schema:streetAddress</a> (indica la dirección).
+   <pre style = "overflow: auto;">
+   &#60;http://vocab.linkeddata.es/datosabiertos/recurso/cultura-ocio/agenda/evento/1285153785025/address&#62; a schema:Address
+       schema:addressRegion "Salamanca" ;
+       schema:addressLocality "Lumbrales" ;
+       schema:postalCode "37240" ;
+       schema:streetAddress "Plaza Mayor, 1" .
+   </pre>
+   </div>
+
+<!--CROSSREF SECTION-->
+   <div id="crossref"><h2 id="crossreference" class="list">T&eacute;rminos de Vocabulario para la representación de eventos de una agenda cultural para clases, propiedades y propiedades de datos <span class="backlink"> volver a <a href="#toc">&iacute;ndice</a></span></h2>
+Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad definida por Vocabulario para la representación de eventos de una agenda cultural.
+<div xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="classes">
+   <h3 id="classes-headline" class="list">Clases</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#http://www.w3.org/2004/02/skos/core#Concept" title="http://www.w3.org/2004/02/skos/core#Concept">Concept</a>
+      </li>
+      <li>
+         <a href="#http://www.w3.org/2004/02/skos/core#ConceptScheme"
+            title="http://www.w3.org/2004/02/skos/core#ConceptScheme">Concept Scheme</a>
+      </li>
+      <li>
+         <a href="#https://schema.org/PostalAddress" title="https://schema.org/PostalAddress">Dirección postal</a>
+      </li>
+      <li>
+         <a href="#https://schema.org/DigitalDocument" title="https://schema.org/DigitalDocument">Documento digital</a>
+      </li>
+      <li>
+         <a href="#http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructura/equipamiento-municipal#Equipamiento"
+            title="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructura/equipamiento-municipal#Equipamiento">Equipamiento</a>
+      </li>
+      <li>
+         <a href="#https://schema.org/Event" title="https://schema.org/Event">Event</a>
+      </li>
+      <li>
+         <a href="#Evento"
+            title="http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda#Evento">Evento</a>
+      </li>
+      <li>
+         <a href="#https://schema.org/Place" title="https://schema.org/Place">Lugar</a>
+      </li>
+      <li>
+         <a href="#https://schema.org/CreativeWork" title="https://schema.org/CreativeWork">Trabajo creativo</a>
+      </li>
+   </ul>
+   <div class="entity" id="http://www.w3.org/2004/02/skos/core#Concept">
+      <h3>Concept<sup class="type-c" title="clase">c</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#classes">Índice de clases</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3.org/2004/02/skos/core#Concept</p>
+      <div class="comment">
+         <span class="markdown">An abstract idea or notion; a unit of thought.</span>
+      </div>
+      <dl class="description">
+         <dt>disjunto a</dt>
+         <dd>
+            <a href="#http://www.w3.org/2004/02/skos/core#ConceptScheme"
+               title="http://www.w3.org/2004/02/skos/core#ConceptScheme">Concept Scheme</a>
+            <sup class="type-c" title="clase">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://www.w3.org/2004/02/skos/core#ConceptScheme">
+      <h3>Concept Scheme<sup class="type-c" title="clase">c</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#classes">Índice de clases</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3.org/2004/02/skos/core#ConceptScheme</p>
+      <div class="comment">
+         <span class="markdown">A set of concepts, optionally including statements about semantic relationships between those concepts.</span>
+      </div>
+      <dl class="description">
+         <dt>en rango de</dt>
+         <dd>
+            <a href="#http://www.w3.org/2004/02/skos/core#inScheme" title="http://www.w3.org/2004/02/skos/core#inScheme">is in scheme</a>
+            <sup class="type-op" title="Propiedad entre objetos">op</sup>
+         </dd>
+         <dt>miembros</dt>
+         <dd>
+            <a href="#http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento"
+               title="http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento">tipo evento</a>
+            <sup class="type-ni" title="Individuo">ni</sup>
+         </dd>
+         <dt>disjunto a</dt>
+         <dd>
+            <a href="#http://www.w3.org/2004/02/skos/core#Concept" title="http://www.w3.org/2004/02/skos/core#Concept">Concept</a>
+            <sup class="type-c" title="clase">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="https://schema.org/PostalAddress">
+      <h3>Dirección postal<sup class="type-c" title="clase">c</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#classes">Índice de clases</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://schema.org/PostalAddress</p>
+      <div class="comment">
+         <span class="markdown">La dirección postal.</span>
+      </div>
+      <dl class="description">
+         <dt>en dominio de</dt>
+         <dd>
+            <a href="#https://schema.org/postalCode" title="https://schema.org/postalCode">código postal</a>
+            <sup class="type-dp" title="Propiedad de datos">dp</sup>, <a href="#https://schema.org/streetAddress" title="https://schema.org/streetAddress">dirección calle</a>
+            <sup class="type-dp" title="Propiedad de datos">dp</sup>, <a href="#https://schema.org/addressLocality" title="https://schema.org/addressLocality">dirección localidad</a>
+            <sup class="type-dp" title="Propiedad de datos">dp</sup>, <a href="#https://schema.org/addressRegion" title="https://schema.org/addressRegion">dirección región</a>
+            <sup class="type-dp" title="Propiedad de datos">dp</sup>
+         </dd>
+         <dt>en rango de</dt>
+         <dd>
+            <a href="#https://schema.org/address" title="https://schema.org/address">dirección</a>
+            <sup class="type-op" title="Propiedad entre objetos">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="https://schema.org/DigitalDocument">
+      <h3>Documento digital<sup class="type-c" title="clase">c</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#classes">Índice de clases</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://schema.org/DigitalDocument</p>
+      <div class="comment">
+         <span class="markdown">Un archivo o documento electrónico.</span>
+      </div>
+      <dl class="description">
+         <dt>tiene subclases</dt>
+         <dd>
+            <a href="#https://schema.org/CreativeWork" title="https://schema.org/CreativeWork">Trabajo creativo</a>
+            <sup class="type-c" title="clase">c</sup>
+         </dd>
+         <dt>en rango de</dt>
+         <dd>
+            <a href="#documentacion"
+               title="http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda#documentacion">documentacion</a>
+            <sup class="type-op" title="Propiedad entre objetos">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructura/equipamiento-municipal#Equipamiento">
+      <h3>Equipamiento<sup class="type-c" title="clase">c</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#classes">Índice de clases</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructura/equipamiento-municipal#Equipamiento</p>
+      <div class="comment">
+         <span class="markdown">Equipamientos a los que un ciudadano puede acudir pertenecientes a una administración.</span>
+      </div>
+      <dl class="description">
+         <dt>tiene subclases</dt>
+         <dd>
+            <a href="#https://schema.org/Place" title="https://schema.org/Place">Lugar</a>
+            <sup class="type-c" title="clase">c</sup>
+         </dd>
+         <dt>en dominio de</dt>
+         <dd>
+            <a href="#http://purl.org/dc/terms/identifier" title="http://purl.org/dc/terms/identifier">identificador</a>
+            <sup class="type-dp" title="Propiedad de datos">dp</sup>, <a href="#http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructura/equipamiento-municipal#nombre"
+               title="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructura/equipamiento-municipal#nombre">nombre</a>
+            <sup class="type-dp" title="Propiedad de datos">dp</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="https://schema.org/Event">
+      <h3>Event<sup class="type-c" title="clase">c</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#classes">Índice de clases</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://schema.org/Event</p>
+      <div class="comment">
+         <span class="markdown">Un evento que tiene lugar a una hora y en un lugar determinados, como un concierto, una conferencia o un festival.</span>
+      </div>
+      <dl class="description">
+         <dt>tiene superclases</dt>
+         <dd>
+            <a href="#Evento"
+               title="http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda#Evento">Evento</a>
+            <sup class="type-c" title="clase">c</sup>
+         </dd>
+         <dt>en dominio de</dt>
+         <dd>
+            <a href="#https://schema.org/Audience" title="https://schema.org/Audience">audiencia</a>
+            <sup class="type-dp" title="Propiedad de datos">dp</sup>, <a href="#https://schema.org/maximumAttendeeCapacity" title="https://schema.org/maximumAttendeeCapacity">capacidad máxima</a>
+            <sup class="type-dp" title="Propiedad de datos">dp</sup>, <a href="#https://schema.org/isAccessibleForFree" title="https://schema.org/isAccessibleForFree">es accesible gratis</a>
+            <sup class="type-dp" title="Propiedad de datos">dp</sup>, <a href="#https://schema.org/eventStatus" title="https://schema.org/eventStatus">estado del evento</a>
+            <sup class="type-dp" title="Propiedad de datos">dp</sup>, <a href="#https://schema.org/endDate" title="https://schema.org/endDate">fecha fin</a>
+            <sup class="type-dp" title="Propiedad de datos">dp</sup>, <a href="#https://schema.org/startDate" title="https://schema.org/startDate">fecha inicio</a>
+            <sup class="type-dp" title="Propiedad de datos">dp</sup>, <a href="#https://schema.org/doorTime" title="https://schema.org/doorTime">hora de apertura</a>
+            <sup class="type-dp" title="Propiedad de datos">dp</sup>, <a href="#https://schema.org/eventAttendanceMode" title="https://schema.org/eventAttendanceMode">modo de asistencia</a>
+            <sup class="type-dp" title="Propiedad de datos">dp</sup>, <a href="#https://schema.org/typicalAgeRange" title="https://schema.org/typicalAgeRange">rango de edad</a>
+            <sup class="type-dp" title="Propiedad de datos">dp</sup>, <a href="#https://schema.org/subEvent" title="https://schema.org/subEvent">sub evento</a>
+            <sup class="type-op" title="Propiedad entre objetos">op</sup>, <a href="#https://schema.org/superEvent" title="https://schema.org/superEvent">super evento</a>
+            <sup class="type-op" title="Propiedad entre objetos">op</sup>, <a href="#https://schema.org/workPerformed" title="https://schema.org/workPerformed">trabajo realizado</a>
+            <sup class="type-dp" title="Propiedad de datos">dp</sup>
+         </dd>
+         <dt>en rango de</dt>
+         <dd>
+            <a href="#https://schema.org/subEvent" title="https://schema.org/subEvent">sub evento</a>
+            <sup class="type-op" title="Propiedad entre objetos">op</sup>, <a href="#https://schema.org/superEvent" title="https://schema.org/superEvent">super evento</a>
+            <sup class="type-op" title="Propiedad entre objetos">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Evento">
+      <h3>Evento<sup class="type-c" title="clase">c</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#classes">Índice de clases</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda#Evento</p>
+      <div class="comment">
+         <span class="markdown">Evento que tendrá lugar en una ciudad.</span>
+      </div>
+      <dl class="description">
+         <dt>tiene superclases</dt>
+         <dd/>
+         <dt>tiene subclases</dt>
+         <dd>
+            <a href="#https://schema.org/Event" title="https://schema.org/Event">Event</a>
+            <sup class="type-c" title="clase">c</sup>
+         </dd>
+         <dt>en dominio de</dt>
+         <dd>
+            <a href="#documentacion"
+               title="http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda#documentacion">documentacion</a>
+            <sup class="type-op" title="Propiedad entre objetos">op</sup>, <a href="#interior"
+               title="http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda#interior">interior</a>
+            <sup class="type-dp" title="Propiedad de datos">dp</sup>, <a href="#tipoEvento"
+               title="http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda#tipoEvento">tipo de evento</a>
+            <sup class="type-op" title="Propiedad entre objetos">op</sup>, <a href="#https://schema.org/location" title="https://schema.org/location">ubicación</a>
+            <sup class="type-op" title="Propiedad entre objetos">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="https://schema.org/Place">
+      <h3>Lugar<sup class="type-c" title="clase">c</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#classes">Índice de clases</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://schema.org/Place</p>
+      <div class="comment">
+         <span class="markdown">Entidades que tienen una extensión física</span>
+      </div>
+      <dl class="description">
+         <dt>tiene superclases</dt>
+         <dd>
+            <a href="#http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructura/equipamiento-municipal#Equipamiento"
+               title="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructura/equipamiento-municipal#Equipamiento">Equipamiento</a>
+            <sup class="type-c" title="clase">c</sup>
+         </dd>
+         <dt>en dominio de</dt>
+         <dd>
+            <a href="#https://schema.org/address" title="https://schema.org/address">dirección</a>
+            <sup class="type-op" title="Propiedad entre objetos">op</sup>
+         </dd>
+         <dt>en rango de</dt>
+         <dd>
+            <a href="#https://schema.org/location" title="https://schema.org/location">ubicación</a>
+            <sup class="type-op" title="Propiedad entre objetos">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="https://schema.org/CreativeWork">
+      <h3>Trabajo creativo<sup class="type-c" title="clase">c</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#classes">Índice de clases</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://schema.org/CreativeWork</p>
+      <div class="comment">
+         <span class="markdown">El tipo más genérico de trabajo creativo, que incluye libros, películas, fotografías, programas de software, etc.</span>
+      </div>
+      <dl class="description">
+         <dt>tiene superclases</dt>
+         <dd>
+            <a href="#https://schema.org/DigitalDocument" title="https://schema.org/DigitalDocument">Documento digital</a>
+            <sup class="type-c" title="clase">c</sup>
+         </dd>
+         <dt>en dominio de</dt>
+         <dd>
+            <a href="#https://schema.org/description" title="https://schema.org/description">descripción</a>
+            <sup class="type-dp" title="Propiedad de datos">dp</sup>, <a href="#https://schema.org/url" title="https://schema.org/url">enlace</a>
+            <sup class="type-dp" title="Propiedad de datos">dp</sup>, <a href="#https://schema.org/fileFormat" title="https://schema.org/fileFormat">formato archivo</a>
+            <sup class="type-dp" title="Propiedad de datos">dp</sup>, <a href="#http://purl.org/dc/terms/identifier" title="http://purl.org/dc/terms/identifier">identificador</a>
+            <sup class="type-dp" title="Propiedad de datos">dp</sup>, <a href="#https://schema.org/image" title="https://schema.org/image">imagen</a>
+            <sup class="type-dp" title="Propiedad de datos">dp</sup>, <a href="#https://schema.org/name" title="https://schema.org/name">name</a>
+            <sup class="type-dp" title="Propiedad de datos">dp</sup>
+         </dd>
+      </dl>
+   </div>
+</div><div xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="objectproperties">
+   <h2>Propiedades entre objetos</h2>
+   <ul class="hlist">
+      <li>
+         <a href="#https://schema.org/address" title="https://schema.org/address">dirección</a>
+      </li>
+      <li>
+         <a href="#documentacion"
+            title="http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda#documentacion">documentacion</a>
+      </li>
+      <li>
+         <a href="#http://www.w3.org/2004/02/skos/core#inScheme" title="http://www.w3.org/2004/02/skos/core#inScheme">is in scheme</a>
+      </li>
+      <li>
+         <a href="#https://schema.org/subEvent" title="https://schema.org/subEvent">sub evento</a>
+      </li>
+      <li>
+         <a href="#https://schema.org/superEvent" title="https://schema.org/superEvent">super evento</a>
+      </li>
+      <li>
+         <a href="#tipoEvento"
+            title="http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda#tipoEvento">tipo de evento</a>
+      </li>
+      <li>
+         <a href="#https://schema.org/location" title="https://schema.org/location">ubicación</a>
+      </li>
+   </ul>
+   <div class="entity" id="https://schema.org/address">
+      <h3>dirección<sup class="type-op" title="Propiedad entre objetos">op</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#objectproperties">Índice de propiedades de objetos</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://schema.org/address</p>
+      <div class="comment">
+         <span class="markdown">Dirección física del artículo.</span>
+      </div>
+      <div class="description">
+         <p>
+            <strong>tiene características:
+                </strong> funcional</p>
+         <dl>
+            <dt>dominio</dt>
+            <dd>
+               <a href="#https://schema.org/Place" title="https://schema.org/Place">Lugar</a>
+               <sup class="type-c" title="clase">c</sup>
+            </dd>
+            <dt>rango</dt>
+            <dd>
+               <a href="#https://schema.org/PostalAddress" title="https://schema.org/PostalAddress">Dirección postal</a>
+               <sup class="type-c" title="clase">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="documentacion">
+      <h3>documentacion<sup class="type-op" title="Propiedad entre objetos">op</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#objectproperties">Índice de propiedades de objetos</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda#documentacion</p>
+      <div class="comment">
+         <span class="markdown">Documentación asociada a un evento</span>
+      </div>
+      <div class="description">
+         <p>
+            <strong>tiene características:
+                </strong> funcional</p>
+         <dl>
+            <dt>dominio</dt>
+            <dd>
+               <a href="#Evento"
+                  title="http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda#Evento">Evento</a>
+               <sup class="type-c" title="clase">c</sup>
+            </dd>
+            <dt>rango</dt>
+            <dd>
+               <a href="#https://schema.org/DigitalDocument" title="https://schema.org/DigitalDocument">Documento digital</a>
+               <sup class="type-c" title="clase">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://www.w3.org/2004/02/skos/core#inScheme">
+      <h3>is in scheme<sup class="type-op" title="Propiedad entre objetos">op</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#objectproperties">Índice de propiedades de objetos</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3.org/2004/02/skos/core#inScheme</p>
+      <div class="comment">
+         <span class="markdown">A concept may be a member of more than one concept scheme.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>rango</dt>
+            <dd>
+               <a href="#http://www.w3.org/2004/02/skos/core#ConceptScheme"
+                  title="http://www.w3.org/2004/02/skos/core#ConceptScheme">Concept Scheme</a>
+               <sup class="type-c" title="clase">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="https://schema.org/subEvent">
+      <h3>sub evento<sup class="type-op" title="Propiedad entre objetos">op</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#objectproperties">Índice de propiedades de objetos</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://schema.org/subEvent</p>
+      <div class="comment">
+         <span class="markdown">Un evento que forma parte de este evento.</span>
+      </div>
+      <div class="description">
+         <p>
+            <strong>tiene características:
+                </strong> funcional</p>
+         <dl>
+            <dt>dominio</dt>
+            <dd>
+               <a href="#https://schema.org/Event" title="https://schema.org/Event">Event</a>
+               <sup class="type-c" title="clase">c</sup>
+            </dd>
+            <dt>rango</dt>
+            <dd>
+               <a href="#https://schema.org/Event" title="https://schema.org/Event">Event</a>
+               <sup class="type-c" title="clase">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="https://schema.org/superEvent">
+      <h3>super evento<sup class="type-op" title="Propiedad entre objetos">op</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#objectproperties">Índice de propiedades de objetos</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://schema.org/superEvent</p>
+      <div class="comment">
+         <span class="markdown">Un acontecimiento del que forma parte este evento.</span>
+      </div>
+      <div class="description">
+         <p>
+            <strong>tiene características:
+                </strong> funcional</p>
+         <dl>
+            <dt>dominio</dt>
+            <dd>
+               <a href="#https://schema.org/Event" title="https://schema.org/Event">Event</a>
+               <sup class="type-c" title="clase">c</sup>
+            </dd>
+            <dt>rango</dt>
+            <dd>
+               <a href="#https://schema.org/Event" title="https://schema.org/Event">Event</a>
+               <sup class="type-c" title="clase">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="tipoEvento">
+      <h3>tipo de evento<sup class="type-op" title="Propiedad entre objetos">op</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#objectproperties">Índice de propiedades de objetos</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda#tipoEvento</p>
+      <div class="comment">
+         <span class="markdown">Tipo de evento que tendrá lugar.</span>
+      </div>
+      <div class="description">
+         <p>
+            <strong>tiene características:
+                </strong> funcional</p>
+         <dl>
+            <dt>dominio</dt>
+            <dd>
+               <a href="#Evento"
+                  title="http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda#Evento">Evento</a>
+               <sup class="type-c" title="clase">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="https://schema.org/location">
+      <h3>ubicación<sup class="type-op" title="Propiedad entre objetos">op</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#objectproperties">Índice de propiedades de objetos</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://schema.org/location</p>
+      <div class="comment">
+         <span class="markdown">La ubicación, por ejemplo, del lugar donde se produce un evento, donde se encuentra una organización o donde tiene lugar una acción.</span>
+      </div>
+      <div class="description">
+         <p>
+            <strong>tiene características:
+                </strong> funcional</p>
+         <dl>
+            <dt>dominio</dt>
+            <dd>
+               <a href="#Evento"
+                  title="http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda#Evento">Evento</a>
+               <sup class="type-c" title="clase">c</sup>
+            </dd>
+            <dt>rango</dt>
+            <dd>
+               <a href="#https://schema.org/Place" title="https://schema.org/Place">Lugar</a>
+               <sup class="type-c" title="clase">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+</div><div xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="dataproperties">
+   <h3 id="dataproperties-headline" class="list">Propiedades de datos</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#https://schema.org/Audience" title="https://schema.org/Audience">audiencia</a>
+      </li>
+      <li>
+         <a href="#https://schema.org/maximumAttendeeCapacity" title="https://schema.org/maximumAttendeeCapacity">capacidad máxima</a>
+      </li>
+      <li>
+         <a href="#https://schema.org/postalCode" title="https://schema.org/postalCode">código postal</a>
+      </li>
+      <li>
+         <a href="#https://schema.org/description" title="https://schema.org/description">descripción</a>
+      </li>
+      <li>
+         <a href="#https://schema.org/streetAddress" title="https://schema.org/streetAddress">dirección calle</a>
+      </li>
+      <li>
+         <a href="#https://schema.org/addressLocality" title="https://schema.org/addressLocality">dirección localidad</a>
+      </li>
+      <li>
+         <a href="#https://schema.org/addressRegion" title="https://schema.org/addressRegion">dirección región</a>
+      </li>
+      <li>
+         <a href="#https://schema.org/url" title="https://schema.org/url">enlace</a>
+      </li>
+      <li>
+         <a href="#https://schema.org/isAccessibleForFree" title="https://schema.org/isAccessibleForFree">es accesible gratis</a>
+      </li>
+      <li>
+         <a href="#https://schema.org/eventStatus" title="https://schema.org/eventStatus">estado del evento</a>
+      </li>
+      <li>
+         <a href="#https://schema.org/endDate" title="https://schema.org/endDate">fecha fin</a>
+      </li>
+      <li>
+         <a href="#https://schema.org/startDate" title="https://schema.org/startDate">fecha inicio</a>
+      </li>
+      <li>
+         <a href="#https://schema.org/fileFormat" title="https://schema.org/fileFormat">formato archivo</a>
+      </li>
+      <li>
+         <a href="#https://schema.org/doorTime" title="https://schema.org/doorTime">hora de apertura</a>
+      </li>
+      <li>
+         <a href="#http://purl.org/dc/terms/identifier" title="http://purl.org/dc/terms/identifier">
+            <span>identificador</span>
+         </a>
+      </li>
+      <li>
+         <a href="#https://schema.org/image" title="https://schema.org/image">imagen</a>
+      </li>
+      <li>
+         <a href="#interior"
+            title="http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda#interior">interior</a>
+      </li>
+      <li>
+         <a href="#https://schema.org/eventAttendanceMode" title="https://schema.org/eventAttendanceMode">modo de asistencia</a>
+      </li>
+      <li>
+         <a href="#https://schema.org/name" title="https://schema.org/name">name</a>
+      </li>
+      <li>
+         <a href="#http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructura/equipamiento-municipal#nombre"
+            title="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructura/equipamiento-municipal#nombre">nombre</a>
+      </li>
+      <li>
+         <a href="#https://schema.org/typicalAgeRange" title="https://schema.org/typicalAgeRange">rango de edad</a>
+      </li>
+      <li>
+         <a href="#https://schema.org/workPerformed" title="https://schema.org/workPerformed">trabajo realizado</a>
+      </li>
+   </ul>
+   <div class="entity" id="https://schema.org/Audience">
+      <h3>audiencia<sup class="type-dp" title="Propiedad de datos">dp</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#dataproperties">Índice de propiedades de datos</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://schema.org/Audience</p>
+      <div class="comment">
+         <span class="markdown">El público al que va dirigido el artículo, es decir, el grupo para el que se creó el artículo.</span>
+      </div>
+      <div class="description">
+         <p>
+            <strong>tiene características:
+                </strong> funcional</p>
+         <dl>
+            <dt>dominio</dt>
+            <dd>
+               <a href="#https://schema.org/Event" title="https://schema.org/Event">Event</a>
+               <sup class="type-c" title="clase">c</sup>
+            </dd>
+            <dt>rango</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="https://schema.org/maximumAttendeeCapacity">
+      <h3>capacidad máxima<sup class="type-dp" title="Propiedad de datos">dp</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#dataproperties">Índice de propiedades de datos</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://schema.org/maximumAttendeeCapacity</p>
+      <div class="comment">
+         <span class="markdown">El número total de personas que pueden asistir a un evento o local.</span>
+      </div>
+      <div class="description">
+         <p>
+            <strong>tiene características:
+                </strong> funcional</p>
+         <dl>
+            <dt>dominio</dt>
+            <dd>
+               <a href="#https://schema.org/Event" title="https://schema.org/Event">Event</a>
+               <sup class="type-c" title="clase">c</sup>
+            </dd>
+            <dt>rango</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="https://schema.org/postalCode">
+      <h3>código postal<sup class="type-dp" title="Propiedad de datos">dp</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#dataproperties">Índice de propiedades de datos</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://schema.org/postalCode</p>
+      <div class="comment">
+         <span class="markdown">El código postal.</span>
+      </div>
+      <div class="description">
+         <p>
+            <strong>tiene características:
+                </strong> funcional</p>
+         <dl>
+            <dt>dominio</dt>
+            <dd>
+               <a href="#https://schema.org/PostalAddress" title="https://schema.org/PostalAddress">Dirección postal</a>
+               <sup class="type-c" title="clase">c</sup>
+            </dd>
+            <dt>rango</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="https://schema.org/description">
+      <h3>descripción<sup class="type-dp" title="Propiedad de datos">dp</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#dataproperties">Índice de propiedades de datos</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://schema.org/description</p>
+      <div class="comment">
+         <span class="markdown">Una descripción del artículo.</span>
+      </div>
+      <div class="description">
+         <p>
+            <strong>tiene características:
+                </strong> funcional</p>
+         <dl>
+            <dt>dominio</dt>
+            <dd>
+               <a href="#https://schema.org/CreativeWork" title="https://schema.org/CreativeWork">Trabajo creativo</a>
+               <sup class="type-c" title="clase">c</sup>
+            </dd>
+            <dt>rango</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="https://schema.org/streetAddress">
+      <h3>dirección calle<sup class="type-dp" title="Propiedad de datos">dp</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#dataproperties">Índice de propiedades de datos</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://schema.org/streetAddress</p>
+      <div class="comment">
+         <span class="markdown">La dirección de la calle.</span>
+      </div>
+      <div class="description">
+         <p>
+            <strong>tiene características:
+                </strong> funcional</p>
+         <dl>
+            <dt>dominio</dt>
+            <dd>
+               <a href="#https://schema.org/PostalAddress" title="https://schema.org/PostalAddress">Dirección postal</a>
+               <sup class="type-c" title="clase">c</sup>
+            </dd>
+            <dt>rango</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="https://schema.org/addressLocality">
+      <h3>dirección localidad<sup class="type-dp" title="Propiedad de datos">dp</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#dataproperties">Índice de propiedades de datos</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://schema.org/addressLocality</p>
+      <div class="comment">
+         <span class="markdown">La localidad en la que se encuentra la dirección, y que está en la región.</span>
+      </div>
+      <div class="description">
+         <p>
+            <strong>tiene características:
+                </strong> funcional</p>
+         <dl>
+            <dt>dominio</dt>
+            <dd>
+               <a href="#https://schema.org/PostalAddress" title="https://schema.org/PostalAddress">Dirección postal</a>
+               <sup class="type-c" title="clase">c</sup>
+            </dd>
+            <dt>rango</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="https://schema.org/addressRegion">
+      <h3>dirección región<sup class="type-dp" title="Propiedad de datos">dp</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#dataproperties">Índice de propiedades de datos</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://schema.org/addressRegion</p>
+      <div class="comment">
+         <span class="markdown">La región en la que se encuentra la localidad, y que está en el país</span>
+      </div>
+      <div class="description">
+         <p>
+            <strong>tiene características:
+                </strong> funcional</p>
+         <dl>
+            <dt>dominio</dt>
+            <dd>
+               <a href="#https://schema.org/PostalAddress" title="https://schema.org/PostalAddress">Dirección postal</a>
+               <sup class="type-c" title="clase">c</sup>
+            </dd>
+            <dt>rango</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="https://schema.org/url">
+      <h3>enlace<sup class="type-dp" title="Propiedad de datos">dp</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#dataproperties">Índice de propiedades de datos</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://schema.org/url</p>
+      <div class="comment">
+         <span class="markdown">Enlace del artículo</span>
+      </div>
+      <div class="description">
+         <p>
+            <strong>tiene características:
+                </strong> funcional</p>
+         <dl>
+            <dt>dominio</dt>
+            <dd>
+               <a href="#https://schema.org/CreativeWork" title="https://schema.org/CreativeWork">Trabajo creativo</a>
+               <sup class="type-c" title="clase">c</sup>
+            </dd>
+            <dt>rango</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#anyURI"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#anyURI">any u r i</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="https://schema.org/isAccessibleForFree">
+      <h3>es accesible gratis<sup class="type-dp" title="Propiedad de datos">dp</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#dataproperties">Índice de propiedades de datos</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://schema.org/isAccessibleForFree</p>
+      <div class="comment">
+         <span class="markdown">Una bandera para señalar que el artículo, evento o lugar es accesible de forma gratuita.</span>
+      </div>
+      <div class="description">
+         <p>
+            <strong>tiene características:
+                </strong> funcional</p>
+         <dl>
+            <dt>dominio</dt>
+            <dd>
+               <a href="#https://schema.org/Event" title="https://schema.org/Event">Event</a>
+               <sup class="type-c" title="clase">c</sup>
+            </dd>
+            <dt>rango</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#boolean"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#boolean">boolean</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="https://schema.org/eventStatus">
+      <h3>estado del evento<sup class="type-dp" title="Propiedad de datos">dp</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#dataproperties">Índice de propiedades de datos</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://schema.org/eventStatus</p>
+      <div class="comment">
+         <span class="markdown">El estado de un evento representa su situación; especialmente útil cuando un evento se cancela o se reprograma.</span>
+      </div>
+      <div class="description">
+         <p>
+            <strong>tiene características:
+                </strong> funcional</p>
+         <dl>
+            <dt>dominio</dt>
+            <dd>
+               <a href="#https://schema.org/Event" title="https://schema.org/Event">Event</a>
+               <sup class="type-c" title="clase">c</sup>
+            </dd>
+            <dt>rango</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="https://schema.org/endDate">
+      <h3>fecha fin<sup class="type-dp" title="Propiedad de datos">dp</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#dataproperties">Índice de propiedades de datos</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://schema.org/endDate</p>
+      <div class="comment">
+         <span class="markdown">La fecha y hora de finalización del artículo</span>
+      </div>
+      <div class="description">
+         <p>
+            <strong>tiene características:
+                </strong> funcional</p>
+         <dl>
+            <dt>dominio</dt>
+            <dd>
+               <a href="#https://schema.org/Event" title="https://schema.org/Event">Event</a>
+               <sup class="type-c" title="clase">c</sup>
+            </dd>
+            <dt>rango</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#dateTime"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#dateTime">date time</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="https://schema.org/startDate">
+      <h3>fecha inicio<sup class="type-dp" title="Propiedad de datos">dp</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#dataproperties">Índice de propiedades de datos</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://schema.org/startDate</p>
+      <div class="comment">
+         <span class="markdown">La fecha y la hora de inicio del artículo</span>
+      </div>
+      <div class="description">
+         <p>
+            <strong>tiene características:
+                </strong> funcional</p>
+         <dl>
+            <dt>dominio</dt>
+            <dd>
+               <a href="#https://schema.org/Event" title="https://schema.org/Event">Event</a>
+               <sup class="type-c" title="clase">c</sup>
+            </dd>
+            <dt>rango</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#dateTime"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#dateTime">date time</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="https://schema.org/fileFormat">
+      <h3>formato archivo<sup class="type-dp" title="Propiedad de datos">dp</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#dataproperties">Índice de propiedades de datos</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://schema.org/fileFormat</p>
+      <div class="comment">
+         <span class="markdown">Tipo del formato del archivo</span>
+      </div>
+      <div class="description">
+         <p>
+            <strong>tiene características:
+                </strong> funcional</p>
+         <dl>
+            <dt>dominio</dt>
+            <dd>
+               <a href="#https://schema.org/CreativeWork" title="https://schema.org/CreativeWork">Trabajo creativo</a>
+               <sup class="type-c" title="clase">c</sup>
+            </dd>
+            <dt>rango</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="https://schema.org/doorTime">
+      <h3>hora de apertura<sup class="type-dp" title="Propiedad de datos">dp</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#dataproperties">Índice de propiedades de datos</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://schema.org/doorTime</p>
+      <div class="comment">
+         <span class="markdown">La hora de inicio de la admisión.</span>
+      </div>
+      <div class="description">
+         <p>
+            <strong>tiene características:
+                </strong> funcional</p>
+         <dl>
+            <dt>dominio</dt>
+            <dd>
+               <a href="#https://schema.org/Event" title="https://schema.org/Event">Event</a>
+               <sup class="type-c" title="clase">c</sup>
+            </dd>
+            <dt>rango</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#dateTime"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#dateTime">date time</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://purl.org/dc/terms/identifier">
+      <h3>identificador<sup class="type-dp" title="Propiedad de datos">dp</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#dataproperties">Índice de propiedades de datos</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/dc/terms/identifier</p>
+      <div class="description">
+         <dl>
+            <dt>dominio</dt>
+            <dd>
+               <a href="#http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructura/equipamiento-municipal#Equipamiento"
+                  title="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructura/equipamiento-municipal#Equipamiento">Equipamiento</a>
+               <sup class="type-c" title="clase">c</sup>
+            </dd>
+            <dd>
+               <a href="#https://schema.org/CreativeWork" title="https://schema.org/CreativeWork">Trabajo creativo</a>
+               <sup class="type-c" title="clase">c</sup>
+            </dd>
+            <dt>rango</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="https://schema.org/image">
+      <h3>imagen<sup class="type-dp" title="Propiedad de datos">dp</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#dataproperties">Índice de propiedades de datos</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://schema.org/image</p>
+      <div class="comment">
+         <span class="markdown">Una imagen del artículo.</span>
+      </div>
+      <div class="description">
+         <p>
+            <strong>tiene características:
+                </strong> funcional</p>
+         <dl>
+            <dt>dominio</dt>
+            <dd>
+               <a href="#https://schema.org/CreativeWork" title="https://schema.org/CreativeWork">Trabajo creativo</a>
+               <sup class="type-c" title="clase">c</sup>
+            </dd>
+            <dt>rango</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#anyURI"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#anyURI">any u r i</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="interior">
+      <h3>interior<sup class="type-dp" title="Propiedad de datos">dp</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#dataproperties">Índice de propiedades de datos</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda#interior</p>
+      <div class="comment">
+         <span class="markdown">Indica si un evento tiene lugar en un sitio cerrado.</span>
+      </div>
+      <div class="description">
+         <p>
+            <strong>tiene características:
+                </strong> funcional</p>
+         <dl>
+            <dt>dominio</dt>
+            <dd>
+               <a href="#Evento"
+                  title="http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda#Evento">Evento</a>
+               <sup class="type-c" title="clase">c</sup>
+            </dd>
+            <dt>rango</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#boolean"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#boolean">boolean</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="https://schema.org/eventAttendanceMode">
+      <h3>modo de asistencia<sup class="type-dp" title="Propiedad de datos">dp</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#dataproperties">Índice de propiedades de datos</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://schema.org/eventAttendanceMode</p>
+      <div class="comment">
+         <span class="markdown">El modo de asistencia de un evento indica si se produce presencial, en remoto o una mezcla.</span>
+      </div>
+      <div class="description">
+         <p>
+            <strong>tiene características:
+                </strong> funcional</p>
+         <dl>
+            <dt>dominio</dt>
+            <dd>
+               <a href="#https://schema.org/Event" title="https://schema.org/Event">Event</a>
+               <sup class="type-c" title="clase">c</sup>
+            </dd>
+            <dt>rango</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="https://schema.org/name">
+      <h3>name<sup class="type-dp" title="Propiedad de datos">dp</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#dataproperties">Índice de propiedades de datos</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://schema.org/name</p>
+      <div class="comment">
+         <span class="markdown">El nombre de un elemento</span>
+      </div>
+      <div class="description">
+         <p>
+            <strong>tiene características:
+                </strong> funcional</p>
+         <dl>
+            <dt>dominio</dt>
+            <dd>
+               <a href="#https://schema.org/CreativeWork" title="https://schema.org/CreativeWork">Trabajo creativo</a>
+               <sup class="type-c" title="clase">c</sup>
+            </dd>
+            <dt>rango</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructura/equipamiento-municipal#nombre">
+      <h3>nombre<sup class="type-dp" title="Propiedad de datos">dp</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#dataproperties">Índice de propiedades de datos</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructura/equipamiento-municipal#nombre</p>
+      <div class="comment">
+         <span class="markdown">Nombre del equipamiento del ayuntamiento donde tendrá lugar el evento.</span>
+      </div>
+      <div class="description">
+         <p>
+            <strong>tiene características:
+                </strong> funcional</p>
+         <dl>
+            <dt>dominio</dt>
+            <dd>
+               <a href="#http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructura/equipamiento-municipal#Equipamiento"
+                  title="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructura/equipamiento-municipal#Equipamiento">Equipamiento</a>
+               <sup class="type-c" title="clase">c</sup>
+            </dd>
+            <dt>rango</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="https://schema.org/typicalAgeRange">
+      <h3>rango de edad<sup class="type-dp" title="Propiedad de datos">dp</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#dataproperties">Índice de propiedades de datos</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://schema.org/typicalAgeRange</p>
+      <div class="comment">
+         <span class="markdown">El rango de edad típico esperado</span>
+      </div>
+      <div class="description">
+         <p>
+            <strong>tiene características:
+                </strong> funcional</p>
+         <dl>
+            <dt>dominio</dt>
+            <dd>
+               <a href="#https://schema.org/Event" title="https://schema.org/Event">Event</a>
+               <sup class="type-c" title="clase">c</sup>
+            </dd>
+            <dt>rango</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="https://schema.org/workPerformed">
+      <h3>trabajo realizado<sup class="type-dp" title="Propiedad de datos">dp</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#dataproperties">Índice de propiedades de datos</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://schema.org/workPerformed</p>
+      <div class="comment">
+         <span class="markdown">Un trabajo realizado en algún evento</span>
+      </div>
+      <div class="description">
+         <p>
+            <strong>tiene características:
+                </strong> funcional</p>
+         <dl>
+            <dt>dominio</dt>
+            <dd>
+               <a href="#https://schema.org/Event" title="https://schema.org/Event">Event</a>
+               <sup class="type-c" title="clase">c</sup>
+            </dd>
+            <dt>rango</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+</div><div xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="namedindividuals">
+   <h3 id="namedindividuals" class="list">Individuos</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento"
+            title="http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento">
+            <span>tipo evento</span>
+         </a>
+      </li>
+   </ul>
+   <div class="entity" id="http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento">
+      <h3>tipo evento<sup class="type-ni" title="Individuo">ni</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#namedindividuals">Índice de individuos</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento</p>
+      <dl class="description">
+         <dt>pertenece a</dt>
+         <dd>
+            <a href="#http://www.w3.org/2004/02/skos/core#ConceptScheme"
+               title="http://www.w3.org/2004/02/skos/core#ConceptScheme">Concept Scheme</a>
+            <sup class="type-c" title="clase">c</sup>
+         </dd>
+      </dl>
+   </div>
+</div><div id="legend">
+<h2>Leyenda <span class="backlink"> volver a <a href="#toc">ToC</a></span></h2>
+<div   class="entity">
+<sup class="type-c" title="Clases">c</sup>: Clases <br/>
+<sup class="type-op" title="Propiedades de objeto">op</sup>: Propiedades de objeto <br/>
+<sup class="type-dp" title="Propiedades de datos">dp</sup>: Propiedades de datos <br/>
+<sup class="type-ni" title="Individuos">ni</sup>: Individuos
+</div>
+</div>
+</div>
+    
+
+<!--REFERENCES SECTION-->
+  <div id="references">
+<h2 id="ref" class="list">Referencias <span class="backlink"> volver a <a href="#toc">&iacute;ndice</a></span></h2>
+<span class="markdown">A&ntilde;ade aqu&iacute; tus referencias, a ser posible en una lista.</span>
+
+</div>
+<div id="acknowledgments">
+<h2 id="ack" class="list">Agradecimientos <span class="backlink"> volver a <a href="#toc">&iacute;ndice</a></span></h2>
+<p>Los autores agradecen a <a href="http://www.essepuntato.it/">Silvio Peroni</a> el desarrollo de <a href="http://www.essepuntato.it/lode">LODE</a>, un entorno de documentaci&oacute;n para OWL que es usado para generar la descripci&oacute;n de t&eacute;rminos de la ontolog&iacute;a de este documento; y a  <a href="http://purl.org/net/dgarijo">Daniel Garijo</a> por desarrollar <a href="https://github.com/dgarijo/Widoco">Widoco</a>, el programa utilizado para producir la plantilla en la que se basa este documento.</p>
+</div>
+
+
+</div>
+</body>
+</html>

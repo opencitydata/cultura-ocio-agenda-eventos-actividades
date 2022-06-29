@@ -1,0 +1,623 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+
+																					  
+
+###  http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento
+<http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento> rdf:type 
+                                                                                    skos:ConceptScheme ;
+                                                                                dc:creator "Josué García Salas" ;
+                                                                                dc:date "2022-03-05"^^xsd:date ;
+                                                                                dc:title "Lista SKOS que recoge los tipos de evento referentes a la cultura y al ocio que se puede organizar en un territorio"@es ;
+                                                                                skos:prefLabel "Tipo de evento"@es .
+
+##DEPORTIVOS
+
+##																					  
+<http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento> a skos:ConceptScheme ;
+	skos:hasTopConcept <http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/deportivos> .
+
+
+##MOTOR
+<http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/deportivos> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento> ;
+	skos:prefLabel "Deportivo"@es ;
+	skos:narrower <http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/motor> .
+##
+<http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/motor> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento> ;
+	skos:prefLabel "Motor"@es ;
+    skos:narrower <http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/formula-1> .
+
+##formula 1
+<http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/formula-1> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento> ;
+	skos:prefLabel "Formula 1"@es .
+##moto gp
+<http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/motor> skos:narrower <http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/moto-GP> .
+<http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/moto-GP> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento> ;
+	skos:prefLabel "Moto GP"@es .
+
+
+
+##ATLETISMO 
+<http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/deportivos> skos:narrower <http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/atletismo> .
+##
+<http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/atletismo> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento> ;
+	skos:prefLabel "Atletismo"@es ;
+    skos:narrower <http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/carrera-de-velocidad> .
+
+##carrera de velocidad
+<http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/carrera-de-velocidad> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento> ;
+	skos:prefLabel "Carrera de Velocidad"@es .
+
+##carrera de medio fondo
+<http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/atletismo> skos:narrower <http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/carrera-de-medio-fondo> .
+<http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/carrera-de-medio-fondo> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento> ;
+	skos:prefLabel "Carrera de Medio Fondo"@es .
+
+##carrera de fondo
+<http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/atletismo> skos:narrower <http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/carrera-de-fondo> .
+<http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/carrera-de-fondo> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento> ;
+	skos:prefLabel "Carrera de Fondo"@es .
+
+##carrera de obstaculos
+<http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/atletismo> skos:narrower <http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/carrera-de-obstaculos> .
+<http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/carrera-de-obstaculos> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento> ;
+	skos:prefLabel "Carrera de Obstaculos"@es .
+
+#vallas
+<http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/atletismo> skos:narrower <http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/vallas> .
+<http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/vallas> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento> ;
+	skos:prefLabel "Vallas"@es .
+
+##marcha
+<http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/atletismo> skos:narrower <http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/marcha> .
+<http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/marcha> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento> ;
+	skos:prefLabel "Marcha"@es .
+
+##relevos
+<http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/atletismo> skos:narrower <http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/relevos> .
+<http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/relevos> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento> ;
+	skos:prefLabel "Relevos"@es .
+
+##salto de altura
+<http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/atletismo> skos:narrower <http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/salto-de-altura> .
+<http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/salto-de-altura> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento> ;
+	skos:prefLabel "Salto de Altura"@es .
+
+##salto de longitud
+<http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/atletismo> skos:narrower <http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/salto-de-longitud> .
+<http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/salto-de-longitud> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento> ;
+	skos:prefLabel "Salto de Longitud"@es .
+
+##triple salto
+<http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/atletismo> skos:narrower <http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/triple-salto> .
+<http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/triple-salto> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento> ;
+	skos:prefLabel "Triple Salto"@es .
+
+##salto de pertiga
+<http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/atletismo> skos:narrower <http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/salto-de-pertiga> .
+<http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/saltoo-de-pertiga> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento> ;
+	skos:prefLabel "Salto de Pertiga"@es .
+
+##lanzamiento de peso
+<http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/atletismo> skos:narrower <http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/lanzamiento-de-peso> .
+<http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/lanzamiento-de-peso> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento> ;
+	skos:prefLabel "Lanzamiento de peso"@es .
+
+##lanzamiento de disco
+<http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/atletismo> skos:narrower <http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/lanzamiento-de-disco> .
+<http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/lanzamiento-de-disco> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento> ;
+	skos:prefLabel "Lanzamiento de Disco"@es .
+
+##lanzamiento de martillo
+<http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/atletismo> skos:narrower <http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/lanzamiento-de-martillo> .
+<http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/lanzamiento-de-martillo> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento> ;
+	skos:prefLabel "Lanzamiento de Martillo"@es .
+
+##lanzamiento de jabalina
+<http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/atletismo> skos:narrower <http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/lanzamiento-de-jabalina> .
+<http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/lanzamiento-de-jabalina> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento> ;
+	skos:prefLabel "Lanzamiento de Jabalina"@es .
+
+
+##triatlon
+<http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/atletismo> skos:narrower <http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/triatlon> .
+<http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/triatlon> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento> ;
+	skos:prefLabel "Triatlon"@es .
+
+
+
+
+##ACUATICO
+<http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/deportivos> skos:narrower <http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/acuatico> .
+##
+<http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/acuatico> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento> ;
+	skos:prefLabel "Acuatico"@es ;
+    skos:narrower <http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/natacion> .
+
+##natacion
+<http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/natacion> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento> ;
+	skos:prefLabel "Natacion"@es .
+
+##waterpolo
+<http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/acuatico> skos:narrower <http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/waterpolo> .
+<http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/waterpolo> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento> ;
+	skos:prefLabel "Waterpolo"@es .
+
+##natacion sincronizada
+<http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/acuatico> skos:narrower <http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/natacion-sincronizada> .
+<http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/natacion-sincronizada> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento> ;
+	skos:prefLabel "Natacion Sincronizada"@es .
+
+##salto
+<http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/acuatico> skos:narrower <http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/salto> .
+<http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/Salto> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento> ;
+	skos:prefLabel "Salto"@es .
+
+##remo
+<http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/acuatico> skos:narrower <http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/remo> .
+<http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/remo> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento> ;
+	skos:prefLabel "Remo"@es .
+
+##piraguismo
+<http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/acuatico> skos:narrower <http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/piraguismo> .
+<http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/piraguismo> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento> ;
+	skos:prefLabel "Piraguismo"@es .
+
+##esqui acuatico
+<http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/acuatico> skos:narrower <http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/esqui-acuatico> .
+<http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/esqui-acuatico> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento> ;
+	skos:prefLabel "Esqui Acuatico"@es .
+
+##vela
+<http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/acuatico> skos:narrower <http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/vela> .
+<http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/vela> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento> ;
+	skos:prefLabel "Vela"@es .
+
+##surf
+<http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/acuatico> skos:narrower <http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/surf> .
+<http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/surf> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento> ;
+	skos:prefLabel "Surf"@es .
+
+##buceo
+<http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/acuatico> skos:narrower <http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/buceo> .
+<http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/buceo> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento> ;
+	skos:prefLabel "Buceo"@es .
+
+##apnea
+<http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/acuatico> skos:narrower <http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/apnea> .
+<http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/apnea> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento> ;
+	skos:prefLabel "Apnea"@es .
+
+##pesca deportiva
+<http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/acuatico> skos:narrower <http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/pesca-deportiva> .
+<http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/pesca-deportiva> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento> ;
+	skos:prefLabel "Pesca Deportiva"@es .
+
+##submarinismo
+<http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/acuatico> skos:narrower <http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/submarinismo> .
+<http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/submarinismo> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento> ;
+	skos:prefLabel "Submarinismo"@es .
+
+##Trampolin
+<http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/acuatico> skos:narrower <http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/trampolin> .
+<http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/trampolin> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento> ;
+	skos:prefLabel "Trampolin"@es .
+
+
+
+
+##PELOTA
+<http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/deportivos> skos:narrower <http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/pelota> .
+##
+<http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/pelota> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento> ;
+	skos:prefLabel "Pelota"@es ;
+    skos:narrower <http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/baloncesto> .
+
+##baloncesto
+<http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/baloncesto> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento> ;
+	skos:prefLabel "Baloncesto"@es .
+
+##Balonmano
+<http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/pelota> skos:narrower <http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/balonmano> .
+<http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/balonmano> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento> ;
+	skos:prefLabel "Balonmano"@es .
+
+##Balon prisionero
+<http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/pelota> skos:narrower <http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/balon-prisionero> .
+<http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/balon-prisionero> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento> ;
+	skos:prefLabel "Balon Prisionero"@es .
+
+##Billar
+<http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/pelota> skos:narrower <http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/billar> .
+<http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/billar> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento> ;
+	skos:prefLabel "Billar"@es .
+
+##Bolos
+<http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/pelota> skos:narrower <http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/bolos> .
+<http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/bolos> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento> ;
+	skos:prefLabel "Bolos"@es .
+
+##Futbol
+<http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/pelota> skos:narrower <http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/futbol> .
+<http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/futbol> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento> ;
+	skos:prefLabel "Futbol"@es .
+
+##futbol-7
+<http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/pelota> skos:narrower <http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/futbol-7> .
+<http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/futbol-7> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento> ;
+	skos:prefLabel "Futbol 7"@es .
+
+##futbol sala
+<http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/pelota> skos:narrower <http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/futbol-sala> .
+<http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/futbol-sala> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento> ;
+	skos:prefLabel "Futbol Sala"@es .
+
+##futbol playa 
+<http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/pelota> skos:narrower <http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/futbol-playa> .
+<http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/futbol-playa> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento> ;
+	skos:prefLabel "Futbol Playa"@es .
+
+##rugby
+<http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/pelota> skos:narrower <http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/rugby> .
+<http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/rugby> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento> ;
+	skos:prefLabel "Rugby"@es .
+
+##Gimnasia-ritmica
+<http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/pelota> skos:narrower <http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/gimnasia-ritmica> .
+<http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/gimnasia-ritmica> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento> ;
+	skos:prefLabel "Gimnasia Ritmica"@es .
+
+##golf
+<http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/pelota> skos:narrower <http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/golf> .
+<http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/golf> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento> ;
+	skos:prefLabel "Golf"@es .
+
+##hockey
+<http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/pelota> skos:narrower <http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/hockey> .
+<http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/hockey> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento> ;
+	skos:prefLabel "Hockey"@es .
+
+##Padel
+<http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/pelota> skos:narrower <http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/padel> .
+<http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/padel> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento> ;
+	skos:prefLabel "Padel"@es .
+
+##pelota-vasca
+<http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/pelota> skos:narrower <http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/pelota-vasca> .
+<http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/pelota-vasca> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento> ;
+	skos:prefLabel "Pelota Vasca"@es .
+
+##Petanca
+<http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/pelota> skos:narrower <http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/petanca> .
+<http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/petanca> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento> ;
+	skos:prefLabel "Petanca"@es .
+
+##Tenis
+<http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/pelota> skos:narrower <http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/tenis> .
+<http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/tenis> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento> ;
+	skos:prefLabel "Tenis"@es .
+
+##tenis de mesa
+<http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/pelota> skos:narrower <http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/tenis-de-mesa> .
+<http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/tenis-de-mesa> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento> ;
+	skos:prefLabel "Tenis de Mesa"@es .
+
+##Voleibol
+<http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/pelota> skos:narrower <http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/voleibol> .
+<http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/voleibol> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento> ;
+	skos:prefLabel "Voleibol"@es .
+
+
+
+
+##COMBATE
+<http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/deportivos> skos:narrower <http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/combate> .
+##
+<http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/combate> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento> ;
+	skos:prefLabel "Combate"@es ;
+    skos:narrower <http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/esgrima> .
+
+##boxeo
+<http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/esgrima> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento> ;
+	skos:prefLabel "Esgrima"@es .
+
+##judo
+<http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/combate> skos:narrower <http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/judo> .
+<http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/judo> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento> ;
+	skos:prefLabel "Judo"@es .
+
+##Karate
+<http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/combate> skos:narrower <http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/karate> .
+<http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/karate> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento> ;
+	skos:prefLabel "Karate"@es .
+
+##Taekwondo
+<http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/combate> skos:narrower <http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/taekwondo> .
+<http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/taekwondo> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento> ;
+	skos:prefLabel "Taekwondo"@es .
+
+##MMA
+<http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/combate> skos:narrower <http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/MMA> .
+<http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/MMA> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento> ;
+	skos:prefLabel "MMA"@es .
+
+
+
+##OTROS
+<http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/deportivos> skos:narrower <http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/otros> .
+##
+<http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/otros> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento> ;
+	skos:prefLabel "Otros"@es .
+    skos:narrower <http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/ajedrez> .
+
+##boxeo
+<http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/ajedrez> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento> ;
+	skos:prefLabel "Ajedrez"@es .
+
+
+
+
+
+##ESCOLARES
+##																					  
+<http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento> a skos:ConceptScheme ;
+	skos:hasTopConcept <http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/escolares> .
+##
+<http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/escolares> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento> ;
+	skos:prefLabel "Escolares"@es .
+
+
+
+##BENEFICOS
+##																					  
+<http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento> a skos:ConceptScheme ;
+	skos:hasTopConcept <http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/beneficos> .
+##
+<http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/beneficos> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento> ;
+	skos:prefLabel "Beneficos"@es .
+
+
+
+##CONFERENCIAS
+##																					  
+<http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento> a skos:ConceptScheme ;
+	skos:hasTopConcept <http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/conferencias> .
+##
+<http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/conferencias> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento> ;
+	skos:prefLabel "Conferencias"@es .
+
+
+
+##CONGRESOS
+##																					  
+<http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento> a skos:ConceptScheme ;
+	skos:hasTopConcept <http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/congresos> .
+##
+<http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/congresos> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento> ;
+	skos:prefLabel "Congresos"@es .
+
+
+
+##TALLERES
+##																					  
+<http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento> a skos:ConceptScheme ;
+	skos:hasTopConcept <http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/talleres> .
+##
+<http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/talleres> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento> ;
+	skos:prefLabel "Talleres"@es .
+
+
+
+##HOMENAJES
+##																					  
+<http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento> a skos:ConceptScheme ;
+	skos:hasTopConcept <http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/homenajes> .
+##
+<http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/homenajes> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento> ;
+	skos:prefLabel "Homenajes"@es .
+
+
+
+##TURISMO
+##																					  
+<http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento> a skos:ConceptScheme ;
+	skos:hasTopConcept <http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/turismo> .
+##EXCURSIONES
+<http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/turismo> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento> ;
+	skos:prefLabel "Turismo"@es ;
+    skos:narrower <http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/excursiones> .
+##
+<http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/excursiones> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento> ;
+	skos:prefLabel "Excursiones"@es .
+
+##VIAJES 
+<http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/turismo> skos:narrower <http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/viajes> .
+##
+<http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/viajes> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento> ;
+	skos:prefLabel "Viajes"@es .
+
+
+
+
+##SOCIO-CULTURAL
+##																					  
+<http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento> a skos:ConceptScheme ;
+	skos:hasTopConcept <http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/socio-cultural> .
+##CARNAVALES
+<http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/socio-cultural> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento> ;
+	skos:prefLabel "Socio Cultural"@es ;
+    skos:narrower <http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/carnavales> .
+##
+<http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/carnavales> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento> ;
+	skos:prefLabel "Carnavales"@es .
+
+##CIRCOS
+<http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/socio-cultural> skos:narrower <http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/circos> .
+##
+<http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/circos> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento> ;
+	skos:prefLabel "Circos"@es .
+
+##CONCIERTOS
+<http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/socio-cultural> skos:narrower <http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/conciertos> .
+##
+<http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/conciertos> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento> ;
+	skos:prefLabel "Conciertos"@es .
+
+##DANZAS
+<http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/socio-cultural> skos:narrower <http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/danzas> .
+##
+<http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/danzas> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento> ;
+	skos:prefLabel "Danzas"@es .
+
+##EXPOSICIONES
+<http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/socio-cultural> skos:narrower <http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/exposiciones> .
+##
+<http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/exposiciones> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento> ;
+	skos:prefLabel "Exposiciones"@es .
+
+##FIESTAS
+<http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/socio-cultural> skos:narrower <http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/fiestas> .
+##
+<http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/fiestas> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento> ;
+	skos:prefLabel "Fiestas"@es .
+
+##TEATRO
+<http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/socio-cultural> skos:narrower <http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/teatro> .
+##
+<http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/teatro> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento> ;
+	skos:prefLabel "Teatro"@es .
+
+
+##OPERA
+<http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/socio-cultural> skos:narrower <http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/opera> .
+##
+<http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/opera> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento> ;
+	skos:prefLabel "Opera"@es .
+
+
+##PELICULAS
+<http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/socio-cultural> skos:narrower <http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/peliculas> .
+##
+<http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/peliculas> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento> ;
+	skos:prefLabel "Peliculas"@es .
+
+
+##FESTIVALES
+<http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/socio-cultural> skos:narrower <http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/festival> .
+##
+<http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/festival> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento> ;
+	skos:prefLabel "Festival"@es .
+
+
+##MONOLOGOS
+<http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/socio-cultural> skos:narrower <http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/monologos> .
+##
+<http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/monologos> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento> ;
+	skos:prefLabel "Monologos"@es .
+
+
+##CAMPAMENTOS
+<http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/socio-cultural> skos:narrower <http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/campamentos> .
+##
+<http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/campamentos> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento> ;
+	skos:prefLabel "Campamentos"@es .
+
+
+##FERIAS
+<http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/socio-cultural> skos:narrower <http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/ferias> .
+##
+<http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento/ferias> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/cultura-ocio/agenda/tipo-evento> ;
+	skos:prefLabel "Ferias"@es .

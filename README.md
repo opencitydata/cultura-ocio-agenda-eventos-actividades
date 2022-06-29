@@ -1,5 +1,5 @@
 # cultura-ocio-agenda-eventos-actividades
-Este repositorio contiene el material relacionado con el vocabulario sobre  la descripción de eventos pertenecientes a la agenda cultural de una ciudad española, que se identifica (y publica) en la siguiente URI:
+Este repositorio contiene el material relacionado con el vocabulario sobre  la descripción de eventos pertenecientes a la agenda cultural de una ciudad, que se identifica (y publica) en la siguiente URI:
 
 http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda
 
@@ -13,7 +13,12 @@ Por tanto, se pretende con esto llevar un control de cambios entre versiones.
 * [16/05/2018] Documentación regenerada a la última versión y añadidos ejemplos de uso.
 * [24/03/2022] Comienzo de la actualización a la versión 1.1, con nuevos patrones
 
-A continuación se muestran también los datos originales obtenidos del grupo de trabajo OjoAlData100, que identificó este vocabulario como uno de los prioritarios.
+La versión 1.0 de este vocabulario (v1.0) está siendo utilizada en el contexto de la actuación sobre datos abiertos del proyecto "Plataforma de Gobierno Abierto, Colaborativa e Interoperable" (https://www.ciudadesabiertas.es/). Dentro de los objetivos específicos de este proyecto no se encuentra el desarrollo, actualización o validación de este vocabulario, aunque no se descarta que puedan realizarse cambios cuando los conjuntos de datos correspondientes tengan que ser expuestos por medio de la API de datos abiertos que se está desarrollando en el proyecto.
+
+
+## Historia
+
+La selección de este vocabulario como prioritario para este repositorio se remonta a la iniciativa OjoAlData100, que identificó los siguientes campos relevantes:
 
 ### Núm
 13
@@ -49,4 +54,3 @@ Sí (por ejemplo, para comparar agendas previas). El histórico tiene poco valor
 ### Afectado LOPD
 No
 
-Este vocabulario (v1.0) está siendo utilizado en el contexto de la actuación sobre datos abiertos del proyecto "Plataforma de Gobierno Abierto, Colaborativa e Interoperable" (http://www.red.es/redes/es/que-hacemos/ciudades-inteligentes/proyectos-en-ciudades). Dentro de los objetivos específicos de este proyecto no se encuentra el desarrollo, actualización o validación de este vocabulario, aunque no se descarta que puedan realizarse cambios cuando los conjuntos de datos correspondientes tengan que ser expuestos por medio de la API de datos abiertos que se está desarrollando en el proyecto.
