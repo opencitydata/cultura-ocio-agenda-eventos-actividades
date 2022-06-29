@@ -12,6 +12,7 @@ Por tanto, se pretende con esto llevar un control de cambios entre versiones.
 * [07/05/2018] Aceptado pull request de OnToology para la generación de documentación [[OnToology update #2]](https://github.com/opencitydata/cultura-ocio-agenda-eventos-actividades/pull/2)
 * [16/05/2018] Documentación regenerada a la última versión y añadidos ejemplos de uso.
 * [24/03/2022] Comienzo de la actualización a la versión 1.1, con nuevos patrones
+* [20/05/2022] Versión 1.1, realizada en el contexto de un Trabajo Fin de Grado de la ETSI Informáticos (se adjuntará documento cuando esté disponible)
 
 La versión 1.0 de este vocabulario (v1.0) está siendo utilizada en el contexto de la actuación sobre datos abiertos del proyecto "Plataforma de Gobierno Abierto, Colaborativa e Interoperable" (https://www.ciudadesabiertas.es/). Dentro de los objetivos específicos de este proyecto no se encuentra el desarrollo, actualización o validación de este vocabulario, aunque no se descarta que puedan realizarse cambios cuando los conjuntos de datos correspondientes tengan que ser expuestos por medio de la API de datos abiertos que se está desarrollando en el proyecto.
 
